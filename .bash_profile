@@ -10,7 +10,6 @@ export GOPATH=$(go env GOPATH) # golang.org/doc.code.html
 alias gobin='function gobin(){ $GOPATH/bin/"$1";}; gobin'
 
 # NAV.DEV
-alias tf="cd $HOME/Desktop/zvmac/kaifa/SDLC/7_IaaS-C/SREchallenge/project/config"
 alias gop="cd $HOME/go/src"
 
 # NAV.GENERAL
@@ -32,4 +31,4 @@ alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 # PROMPT
 export PS1="🈚️ ☞☞☞ "
 export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
+export LSCOLORS=GxFxCxDxBxegedabagaced
