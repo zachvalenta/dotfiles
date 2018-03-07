@@ -1,0 +1,22 @@
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[color]
+	ui = auto
+[alias]
+	b = branch
+	c = commit -m
+	co = checkout
+	d = diff
+	conf = config --global --list
+	chl = log -n 5 --oneline
+	nb = checkout -b
+	s = status -s
+[color "diff"]
+	meta = white bold
+	frag = cyan bold
+	commit = white bold
+	old = red bold
+	new = magenta bold
+	whitespace = red reverse
