@@ -1,4 +1,4 @@
-echo "from zach user profile"
+echo "from ~/.bash_profile"
 
 # PROMPT
 
@@ -8,10 +8,13 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 # NAV
 
-alias sw="cd $HOME/Desktop/zvmac/materials/sw"
-alias notes="cd $HOME/Desktop/zvmac/notes"
 alias desk="cd $HOME/Desktop"
-alias site="subl $HOME/Desktop/zvmac/materials/sw/lang/js/zv_site/tmp/notes.md"
+alias notes="cd $HOME/Desktop/zvmac/notes"
+alias sw="cd $HOME/Desktop/zvmac/materials/sw"
+
+alias proj="cd $HOME/Desktop/zvmac/materials/sw/#projects"
+alias hc="subl $HOME/Desktop/zvmac/materials/sw/#projects/human_chinese/.tmp/notes.md"
+alias site="subl $HOME/Desktop/zvmac/materials/sw/#projects/site/.tmp/notes.md"
 
 # APP-SPECIFIC 
 
@@ -31,13 +34,14 @@ alias gc="subl $HOME/.gitconfig"
 
 # BASH
 
-alias cppath='pwd | pbcopy'
-alias rm="rm -i"
-alias c="clear"
-alias cd='function cdl(){ cd "$1"; pwd; ls -l;}; cdl'
-alias l='function lsl(){ ls -l;}; lsl'
-alias t='function treeC(){ tree -C "$1";}; treeC'
+alias d="pwd"
+alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
+alias l='function lsl(){ ls -hl ;}; lsl'
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
+alias c="clear"
+alias rm="rm -i"
+alias t='function treeC(){ tree -C "$1";}; treeC'
+alias cppath='pwd | pbcopy'
 
 # DEV
 
