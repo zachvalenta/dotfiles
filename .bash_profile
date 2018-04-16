@@ -10,11 +10,15 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 alias desk="cd $HOME/Desktop"
 alias notes="cd $HOME/Desktop/zvmac/notes"
-alias sw="cd $HOME/Desktop/zvmac/materials/sw"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018"
+alias goals="cd $HOME/Desktop/zvmac/notes/jay/goals"
 
+alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias proj="cd $HOME/Desktop/zvmac/materials/sw/#projects"
 alias hc="subl $HOME/Desktop/zvmac/materials/sw/#projects/human_chinese/.tmp/notes.md"
 alias site="subl $HOME/Desktop/zvmac/materials/sw/#projects/site/.tmp/notes.md"
+
+alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 
 # APP-SPECIFIC 
 
@@ -31,6 +35,7 @@ alias ytdv='youtube-dl'
 alias bp="subl $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
 alias gc="subl $HOME/.gitconfig"
+alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
 
 # BASH
 
@@ -43,13 +48,22 @@ alias rm="rm -i"
 alias t='function treeC(){ tree -C "$1";}; treeC'
 alias cppath='pwd | pbcopy'
 
-# DEV
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# PYTHON
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PATH
+export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
+alias freeze="pip freeze > requirements.txt"
+alias on="source venv/bin/activate"
+alias off="deactivate"
+alias run="python manage.py runserver"
+
+# GO
 
 export GOPATH=$(go env GOPATH) # golang.org/doc.code.html
 alias gobin='function gobin(){ $GOPATH/bin/"$1";}; gobin'
+
+# is this a Homebrew thing?
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
