@@ -15,9 +15,9 @@ alias goals="cd $HOME/Desktop/zvmac/notes/jay/goals"
 
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
-alias proj="cd $HOME/Desktop/zvmac/materials/sw/#projects"
-alias hc="subl $HOME/Desktop/zvmac/materials/sw/#projects/human_chinese/.tmp/notes.md"
-alias site="subl $HOME/Desktop/zvmac/materials/sw/#projects/site/.tmp/notes.md"
+alias proj="cd $HOME/Desktop/zvmac/materials/sw/_projects"
+alias hc="subl $HOME/Desktop/zvmac/materials/sw/_projects/human_chinese/.tmp/notes.md"
+alias site="subl $HOME/Desktop/zvmac/materials/sw/_projects/site/.tmp/notes.md"
 
 alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 
@@ -58,11 +58,13 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting P
 export PATH
 export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
-alias freeze="pip freeze > requirements.txt"
-alias warm="pip install -r requirements.txt"
+
+alias venv="py3 -m venv venv; on"
 alias on="source venv/bin/activate"
 alias off="deactivate"
 alias run="python manage.py runserver"
+alias freeze="pip freeze > requirements.txt"
+alias warm="pip install -r requirements.txt"
 
 # GO
 
