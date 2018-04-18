@@ -14,6 +14,7 @@ alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018"
 alias goals="cd $HOME/Desktop/zvmac/notes/jay/goals"
 
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
+alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
 alias proj="cd $HOME/Desktop/zvmac/materials/sw/#projects"
 alias hc="subl $HOME/Desktop/zvmac/materials/sw/#projects/human_chinese/.tmp/notes.md"
 alias site="subl $HOME/Desktop/zvmac/materials/sw/#projects/site/.tmp/notes.md"
@@ -29,6 +30,9 @@ alias tmd="tmux detach-client"
 alias gotoytd="cd $HOME/Desktop/zvmac/materials/jay/za/ytd"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl'
+
+alias gic="printf '_参考\nvenv\ndb.sqlite3\nnotes.md\' > .gitignore"
+alias gie="subl .gitignore"
 
 # PROFILES
 
@@ -55,6 +59,7 @@ export PATH
 export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
 alias freeze="pip freeze > requirements.txt"
+alias warm="pip install -r requirements.txt"
 alias on="source venv/bin/activate"
 alias off="deactivate"
 alias run="python manage.py runserver"
