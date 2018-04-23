@@ -31,7 +31,7 @@ alias gotoytd="cd $HOME/Desktop/zvmac/materials/jay/za/ytd"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl'
 
-alias gic="printf '_参考\nvenv\ndb.sqlite3\nnotes.md' > .gitignore"
+alias gic="printf '.idea\n_参考\ndb.sqlite3\nnotes.md\nvenv' > .gitignore"
 alias gie="subl .gitignore"
 
 # PROFILES
