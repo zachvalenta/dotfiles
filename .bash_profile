@@ -9,29 +9,30 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # NAV
 
 alias desk="cd $HOME/Desktop"
+alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
+alias train="cd $HOME/Desktop/zvmac/materials/jay/za/training; open ."
+
 alias notes="cd $HOME/Desktop/zvmac/notes"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/05"
 alias goals="cd $HOME/Desktop/zvmac/notes/jay/goals"
 
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
-alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
+alias now="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
 alias proj="cd $HOME/Desktop/zvmac/materials/sw/_projects"
 alias hc="subl $HOME/Desktop/zvmac/materials/sw/_projects/human_chinese/.tmp/notes.md"
-alias site="subl $HOME/Desktop/zvmac/materials/sw/_projects/site/.tmp/notes.md"
-
-alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 
 # APP-SPECIFIC 
 
 alias subl="open -a 'Sublime Text'"
 alias vsc="open -a 'Visual Studio Code'"
 alias tmd="tmux detach-client"
+alias sql="sqlite3"
 
 alias gotoytd="cd $HOME/Desktop/zvmac/materials/jay/za/ytd"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl'
 
-alias gic="printf '.idea\n_参考\ndb.sqlite3\nnotes.md\nvenv' > .gitignore"
+alias gic="printf 'venv\ndb.sqlite3\nnotes.md\nnode_modules' > .gitignore"
 alias gie="subl .gitignore"
 
 # PROFILES
@@ -51,11 +52,11 @@ alias c="clear"
 alias rm="rm -i"
 alias t='function treeC(){ tree -C "$1";}; treeC'
 alias cppath='pwd | pbcopy'
+PATH="/Users/zach/bin:${PATH}"
 
 # PYTHON
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
-export PATH
 export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
 
@@ -74,3 +75,5 @@ alias gobin='function gobin(){ $GOPATH/bin/"$1";}; gobin'
 # is this a Homebrew thing?
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export PATH
