@@ -9,6 +9,8 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # NAV
 
 alias desk="cd $HOME/Desktop"
+alias sw="cd $HOME/Desktop/zvmac/materials/sw"
+
 alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias train="cd $HOME/Desktop/zvmac/materials/jay/za/training; open ."
 
@@ -16,17 +18,15 @@ alias notes="cd $HOME/Desktop/zvmac/notes"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/05"
 alias goals="cd $HOME/Desktop/zvmac/notes/jay/goals"
 
-alias sw="cd $HOME/Desktop/zvmac/materials/sw"
-alias now="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
-alias proj="cd $HOME/Desktop/zvmac/materials/sw/_projects"
-alias hc="subl $HOME/Desktop/zvmac/materials/sw/_projects/human_chinese/.tmp/notes.md"
-
 # APP-SPECIFIC 
 
 alias subl="open -a 'Sublime Text'"
+alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
+
 alias vsc="open -a 'Visual Studio Code'"
 alias tmd="tmux detach-client"
 alias sql="sqlite3"
+alias zbin="cd $HOME/bin"
 
 alias gotoytd="cd $HOME/Desktop/zvmac/materials/jay/za/ytd"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
@@ -34,19 +34,17 @@ alias ytdv='youtube-dl'
 
 alias gic="printf 'venv\ndb.sqlite3\nnotes.md\nnode_modules' > .gitignore"
 alias gie="subl .gitignore"
+alias gc="subl $HOME/.gitconfig"
 
-# PROFILES
+# BASH
 
 alias bp="subl $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
-alias gc="subl $HOME/.gitconfig"
-alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
-
-# BASH
 
 alias d="pwd"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
 alias l='function lsl(){ ls -hl ;}; lsl'
+alias lsd='function lsd(){ ls -dlt */ .*/ ;}; lsd'
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias c="clear"
 alias rm="rm -i"
