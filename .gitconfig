@@ -2,23 +2,46 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[user]
+	name = zachvalenta
+	email = zjv5002@gmail.com
 [color]
 	ui = auto
 [alias]
+	a = add -A
 	b = branch
 	c = commit -m
 	co = checkout
 	d = diff
 	conf = config --global --list
-	chl = log -n 5 --oneline
+	l = log --graph -n 8 --oneline --all --decorate
 	nb = checkout -b
 	s = status -s
+# h/t @chrisdhanaraj for colors and diff-so-fancy
+# https://github.com/chrisdhanaraj/dotfiles/blob/master/.gitconfig
+[color]
+	ui = always
 [color "diff"]
-	meta = white bold
-	frag = cyan bold
-	commit = white bold
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
 	old = red bold
-	new = magenta bold
+	new = green bold
 	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
 [push]
 	default = simple
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
