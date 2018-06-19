@@ -7,9 +7,9 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 # ITERM - $CWD in tab title --> h/t https://gist.github.com/phette23/5270658
-if [ $ITERM_SESSION_ID ]; then
-  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
-fi
+# if [ $ITERM_SESSION_ID ]; then
+#   export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+# fi
 
 # NAV
 
@@ -48,7 +48,7 @@ alias upbp="source $HOME/.bash_profile"
 
 alias d="pwd"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
-alias l='function lsl(){ ls -hl "$1";}; lsl'
+alias l='function lsl(){ ls -hl ;}; lsl'
 alias lsd='function lsd(){ ls -dlt */ .*/ ;}; lsd'
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias c="clear"
