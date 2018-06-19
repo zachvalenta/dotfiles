@@ -6,6 +6,11 @@ export PS1="🈚️ ☞☞☞ "
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
+# ITERM - $CWD in tab title --> h/t https://gist.github.com/phette23/5270658
+if [ $ITERM_SESSION_ID ]; then
+  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+fi
+
 # NAV
 
 alias desk="cd $HOME/Desktop"
