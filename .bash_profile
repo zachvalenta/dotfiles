@@ -6,11 +6,6 @@ export PS1="🈚️ ☞☞☞ "
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
-# ITERM - $CWD in tab title --> h/t https://gist.github.com/phette23/5270658
-# if [ $ITERM_SESSION_ID ]; then
-#   export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
-# fi
-
 # NAV
 
 alias desk="cd $HOME/Desktop"
@@ -33,9 +28,10 @@ alias tmd="tmux detach-client"
 alias sql="sqlite3"
 alias zbin="cd $HOME/bin"
 
+alias ytdd="cd $HOME/Desktop/zvmac/materials/jay/ytd"
+alias ytds="cd $HOME/Desktop/zvmac/materials/jay/ytd/#singles"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl'
-alias ytdd="cd $HOME/Desktop/zvmac/materials/jay/za/ytd"
 
 alias gic="printf 'venv\ndb.sqlite3\nnotes.md\nnode_modules' > .gitignore"
 alias gie="subl .gitignore"
