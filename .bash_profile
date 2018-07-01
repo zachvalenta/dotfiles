@@ -51,6 +51,7 @@ alias c="clear"
 alias rm="rm -i"
 alias t='function treeC(){ tree -C "$1";}; treeC'
 alias cppath='pwd | pbcopy'
+alias sou='function sou(){ find . -name "$1";}; sou'
 PATH="/Users/zach/bin:${PATH}"
 
 # PYTHON
