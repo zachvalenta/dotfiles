@@ -1,0 +1,4 @@
+-- [host]:port user@db
+\set PROMPT1 '%M:%> %n@%/%R%#%x '
+-- prompt to complete statement (like MySQL CLI)
+\set PROMPT2 '   -> '
