@@ -8,15 +8,16 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 # NAV
 
+alias pao="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site; open .; open 'notes.md'"
 alias desk="cd $HOME/Desktop"
+alias yin="cd /Volumes/MUSIC-USB"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
-
-alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
-alias train="cd $HOME/Desktop/zvmac/materials/jay/za/training; open ."
-
 alias notes="cd $HOME/Desktop/zvmac/notes"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/06"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/07"
 alias goals="cd $HOME/Desktop/zvmac/notes/jay/goals"
+alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
+alias box="open $HOME/Desktop/zvmac/materials/sw/za/db/scorecard"
+alias wz="open $HOME/Desktop/zvmac/materials/za/non-fiction/#media"
 
 # APP-SPECIFIC 
 
@@ -28,10 +29,9 @@ alias tmd="tmux detach-client"
 alias sql="sqlite3"
 alias zbin="cd $HOME/bin"
 
-alias ytdd="cd $HOME/Desktop/zvmac/materials/jay/ytd"
-alias ytds="cd $HOME/Desktop/zvmac/materials/jay/ytd/#singles"
+alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
-alias ytdv='youtube-dl'
+alias ytdv='youtube-dl --format mp4'
 
 alias gic="printf 'venv\ndb.sqlite3\nnotes.md\nnode_modules' > .gitignore"
 alias gie="subl .gitignore"
@@ -65,7 +65,7 @@ alias on="source venv/bin/activate"
 alias off="deactivate"
 alias run="python manage.py runserver"
 alias freeze="pip freeze > requirements.txt"
-alias warm="pip install -r requirements.txt"
+alias heat="pip install -r requirements.txt"
 
 # GO
 
