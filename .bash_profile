@@ -8,9 +8,9 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 # NAV
 
-alias pao="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site; open .; open 'notes.md'"
+alias pao="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site; open 'notes.md'"
 alias desk="cd $HOME/Desktop"
-alias yin="cd /Volumes/MUSIC-USB"
+alias yin="cd /Volumes/MUSIC-USB; open ."
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/07"
@@ -49,7 +49,8 @@ alias lsd='function lsd(){ ls -dlt */ .*/ ;}; lsd'
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias c="clear"
 alias rm="rm -i"
-alias t='function treeC(){ tree -C "$1";}; treeC'
+alias t='function treeC(){ tree -C .;}; treeC'
+alias tl='function treeLevel(){ tree -CL "$1";}; treeLevel'
 alias cppath='pwd | pbcopy'
 alias sou='function sou(){ find . -name "$1";}; sou'
 PATH="/Users/zach/bin:${PATH}"
