@@ -17,40 +17,46 @@ alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/07"
 alias goals="cd $HOME/Desktop/zvmac/notes/jay/goals"
 alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias box="open $HOME/Desktop/zvmac/materials/sw/za/db/scorecard"
-alias wz="open $HOME/Desktop/zvmac/materials/za/non-fiction/#media"
 
-# APP-SPECIFIC 
+# ZA
 
 alias subl="open -a 'Sublime Text'"
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
-
 alias vsc="open -a 'Visual Studio Code'"
 alias tmd="tmux detach-client"
-alias sql="sqlite3"
 alias zbin="cd $HOME/bin"
+
+# YOUTUBE-DL
 
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl --format mp4'
 
-alias gic="printf 'venv\ndb.sqlite3\nnotes.md\nnode_modules' > .gitignore"
+# GIT
+
+alias gic="printf 'venv\ndb.sqlite3\nnotes.md\nmanage.py\n' > .gitignore"
 alias gie="subl .gitignore"
 alias gc="subl $HOME/.gitconfig"
 
-# BASH
+# BASH PROFILE
 
 alias bp="subl $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
 
+# DIRECTORY-RELATED
+
 alias d="pwd"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
 alias l='function lsl(){ ls -hl ;}; lsl'
-alias lsd='function lsd(){ ls -dlt */ .*/ ;}; lsd'
+alias lsd='function lsd(){ ls -dlt */ .*/ ;}; lsd' # TODO: ignore dot directories
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
+
+# UTIL
+
 alias c="clear"
 alias rm="rm -i"
-alias t='function treeC(){ tree -C .;}; treeC'
-alias tl='function treeLevel(){ tree -CL "$1";}; treeLevel'
+alias t='function treeC(){ tree -C "$1";}; treeC'
+alias tl='function treeLevel(){ tree -CL "$1" "$2";}; treeLevel'
 alias cppath='pwd | pbcopy'
 alias sou='function sou(){ find . -name "$1";}; sou'
 PATH="/Users/zach/bin:${PATH}"
