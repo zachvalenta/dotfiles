@@ -6,17 +6,20 @@ export PS1="🈚️ ☞☞☞ "
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
-# NAV
+# NAV - ITERM DEFAULT PANES
 
-alias pao="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site; open 'notes.md'"
 alias desk="cd $HOME/Desktop"
-alias yin="cd /Volumes/MUSIC-USB; open ."
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias notes="cd $HOME/Desktop/zvmac/notes"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/07"
-alias goals="cd $HOME/Desktop/zvmac/notes/jay/goals"
+
+# NAV
+
+alias pao="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site; open ."
+alias yin="cd /Volumes/MUSIC-USB; open ."
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/08"
 alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
-alias box="open $HOME/Desktop/zvmac/materials/sw/za/db/scorecard"
+alias box="cd $HOME/Desktop/zvmac/materials/sw/za/db/scorecard; open ."
+alias shu="cd $HOME/Desktop/zvmac/materials/za/fiction/za/book-notes"
 
 # ZA
 
@@ -67,6 +70,7 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting P
 export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
 
+alias pyt="py3 -m unittest -v"
 alias venv="py3 -m venv venv; on"
 alias on="source venv/bin/activate"
 alias off="deactivate"
