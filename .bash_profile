@@ -11,15 +11,14 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 alias desk="cd $HOME/Desktop"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias notes="cd $HOME/Desktop/zvmac/notes"
+alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 
 # NAV
 
-alias pao="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site; open ."
 alias yin="cd /Volumes/MUSIC-USB; open ."
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/08"
 alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/db/scorecard; open ."
-alias shu="cd $HOME/Desktop/zvmac/materials/za/fiction/za/book-notes"
 
 # ZA
 
@@ -59,7 +58,7 @@ alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias c="clear"
 alias rm="rm -i"
 alias t='function treeC(){ tree -C "$1";}; treeC'
-alias tl='function treeLevel(){ tree -CL "$1" "$2";}; treeLevel'
+alias tl='function treeLevel(){ tree -CL $1;}; treeLevel'
 alias cppath='pwd | pbcopy'
 alias sou='function sou(){ find . -name "$1";}; sou'
 PATH="/Users/zach/bin:${PATH}"
@@ -70,7 +69,8 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting P
 export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
 
-alias pyt="py3 -m unittest -v"
+alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
+alias pyt="py3 -m unittest discover"
 alias venv="py3 -m venv venv; on"
 alias on="source venv/bin/activate"
 alias off="deactivate"
