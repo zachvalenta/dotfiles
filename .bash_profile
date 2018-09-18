@@ -16,7 +16,7 @@ alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-sit
 # NAV
 
 alias yin="cd /Volumes/MUSIC-USB; open ."
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/08"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/09"
 alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/db/scorecard; open ."
 
@@ -49,16 +49,15 @@ alias upbp="source $HOME/.bash_profile"
 
 alias d="pwd"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
-alias l='function lsl(){ ls -hl ;}; lsl'
-alias lsd='function lsd(){ ls -dlt */ .*/ ;}; lsd' # TODO: ignore dot directories
+alias l='function lsl(){ ls -hl ;}; lsl' # TODO: ternary for args/no-args
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 
 # UTIL
 
 alias c="clear"
-alias rm="rm -i"
-alias t='function treeC(){ tree -C "$1";}; treeC'
-alias tl='function treeLevel(){ tree -CL $1;}; treeLevel'
+alias rm='function redirect(){ echo "use qing.py instead";}; redirect'
+alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args
+alias tl='function treeLevel(){ tree -CL $1 $2;}; treeLevel'
 alias cppath='pwd | pbcopy'
 alias sou='function sou(){ find . -name "$1";}; sou'
 PATH="/Users/zach/bin:${PATH}"
@@ -70,13 +69,16 @@ export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
 
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
-alias pyt="py3 -m unittest discover"
-alias venv="py3 -m venv venv; on"
+alias pyt="py3 -m unittest discover -v"
+
+alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
 alias on="source venv/bin/activate"
 alias off="deactivate"
-alias run="python manage.py runserver"
 alias freeze="pip freeze > requirements.txt"
 alias heat="pip install -r requirements.txt"
+
+alias rund="python manage.py runserver"
+alias runf="export FLASK_APP=app; export FLASK_ENV=development; flask run"
 
 # GO
 
