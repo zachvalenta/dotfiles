@@ -1,4 +1,5 @@
-echo "from ~/.bash_profile"
+echo -n "$(tput setaf 2) updating ~/.bash_profile at$(tput sgr0): "
+date
 
 # PROMPT
 
@@ -69,6 +70,11 @@ export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
 
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
+alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
+
+alias rund="python manage.py runserver"
+alias runf="export FLASK_APP=app; export FLASK_ENV=development; flask run"
+
 alias pyt="py3 -m unittest discover -v"
 
 alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
@@ -76,9 +82,6 @@ alias on="source venv/bin/activate"
 alias off="deactivate"
 alias freeze="pip freeze > requirements.txt"
 alias heat="pip install -r requirements.txt"
-
-alias rund="python manage.py runserver"
-alias runf="export FLASK_APP=app; export FLASK_ENV=development; flask run"
 
 # GO
 
