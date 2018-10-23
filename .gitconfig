@@ -14,11 +14,10 @@
 	co = checkout
 	d = diff
 	conf = config --global --list
-	l = log --graph -n 8 --oneline --all --decorate
+	l = log --graph -n 10 --oneline --all --decorate
 	nb = checkout -b
 	s = status -s
-# h/t @chrisdhanaraj for colors and diff-so-fancy
-# https://github.com/chrisdhanaraj/dotfiles/blob/master/.gitconfig
+	t = show -s --format=%ci
 [color]
 	ui = always
 [color "diff"]
