@@ -10,14 +10,15 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # NAV - ITERM DEFAULT PANES
 
 alias desk="cd $HOME/Desktop"
+alias yin="cd /Volumes/MUSIC-USB; open ."
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias notes="cd $HOME/Desktop/zvmac/notes"
-alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
+alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/impl/src"
 
 # NAV
 
-alias yin="cd /Volumes/MUSIC-USB; open ."
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/09"
+alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018"
 alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/db/scorecard; open ."
 
@@ -56,11 +57,12 @@ alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 # UTIL
 
 alias c="clear"
-alias rm='function redirect(){ echo "use qing.py instead";}; redirect'
+alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args
 alias tl='function treeLevel(){ tree -CL $1 $2;}; treeLevel'
 alias cppath='pwd | pbcopy'
-alias sou='function sou(){ find . -name "$1";}; sou'
+alias sou='function sou(){ find . -name "$1.md";}; sou'
+alias ff='function ff(){ open -a Firefox $1 ;}; ff'
 PATH="/Users/zach/bin:${PATH}"
 
 # PYTHON
@@ -68,14 +70,16 @@ PATH="/Users/zach/bin:${PATH}"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
-
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
-alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
-
-alias rund="python manage.py runserver"
-alias runf="export FLASK_APP=app; export FLASK_ENV=development; flask run"
-
 alias pyt="py3 -m unittest discover -v"
+
+alias rund="on; python manage.py runserver"
+
+alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
+alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/ps-course"
+alias fenv="env | grep FLASK"
+alias sfenv="export FLASK_APP=app"
+alias cfenv="unset FLASK_APP"
 
 alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
 alias on="source venv/bin/activate"
