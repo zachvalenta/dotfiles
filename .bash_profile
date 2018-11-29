@@ -7,19 +7,19 @@ export PS1="🈚️ ☞☞☞ "
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
-# NAV - ITERM DEFAULT PANES
+# NAV - PRIMARY
 
 alias desk="cd $HOME/Desktop"
 alias yin="cd /Volumes/MUSIC-USB; open ."
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias notes="cd $HOME/Desktop/zvmac/notes"
-alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/impl/src"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/11"
 
-# NAV
+# NAV - PROJECTS
 
+alias grok="open $HOME/Desktop/zvmac/materials/sw/za/algos/grokking-algos.pdf"
+alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/impl"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018"
-alias aihao="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/db/scorecard; open ."
 
 # ZA
@@ -29,6 +29,7 @@ alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Package
 alias vsc="open -a 'Visual Studio Code'"
 alias tmd="tmux detach-client"
 alias zbin="cd $HOME/bin"
+alias m="make"
 
 # YOUTUBE-DL
 
@@ -38,9 +39,11 @@ alias ytdv='youtube-dl --format mp4'
 
 # GIT
 
+alias gs="git s"
+alias gd="git d"
+alias gc="subl $HOME/.gitconfig"
 alias gic="printf 'venv\ndb.sqlite3\nnotes.md\nmanage.py\n' > .gitignore"
 alias gie="subl .gitignore"
-alias gc="subl $HOME/.gitconfig"
 
 # BASH PROFILE
 
@@ -65,21 +68,24 @@ alias sou='function sou(){ find . -name "$1.md";}; sou'
 alias ff='function ff(){ open -a Firefox $1 ;}; ff'
 PATH="/Users/zach/bin:${PATH}"
 
-# PYTHON
+# PYTHON - GENERAL
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
 alias pyt="py3 -m unittest discover -v"
-
 alias rund="on; python manage.py runserver"
 
+# PYTHON - FLASK
+
 alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
-alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/ps-course"
+alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/ps_course"
 alias fenv="env | grep FLASK"
 alias sfenv="export FLASK_APP=app"
 alias cfenv="unset FLASK_APP"
+
+# PYTHON - ENV
 
 alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
 alias on="source venv/bin/activate"
@@ -87,12 +93,20 @@ alias off="deactivate"
 alias freeze="pip freeze > requirements.txt"
 alias heat="pip install -r requirements.txt"
 
-# GO
+# CLEAN UP
 
 export GOPATH=$(go env GOPATH) # golang.org/doc.code.html
 alias gobin='function gobin(){ $GOPATH/bin/"$1";}; gobin'
 
-# is this a Homebrew thing?
+function npm {
+	LOCAL_NPM="./node_modules/.bin/npm"
+	if [ -x $LOCAL_NPM ]; then
+		$LOCAL_NPM $*
+	else
+		`which npm` $*
+	fi
+}
+export PATH="./node_modules/.bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
