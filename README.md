@@ -1,1 +1,1 @@
-dump of various configs - psql, Git, Bash profile, et al.
+dump of various configs - psql, Git, Bash, PDB, httpie, Sublime
