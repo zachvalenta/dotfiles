@@ -13,7 +13,7 @@ alias desk="cd $HOME/Desktop"
 alias yin="cd /Volumes/MUSIC-USB; open ."
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias notes="cd $HOME/Desktop/zvmac/notes"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/11"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/12"
 
 # NAV - PROJECTS
 
@@ -21,6 +21,7 @@ alias grok="open $HOME/Desktop/zvmac/materials/sw/za/algos/grokking-algos.pdf"
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/impl"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/db/scorecard; open ."
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/sdlc/0-process/applications; open ."
 
 # ZA
 
@@ -31,19 +32,24 @@ alias tmd="tmux detach-client"
 alias zbin="cd $HOME/bin"
 alias m="make"
 
-# YOUTUBE-DL
+# A/V
 
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl --format mp4'
+alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
 # GIT
 
+alias gb="git b"
 alias gs="git s"
 alias gd="git d"
-alias gc="subl $HOME/.gitconfig"
+alias gl="git l"
+alias ga="git a"
+alias gc="git c"
 alias gic="printf 'venv\ndb.sqlite3\nnotes.md\nmanage.py\n' > .gitignore"
 alias gie="subl .gitignore"
+alias gco="subl $HOME/.gitconfig"
 
 # BASH PROFILE
 
