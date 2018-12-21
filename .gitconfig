@@ -20,6 +20,7 @@
 	nb = checkout -b
 	s = status -s
 	t = show -s --format=%ci
+	u = reset HEAD
 [color]
 	ui = always
 [color "diff"]
