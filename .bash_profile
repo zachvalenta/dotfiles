@@ -50,7 +50,7 @@ alias ga="git a"
 alias gai="git ai"
 alias gu="git u"
 alias gc="git c"
-alias gic="printf 'venv\ndb.sqlite3\nnotes.md\nmanage.py\n' > .gitignore"
+alias gic="touch .gitignore"
 alias gie="subl .gitignore"
 alias gco="subl $HOME/.gitconfig"
 
