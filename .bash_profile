@@ -13,14 +13,14 @@ alias desk="cd $HOME/Desktop"
 alias yin="cd /Volumes/MUSIC-USB; open ."
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias notes="cd $HOME/Desktop/zvmac/notes"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2018/12"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/01"
 
 # NAV - PROJECTS
 
 alias grok="open $HOME/Desktop/zvmac/materials/sw/za/algos/grokking-algos.pdf"
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/impl"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
-alias box="cd $HOME/Desktop/zvmac/materials/sw/za/db/scorecard; open ."
+alias box="cd $HOME/Desktop/zvmac/materials/sw/za/za/db; open ."
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/sdlc/0-process/applications; open ."
 
 # ZA
@@ -50,7 +50,7 @@ alias ga="git a"
 alias gai="git ai"
 alias gu="git u"
 alias gc="git c"
-alias gic="touch .gitignore"
+alias gic="touch .gitignore; gie"
 alias gie="subl .gitignore"
 alias gco="subl $HOME/.gitconfig"
 
