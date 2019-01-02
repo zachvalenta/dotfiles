@@ -13,9 +13,9 @@
 	b = branch -v
 	c = commit -m
 	co = checkout
+	conf = config --global --list
 	d = diff --color-words
 	ds = diff --staged
-	conf = config --global --list
 	l = log --graph -n 10 --oneline --all --decorate
 	nb = checkout -b
 	s = status -s
