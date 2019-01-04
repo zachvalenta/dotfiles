@@ -101,8 +101,8 @@ alias cfenv="unset FLASK_APP"
 alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
 alias on="source venv/bin/activate"
 alias off="deactivate"
-alias freeze="pip freeze > requirements.txt"
-alias heat="pip install -r requirements.txt"
+alias pipfr="pip freeze > requirements.txt"
+alias pipin="pip install -r requirements.txt"
 
 # CLEAN UP
 
