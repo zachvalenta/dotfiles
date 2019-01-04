@@ -1,30 +1,37 @@
 echo -n "$(tput setaf 2) updating ~/.bash_profile at$(tput sgr0): "
 date
 
+###
 # PROMPT
+###
 
 export PS1="🈚️ ☞☞☞ "
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
+###
 # NAV - PRIMARY
+###
 
 alias desk="cd $HOME/Desktop"
 alias yin="cd /Volumes/MUSIC-USB; open ."
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/01"
+
+###
+# NAV - SECONDARY
+###
+
 alias dot="cd $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
-
-# NAV - PROJECTS
-
-alias grok="open $HOME/Desktop/zvmac/materials/sw/za/algos/grokking-algos.pdf"
-alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/impl"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/za/db; open ."
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/sdlc/0-process/applications; open ."
+alias cap="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
 
+###
 # ZA
+###
 
 alias subl="open -a 'Sublime Text'"
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
@@ -33,14 +40,18 @@ alias tmd="tmux detach-client"
 alias zbin="cd $HOME/bin"
 alias m="make"
 
+###
 # A/V
+###
 
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl --format mp4'
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
+###
 # GIT
+###
 
 alias gb="git b"
 alias gs="git s"
@@ -55,19 +66,26 @@ alias gic="touch .gitignore; gie"
 alias gie="subl .gitignore"
 alias gco="subl $HOME/.gitconfig"
 
+###
 # BASH PROFILE
+###
 
 alias bp="subl $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
+alias cpbp="cp $HOME/.bash_profile $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 
+###
 # DIRECTORY-RELATED
+###
 
 alias d="pwd"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
 alias l='function lsl(){ ls -hl ;}; lsl' # TODO: ternary for args/no-args
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 
+###
 # UTIL
+###
 
 alias grep="grep --color=auto"
 alias c="clear"
@@ -79,7 +97,9 @@ alias sou='function sou(){ find . -name "$1.md";}; sou'
 alias ff='function ff(){ open -a Firefox $1 ;}; ff'
 PATH="/Users/zach/bin:${PATH}"
 
+###
 # PYTHON - GENERAL
+###
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
@@ -88,7 +108,9 @@ alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
 alias pyt="py3 -m unittest discover -v"
 alias rund="on; python manage.py runserver"
 
+###
 # PYTHON - FLASK
+###
 
 alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/ps_course"
@@ -96,7 +118,9 @@ alias fenv="env | grep FLASK"
 alias sfenv="export FLASK_APP=app"
 alias cfenv="unset FLASK_APP"
 
+###
 # PYTHON - ENV
+###
 
 alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
 alias on="source venv/bin/activate"
@@ -104,7 +128,9 @@ alias off="deactivate"
 alias pipfr="pip freeze > requirements.txt"
 alias pipin="pip install -r requirements.txt"
 
+###
 # CLEAN UP
+###
 
 export GOPATH=$(go env GOPATH) # golang.org/doc.code.html
 alias gobin='function gobin(){ $GOPATH/bin/"$1";}; gobin'
