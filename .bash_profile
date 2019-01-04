@@ -14,6 +14,7 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/01"
+alias dot="cd $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 
 # NAV - PROJECTS
 
@@ -68,6 +69,7 @@ alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 
 # UTIL
 
+alias grep="grep --color=auto"
 alias c="clear"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args
