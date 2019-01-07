@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
+    "files.exclude": {
+        "node_modules": true,
+        "venv": true
+    },
+    "window.restoreWindows": "one",
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Visual Studio Dark"
+}
