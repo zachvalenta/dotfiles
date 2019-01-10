@@ -14,30 +14,40 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias desk="cd $HOME/Desktop"
-alias yin="cd /Volumes/MUSIC-USB; open ."
-alias sw="cd $HOME/Desktop/zvmac/materials/sw"
-alias notes="cd $HOME/Desktop/zvmac/notes"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/01"
+alias notes="cd $HOME/Desktop/zvmac/notes"
+alias sw="cd $HOME/Desktop/zvmac/materials/sw"
+alias yin="cd /Volumes/MUSIC-USB; open ."
 
 ###
 # NAV - SECONDARY
 ###
 
+alias box="cd $HOME/Desktop/zvmac/materials/sw/za/za/db; open ."
 alias dot="cd $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
-alias box="cd $HOME/Desktop/zvmac/materials/sw/za/za/db; open ."
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/sdlc/0-process/applications; open ."
-alias cap="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
+alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
+alias zbin="cd $HOME/bin"
+alias zbinr="open $HOME/bin/README.md"
+
+###
+# NAV - PROJECTS
+###
+
+alias cpa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
+alias cfa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-flask-app"
+alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services; open ."
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open duckduckgo.md"
+alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
+alias tingr="open $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db/README.md"
 
 ###
 # ZA
 ###
 
 alias subl="open -a 'Sublime Text'"
-alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
 alias vsc="open -a 'Visual Studio Code'"
 alias tmd="tmux detach-client"
-alias zbin="cd $HOME/bin"
 alias m="make"
 
 ###
@@ -113,7 +123,6 @@ alias rund="on; python manage.py runserver"
 ###
 
 alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
-alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/ps_course"
 alias fenv="env | grep FLASK"
 alias sfenv="export FLASK_APP=app"
 alias cfenv="unset FLASK_APP"
