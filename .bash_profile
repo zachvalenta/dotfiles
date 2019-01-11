@@ -97,14 +97,14 @@ alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 # UTIL
 ###
 
-alias grep="grep --color=auto"
 alias c="clear"
-alias rm='function redirect(){ echo "use qing instead";}; redirect'
+alias cppath='pwd | pbcopy'
+alias ff='function ff(){ open -a Firefox $1 ;}; ff'
+alias grep="grep --color=auto"
 alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args
 alias tl='function treeLevel(){ tree -CL $1 $2;}; treeLevel'
-alias cppath='pwd | pbcopy'
+alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias sou='function sou(){ find . -name "$1.md";}; sou'
-alias ff='function ff(){ open -a Firefox $1 ;}; ff'
 PATH="/Users/zach/bin:${PATH}"
 
 ###
@@ -122,10 +122,10 @@ alias rund="on; python manage.py runserver"
 # PYTHON - FLASK
 ###
 
-alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
-alias fenv="env | grep FLASK"
-alias sfenv="export FLASK_APP=app"
 alias cfenv="unset FLASK_APP"
+alias fenv="env | grep FLASK"
+alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
+alias sfenv="export FLASK_APP=app"
 
 ###
 # PYTHON - ENV
