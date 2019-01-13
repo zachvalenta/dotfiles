@@ -35,6 +35,7 @@ alias zbinr="open $HOME/bin/README.md"
 ###
 
 alias cpa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
+alias cpar="cpa; open README.md"
 alias cfa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-flask-app"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services; open ."
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open duckduckgo.md"
@@ -75,6 +76,7 @@ alias gc="git c"
 alias gic="touch .gitignore; gie"
 alias gie="subl .gitignore"
 alias gco="subl $HOME/.gitconfig"
+alias cpgc="cp $HOME/.gitconfig $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 
 ###
 # BASH PROFILE

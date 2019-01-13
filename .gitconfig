@@ -13,6 +13,7 @@
 	b = branch -v
 	c = commit -m
 	co = checkout
+	far = remote -v show
 	ma = checkout master
 	conf = config --global --list
 	d = diff --color-words
