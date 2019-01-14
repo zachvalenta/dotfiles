@@ -23,6 +23,7 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 # NAV - SECONDARY
 ###
 
+alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos"
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/za/db; open ."
 alias dot="cd $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
@@ -37,8 +38,9 @@ alias zbinr="open $HOME/bin/README.md"
 alias cpa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
 alias cpar="cpa; open README.md"
 alias cfa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-flask-app"
-alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services; open ."
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open duckduckgo.md"
+alias cfar="cfa; open README.md"
+alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services; open .; cd wire-ngf"
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open .; open ddg.md"
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
 alias tingr="open $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db/README.md"
 
