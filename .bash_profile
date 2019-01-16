@@ -87,15 +87,16 @@ alias gc="git c"
 alias gic="touch .gitignore; gie"
 alias gie="subl .gitignore"
 alias gco="subl $HOME/.gitconfig"
-alias cpgc="cp $HOME/.gitconfig $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 
 ###
-# BASH PROFILE
+# DOTFILES
 ###
 
 alias bp="subl $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
 alias cpbp="cp $HOME/.bash_profile $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
+alias cpgc="cp $HOME/.gitconfig $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
+alias cpng="cp /usr/local/etc/nginx/nginx.conf $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 
 ###
 # DIRECTORY-RELATED
