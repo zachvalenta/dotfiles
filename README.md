@@ -1,1 +1,11 @@
-dump of various configs - psql, Git, Bash, PDB, httpie, Sublime
+dump of various configs
+
+* Bash
+* Git
+* pdb
+* psql
+* Sublime
+* httpie
+* Nginx
+* VS Code
+* Vimium
