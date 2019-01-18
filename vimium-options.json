@@ -6,8 +6,8 @@
       "passKeys": "h,j,k,l"
     },
     {
-      "pattern": "https?://www.youtube.com/watch*",
-      "passKeys": "f,j,k,l,m"
+      "pattern": "https?://www.youtube.com/*",
+      "passKeys": ""
     },
     {
       "pattern": "https://github.com/*",
