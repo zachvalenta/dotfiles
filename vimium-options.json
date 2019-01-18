@@ -16,6 +16,10 @@
     {
       "pattern": "https://mail.google.com/*",
       "passKeys": ""
+    },
+    {
+      "pattern": "https://contacts.google.com/*",
+      "passKeys": ""
     }
   ],
   "filterLinkHints": false,
