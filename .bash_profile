@@ -97,6 +97,7 @@ alias upbp="source $HOME/.bash_profile"
 alias cpbp="cp $HOME/.bash_profile $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 alias cpgc="cp $HOME/.gitconfig $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 alias cpng="cp /usr/local/etc/nginx/nginx.conf $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
+alias cpvi="cp $HOME/Desktop/vimium-options.json $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles; qing $HOME/Desktop/vimium-options.json"
 
 ###
 # DIRECTORY-RELATED
