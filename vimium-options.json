@@ -12,6 +12,10 @@
     {
       "pattern": "https://github.com/*",
       "passKeys": "/"
+    },
+    {
+      "pattern": "https://mail.google.com/*",
+      "passKeys": ""
     }
   ],
   "filterLinkHints": false,
