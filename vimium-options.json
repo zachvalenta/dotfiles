@@ -14,11 +14,7 @@
       "passKeys": "/"
     },
     {
-      "pattern": "https://mail.google.com/*",
-      "passKeys": ""
-    },
-    {
-      "pattern": "https://contacts.google.com/*",
+      "pattern": "https://*.google.com/*",
       "passKeys": ""
     }
   ],
