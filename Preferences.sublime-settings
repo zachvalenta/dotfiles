@@ -1,7 +1,7 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"find_selected_text": true,
-	"folder_exclude_patterns": [".git", "logs"],
+	"folder_exclude_patterns": [".git", "logs/201*"],
 	"font_size": 15,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
