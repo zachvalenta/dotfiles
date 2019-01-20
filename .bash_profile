@@ -1,4 +1,4 @@
-echo -n "$(tput setaf 2) updating ~/.bash_profile at$(tput sgr0): "
+echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "
 date
 
 ###
@@ -96,7 +96,8 @@ alias bp="subl $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
 alias cpbp="cp $HOME/.bash_profile $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 alias cpgc="cp $HOME/.gitconfig $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
-alias cpng="cp /usr/local/etc/nginx/nginx.conf $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
+alias cpngd="cp /usr/local/etc/nginx/nginx.conf $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
+alias cpngu="cp $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles/nginx.conf /usr/local/etc/nginx"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles; qing $HOME/Desktop/vimium-options.json"
 
 ###
