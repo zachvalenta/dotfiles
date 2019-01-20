@@ -35,7 +35,7 @@ alias zbinr="open $HOME/bin/README.md"
 ###
 
 # 📈  grokking algos
-alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos"
+alias grok="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos"
 
 # 📈  create Python/Flask app
 alias cpa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
