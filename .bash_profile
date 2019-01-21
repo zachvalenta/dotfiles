@@ -43,8 +43,8 @@ alias cpar="cpa; open README.md"
 alias cfa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-flask-app"
 alias cfar="cfa; open README.md"
 
-# 📈  hook up Nginx -> gunicorn -> Flask
-alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services; open .; cd wire-ngf"
+# 📈  nginx-wsgi
+alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 
 # 📈  DDG
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open .; open ddg.md"
