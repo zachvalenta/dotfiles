@@ -13,6 +13,7 @@
 	b = branch -v
 	c = commit -m
 	co = checkout
+	count = rev-list --count HEAD
 	far = remote -v show
 	ma = checkout master
 	conf = config --global --list
