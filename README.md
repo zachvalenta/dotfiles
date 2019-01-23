@@ -2,10 +2,11 @@ dump of various configs
 
 * Bash
 * Git
-* pdb
-* psql
-* Sublime
 * httpie
 * Nginx
-* VS Code
+* pdb
+* psql
+* SQLite
+* Sublime
 * Vimium
+* VS Code
