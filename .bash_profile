@@ -24,7 +24,6 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 ###
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/za/db; open ."
-alias dot="cd $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
 alias zbin="cd $HOME/bin"
@@ -92,6 +91,7 @@ alias gco="subl $HOME/.gitconfig"
 # DOTFILES
 ###
 
+alias dot="cd $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
 alias bp="subl $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
 alias cpbp="cp $HOME/.bash_profile $HOME/Desktop/zvmac/materials/sw/os/shell/dotfiles"
