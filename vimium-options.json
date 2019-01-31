@@ -7,7 +7,7 @@
     },
     {
       "pattern": "https?://www.youtube.com/*",
-      "passKeys": "j,k,l,m,/"
+      "passKeys": "f,j,k,l,m,/"
     },
     {
       "pattern": "https://github.com/*",
