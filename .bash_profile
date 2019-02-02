@@ -60,6 +60,7 @@ alias subl="open -a 'Sublime Text'"
 alias vsc="open -a 'Visual Studio Code'"
 alias tmd="tmux detach-client"
 alias m="make"
+alias brewup="brew outdated | xargs brew upgrade"
 
 ###
 # A/V
