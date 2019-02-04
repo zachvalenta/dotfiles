@@ -4507,7 +4507,7 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
-	<false/>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -4517,7 +4517,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-01-31T19:37:17Z</date>
+	<date>2019-02-03T19:39:01Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SwitchPaneModifier</key>
