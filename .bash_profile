@@ -5,7 +5,7 @@ date
 # PROMPT
 ###
 
-export PS1="🈚️ ☞☞☞ "
+export PS1="$ "
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
