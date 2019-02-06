@@ -46,7 +46,7 @@ alias cfar="cfa; open README.md"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 
 # 📈  DDG
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open .; open ddg.md"
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open ."
 
 # 📈  book db
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
