@@ -10,10 +10,6 @@
       "passKeys": "f,j,k,l,m,/,1,2,3,4,5,6,7,8,9,?, <, >"
     },
     {
-      "pattern": "https://github.com/*",
-      "passKeys": "/"
-    },
-    {
       "pattern": "https://*.google.com/*",
       "passKeys": ""
     }
