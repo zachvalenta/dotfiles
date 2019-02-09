@@ -1,12 +1,14 @@
 {
     "editor.fontSize": 16,
+    "editor.lineNumbers": "relative",
     "editor.wordWrap": "on",
     "files.exclude": {
         "node_modules": true,
         "venv": true
     },
+    "markdown.extension.italic.indicator": "_",
     "window.restoreWindows": "one",
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Visual Studio Dark"
+    "workbench.colorTheme": "Noctis Obscuro",
+    "workbench.iconTheme": "material-icon-theme"
 }

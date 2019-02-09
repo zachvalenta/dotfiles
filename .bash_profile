@@ -46,7 +46,7 @@ alias cfar="cfa; open README.md"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 
 # 📈  DDG
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open ."
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open .; open linode.md"
 
 # 📈  book db
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
@@ -102,6 +102,7 @@ alias cpgc="cp $HOME/.gitconfig $HOME/Desktop/zvmac/materials/jay/assets-digital
 alias cpngd="cp /usr/local/etc/nginx/nginx.conf $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
 alias cpngu="cp $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles/nginx.conf /usr/local/etc/nginx"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles; qing $HOME/Desktop/vimium-options.json"
+alias cpvsc="cp $HOME/Library/Application\ Support/Code/User/settings.json $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
 
 ###
 # DIRECTORY-RELATED
