@@ -6,7 +6,9 @@
         "node_modules": true,
         "venv": true
     },
-    "markdown.extension.italic.indicator": "_",
+    "[markdown]": {
+        "editor.quickSuggestions": true
+    },
     "window.restoreWindows": "one",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Noctis Obscuro",
