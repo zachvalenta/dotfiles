@@ -17,7 +17,7 @@
 	far = remote -v show
 	ma = checkout master
 	conf = config --global --list
-	d = diff --color-words
+	d = diff
 	ds = diff --staged
 	l = log --graph -n 10 --oneline --all --decorate
 	nb = checkout -b
