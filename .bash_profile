@@ -26,6 +26,7 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/za/db; open ."
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
+alias snipvsc="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias zbin="cd $HOME/bin"
 alias zbinr="open $HOME/bin/README.md"
 
@@ -46,7 +47,7 @@ alias cfar="cfa; open README.md"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 
 # 📈  DDG
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open .; open linode.md"
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open linode.md"
 
 # 📈  book db
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
@@ -90,19 +91,21 @@ alias gco="subl $HOME/.gitconfig"
 
 ###
 # DOTFILES
-# 📍 there's got to be a better way to store dotfiles directory location
-# figure out after upgrade to Mojave
 ###
 
-alias dot="cd $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
+DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
+VSCODE_DIR="$HOME/Library/Application\ Support/Code/User/"
+
+alias dot="cd $DOTFILES_DIR"
 alias bp="subl $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
-alias cpbp="cp $HOME/.bash_profile $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
-alias cpgc="cp $HOME/.gitconfig $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
-alias cpngd="cp /usr/local/etc/nginx/nginx.conf $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
-alias cpngu="cp $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles/nginx.conf /usr/local/etc/nginx"
-alias cpvi="cp $HOME/Desktop/vimium-options.json $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles; qing $HOME/Desktop/vimium-options.json"
-alias cpvsc="cp $HOME/Library/Application\ Support/Code/User/settings.json $HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
+alias cpbp="cp $HOME/.bash_profile $DOTFILES_DIR"
+alias cpvsc="cp $VSCODE_DIR/*.json $DOTFILES_DIR"
+alias rsvsc="cp $DOTFILES_DIR/settings.json $VSCODE_DIR; cp $DOTFILES_DIR/keybindings.json $VSCODE_DIR"
+alias cpgc="cp $HOME/.gitconfig $DOTFILES_DIR"
+alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
+# alias cpngt="cp /usr/local/etc/nginx/nginx.conf $DOTFILES_DIR"
+# alias cpngf="cp $DOTFILES_DIR/nginx.conf /usr/local/etc/nginx"
 
 ###
 # DIRECTORY-RELATED
