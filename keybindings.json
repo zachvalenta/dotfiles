@@ -18,6 +18,10 @@
     "command": "editor.action.moveLinesUpAction",
     "when": "editorTextFocus && !editorReadonly" 
     },
+    {
+        "key": "cmd+alt+enter",
+        "command": "editor.action.openLink"
+    },
 
     {
     "key": "cmd+down", 
