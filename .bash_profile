@@ -97,7 +97,7 @@ DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
 VSCODE_DIR="$HOME/Library/Application\ Support/Code/User/"
 
 alias dot="cd $DOTFILES_DIR"
-alias bp="subl $HOME/.bash_profile"
+alias bp="open $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
 alias cpbp="cp $HOME/.bash_profile $DOTFILES_DIR"
 alias cpvsc="cp $VSCODE_DIR/*.json $DOTFILES_DIR"
