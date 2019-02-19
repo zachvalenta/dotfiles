@@ -24,6 +24,7 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 ###
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/za/db; open ."
+alias grok="/Users/zach/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
 alias snipvsc="cd $HOME/Library/Application\ Support/Code/User/snippets"
@@ -47,7 +48,7 @@ alias cfar="cfa; open README.md"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 
 # 📈  DDG
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications; open linode.md"
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications/linode; open linode.md"
 
 # 📈  book db
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
@@ -86,8 +87,8 @@ alias gai="git ai"
 alias gu="git u"
 alias gc="git c"
 alias gic="touch .gitignore; gie"
-alias gie="subl .gitignore"
-alias gco="subl $HOME/.gitconfig"
+alias gie="open .gitignore"
+alias gco="open $HOME/.gitconfig"
 
 ###
 # DOTFILES
@@ -137,6 +138,7 @@ PATH="/Users/zach/bin:${PATH}"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
+alias bpy="bpython"
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
 alias pyt="py3 -m unittest discover -v"
 alias rund="on; python manage.py runserver"
