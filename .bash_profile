@@ -23,7 +23,7 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 # NAV - SECONDARY
 ###
 
-alias box="cd $HOME/Desktop/zvmac/materials/sw/za/za/db; open ."
+alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
 alias grok="/Users/zach/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
