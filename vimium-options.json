@@ -15,7 +15,7 @@
     },
     {
       "pattern": "https?://*.pluralsight.com/*",
-      "passKeys": "m,t,/"
+      "passKeys": "f,m,t,/"
     }
   ],
   "filterLinkHints": false,
