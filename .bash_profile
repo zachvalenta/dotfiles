@@ -24,8 +24,6 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 ###
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
-alias grok="/Users/zach/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos"
-alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
 alias snipvsc="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias zbin="cd $HOME/bin"
@@ -35,8 +33,11 @@ alias zbinr="open $HOME/bin/README.md"
 # NAV - PROJECTS
 ###
 
-# 📈  grokking algos
-alias grok="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/grokking/grokking-algos"
+# 📈 site
+alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
+
+# 📈 algos
+alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
 
 # 📈  create Python/Flask app
 alias cpa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
@@ -47,7 +48,7 @@ alias cfar="cfa; open README.md"
 # 📈  nginx-wsgi
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 
-# 📈  DDG
+# 📈  applications
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications/linode; open linode.md"
 
 # 📈  book db
