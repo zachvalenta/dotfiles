@@ -3,7 +3,7 @@
   "exclusionRules": [
     {
       "pattern": "https?://duckduckgo.com/*",
-      "passKeys": "h,j,k,l,m"
+      "passKeys": "h,j,k,l,m,?"
     },
     {
       "pattern": "https?://www.youtube.com/*",
