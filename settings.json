@@ -1,6 +1,6 @@
 {
     "editor.detectIndentation": false,
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "on",
     "files.exclude": {
