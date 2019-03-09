@@ -1,5 +1,9 @@
+" DREW NEIL'S MINIMAL CONFIG [PV xxv]
+set nocompatible
+filetype plugin on
+
 " SEARCH
-set incsearch " highlight matches as you type in
+set incsearch " highlight matches as you type
 set hlsearch " highlight matches from last search
 
 " ZA
