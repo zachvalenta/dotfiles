@@ -108,6 +108,8 @@ alias cpvsc="cp $VSCODE_DIR/*.json $DOTFILES_DIR"
 alias rsvsc="cp $DOTFILES_DIR/settings.json $VSCODE_DIR; cp $DOTFILES_DIR/keybindings.json $VSCODE_DIR"
 alias cpgc="cp $HOME/.gitconfig $DOTFILES_DIR"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
+alias vc="open $HOME/.vimrc"
+alias cpvc="cp $HOME/.vimrc $DOTFILES_DIR"
 # alias cpngt="cp /usr/local/etc/nginx/nginx.conf $DOTFILES_DIR"
 # alias cpngf="cp $DOTFILES_DIR/nginx.conf /usr/local/etc/nginx"
 
