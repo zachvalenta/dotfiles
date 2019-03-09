@@ -1,8 +1,8 @@
-dump of various configs
+dotfiles and miscellanea for:
 
 * Bash
 * Git
-* Homebrew
+* Homebrew packages
 * httpie
 * iTerm
 * Nginx
@@ -10,6 +10,7 @@ dump of various configs
 * psql
 * SQLite
 * Sublime
+* Vim
 * Vimium
 * VLC
 * VS Code
