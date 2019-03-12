@@ -1,3 +1,4 @@
+ansiweather
 asciinema
 automake
 cli53
