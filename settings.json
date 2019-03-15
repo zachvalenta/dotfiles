@@ -1,4 +1,5 @@
 {
+    "editor.acceptSuggestionOnEnter": "off",
     "editor.detectIndentation": false,
     "editor.fontSize": 13,
     "editor.lineNumbers": "relative",
