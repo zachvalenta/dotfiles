@@ -64,6 +64,7 @@ alias vsc="open -a 'Visual Studio Code'"
 alias tmd="tmux detach-client"
 alias m="make"
 alias brewup="brew outdated | xargs brew upgrade"
+alias brewfr="brew leaves > brew-pkg.txt"
 alias tqphl="ansiweather -l 4560349"
 alias tqldn="ansiweather -l 2643743"
 
