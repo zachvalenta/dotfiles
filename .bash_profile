@@ -49,7 +49,7 @@ alias cfar="cfa; open README.md"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 
 # 📈  applications
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications/active/algolia"
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/applications"
 
 # 📈  book db
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
@@ -172,7 +172,7 @@ alias pipin="pip install -r requirements.txt"
 # CLEAN UP
 ###
 
-export GOPATH=$(go env GOPATH) # golang.org/doc.code.html
+export GOPATH=$(go env GOPATH) # golang.org/doc.code.html --> double check
 alias gobin='function gobin(){ $GOPATH/bin/"$1";}; gobin'
 
 function npm {
