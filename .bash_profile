@@ -62,6 +62,7 @@ alias tingr="open $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db/REA
 alias subl="open -a 'Sublime Text'"
 alias vsc="open -a 'Visual Studio Code'"
 alias tmd="tmux detach-client"
+alias pg="pgcli"
 alias m="make"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > brew-pkg.txt"
