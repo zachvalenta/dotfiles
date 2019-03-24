@@ -1,6 +1,7 @@
 ansiweather
 asciinema
 automake
+bat
 cli53
 cmake
 cmus
