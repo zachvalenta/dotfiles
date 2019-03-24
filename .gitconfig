@@ -13,17 +13,16 @@
 	b = branch -v
 	c = commit -m
 	co = checkout
+	d = diff
+	ds = diff --staged
     ma = checkout master
 	count = rev-list --count HEAD
 	far = remote -v show
-	ma = checkout master
 	conf = config --global --list
-	d = diff
-	ds = diff --staged
-	l = log --graph -n 10 --oneline --all --decorate
 	nb = checkout -b
-	s = status -s
-	t = show -s --format=%ci
+	l = log --graph -n 10 --oneline --all --decorate  # more recent, prettier
+	s = status -s  # shorter output
+	t = show -s --format=%ci  # timestamp of last commit
 	u = reset HEAD
 [color]
 	ui = always
