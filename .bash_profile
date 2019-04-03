@@ -14,8 +14,9 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias desk="cd $HOME/Desktop"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/03"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/04"
 alias notes="cd $HOME/Desktop/zvmac/notes"
+alias ah="open $HOME/Desktop/zvmac/materials/za/passions"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 alias yin="cd /Volumes/MUSIC-USB; open ."
 
