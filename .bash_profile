@@ -25,7 +25,6 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 ###
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
-alias train="open $HOME/Desktop/zvmac/materials/jay/training"
 alias yoga="open $HOME/Desktop/zvmac/materials/jay/training/yoga/breathing.mp4"
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
 alias snipvsc="cd $HOME/Library/Application\ Support/Code/User/snippets"
