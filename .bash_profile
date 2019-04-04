@@ -25,6 +25,7 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 ###
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
+alias train="open $HOME/Desktop/zvmac/materials/jay/training"
 alias yoga="open $HOME/Desktop/zvmac/materials/jay/training/yoga/breathing.mp4"
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
 alias snipvsc="cd $HOME/Library/Application\ Support/Code/User/snippets"
@@ -53,6 +54,7 @@ alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 # 📈  applications
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
+alias bl="bat $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/backlog/backlog.md"
 
 # 📈  book db
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
@@ -132,6 +134,7 @@ alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 # UTIL
 ###
 
+alias o="open"
 alias c="clear"
 alias cppath='pwd | pbcopy'
 alias ff='function ff(){ open -a Firefox $1 ;}; ff'
