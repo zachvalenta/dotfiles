@@ -136,6 +136,7 @@ alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 ###
 
 alias o="open"
+alias oo="open ."
 alias c="clear"
 alias cppath='pwd | pbcopy'
 alias ff='function ff(){ open -a Firefox $1 ;}; ff'
