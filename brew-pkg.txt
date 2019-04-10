@@ -21,6 +21,7 @@ mariadb
 neofetch
 nginx
 node
+pdfgrep
 pgcli
 pkg-config
 postgresql
