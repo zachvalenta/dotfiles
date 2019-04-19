@@ -145,6 +145,12 @@ alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-ar
 alias tl='function treeLevel(){ tree -CL $1 $2;}; treeLevel'
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias sou='function sou(){ find . -name "$1.md";}; sou'
+function kai(){
+    fname="$1.md";
+    cwd="$(pwd)";
+    touch "$cwd/$fname";
+    open "$cwd/$fname";
+}
 PATH="/Users/zach/bin:${PATH}"
 
 ###
