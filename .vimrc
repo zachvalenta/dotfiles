@@ -9,4 +9,5 @@ set hlsearch " highlight matches from last search
 " ZA
 set hidden "idk
 set number "show line numbers
+set relativenumber "relative line numbers
 syntax enable "highlighting
