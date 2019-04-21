@@ -10,4 +10,5 @@ set hlsearch " highlight matches from last search
 set hidden "idk
 set number "show line numbers
 set relativenumber "relative line numbers
+:set backspace=indent,eol,start "macOS delete key workaround https://stackoverflow.com/a/22390576
 syntax enable "highlighting
