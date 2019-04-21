@@ -19,6 +19,8 @@ alias yin="cd /Volumes/MUSIC-USB; open ."
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias notes="cd $HOME/Desktop/zvmac/notes"
+alias hr="vim $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/04"
 
