@@ -12,3 +12,9 @@ set number "show line numbers
 set relativenumber "relative line numbers
 :set backspace=indent,eol,start "macOS delete key workaround https://stackoverflow.com/a/22390576
 syntax enable "highlighting
+" CHANGE FORMATTING ON ENTER/EXIST INSERT MODE
+set cursorline " https://stackoverflow.com/a/7619510/6813490
+autocmd InsertEnter * highlight CursorLine ctermfg=white ctermbg=blue
+autocmd InsertLeave * highlight CursorLine ctermfg=None ctermbg=None
+" :autocmd InsertEnter * set cul " https://stackoverflow.com/a/6489348/6813490
+" :autocmd InsertLeave * set nocul
