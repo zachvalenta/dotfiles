@@ -34,6 +34,7 @@ alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Package
 alias snipvsc="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias zbin="cd $HOME/bin"
 alias zbinr="open $HOME/bin/README.md"
+alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; open $HOME/Desktop/zvmac/materials/sw/za/editors/practical-vim.pdf"
 
 ###
 # NAV - PROJECTS
@@ -116,9 +117,9 @@ alias cpbp="cp $HOME/.bash_profile $DOTFILES_DIR"
 alias cpvsc="cp $VSCODE_DIR/*.json $DOTFILES_DIR"
 alias rsvsc="cp $DOTFILES_DIR/settings.json $VSCODE_DIR; cp $DOTFILES_DIR/keybindings.json $VSCODE_DIR"
 alias cpgc="cp $HOME/.gitconfig $DOTFILES_DIR"
-alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias vc="open $HOME/.vimrc"
 alias cpvc="cp $HOME/.vimrc $DOTFILES_DIR"
+alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 # alias cpngt="cp /usr/local/etc/nginx/nginx.conf $DOTFILES_DIR"
