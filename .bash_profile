@@ -10,12 +10,11 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
-# NAV - PRIMARY
+# PRIMARY
 ###
 
 alias desk="cd $HOME/Desktop"
 alias yin="cd /Volumes/MUSIC-USB; open ."
-
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias notes="cd $HOME/Desktop/zvmac/notes"
@@ -23,49 +22,23 @@ alias hr="vim $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/04"
-
-###
-# NAV - SECONDARY
-###
-
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
-alias yoga="open $HOME/Desktop/zvmac/materials/jay/training/yoga/breathing.mp4"
-alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
-alias snipvsc="cd $HOME/Library/Application\ Support/Code/User/snippets"
-alias zbin="cd $HOME/bin"
-alias zbinr="open $HOME/bin/README.md"
+
+###
+# PROJECTS
+###
+
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; open $HOME/Desktop/zvmac/materials/sw/za/editors/practical-vim.pdf"
-
-###
-# NAV - PROJECTS
-###
-
-# 📈 site
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
-
-# 📈 algos
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
-
-# 📈  create Python/Flask app
 alias cpa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
-alias cpar="cpa; open README.md"
-alias cfa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-flask-app"
-alias cfar="cfa; open README.md"
-
-# 📈  nginx-wsgi
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
-
-# 📈  applications
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
-alias bl="bat $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/backlog/backlog.md"
-
-# 📈  book db
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
-alias tingr="open $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db/README.md"
 
 ###
-# ZA
+# EDITORS, TERMINALS, CLI
 ###
 
 alias subl="open -a 'Sublime Text'"
@@ -85,6 +58,7 @@ alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl --format mp4'
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
+alias yoga="open $HOME/Desktop/zvmac/materials/jay/training/yoga/breathing.mp4"
 
 ###
 # GIT
@@ -104,7 +78,7 @@ alias gie="open .gitignore"
 alias gco="open $HOME/.gitconfig"
 
 ###
-# DOTFILES
+# DOTFILES, CONF
 ###
 
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
@@ -122,6 +96,9 @@ alias cpvc="cp $HOME/.vimrc $DOTFILES_DIR"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
+alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
+alias snipvsc="cd $HOME/Library/Application\ Support/Code/User/snippets"
+alias zbin="cd $HOME/bin"
 # alias cpngt="cp /usr/local/etc/nginx/nginx.conf $DOTFILES_DIR"
 # alias cpngf="cp $DOTFILES_DIR/nginx.conf /usr/local/etc/nginx"
 
