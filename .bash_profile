@@ -13,16 +13,18 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # PRIMARY
 ###
 
-alias desk="cd $HOME/Desktop"
-alias yin="cd /Volumes/MUSIC-USB; open ."
-alias mat="cd $HOME/Desktop/zvmac/materials; open ."
-alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
-alias notes="cd $HOME/Desktop/zvmac/notes"
-alias hr="vim $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
-alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/04"
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
+alias desk="cd $HOME/Desktop"
+alias hr="vim $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias lj="open $HOME/Desktop/zvmac/materials/jay/lianjie"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
+alias mat="cd $HOME/Desktop/zvmac/materials; open ."
+alias notes="cd $HOME/Desktop/zvmac/notes"
+alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
+alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
+alias sou='function sou(){ find . -name "$1.md";}; sou' # specify directory
+alias yin="cd /Volumes/MUSIC-USB; open ."
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/04"
 
 ###
 # PROJECTS
@@ -41,6 +43,7 @@ alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
 # EDITORS, TERMINALS, CLI
 ###
 
+# lexicographical, cruft
 alias subl="open -a 'Sublime Text'"
 alias vsc="open -a 'Visual Studio Code'"
 alias tmd="tmux detach-client"
@@ -110,6 +113,8 @@ alias d="pwd"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
 alias l='function lsl(){ ls -hl ;}; lsl' # TODO: ternary for args/no-args
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
+alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args
+alias tl='function treeLevel(){ tree -CL $1 $2;}; treeLevel'
 
 ###
 # UTIL
@@ -117,20 +122,16 @@ alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 
 alias o="open"
 alias oo="open ."
-alias c="clear"
-alias cppath='pwd | pbcopy'
-alias ff='function ff(){ open -a Firefox $1 ;}; ff'
-alias grep="grep --color=auto"
-alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args
-alias tl='function treeLevel(){ tree -CL $1 $2;}; treeLevel'
-alias rm='function redirect(){ echo "use qing instead";}; redirect'
-alias sou='function sou(){ find . -name "$1.md";}; sou'
 function kai(){
     fname="$1.md";
     cwd="$(pwd)";
     touch "$cwd/$fname";
     open "$cwd/$fname";
 }
+alias c="clear"
+alias cppath='pwd | pbcopy'
+alias grep="grep --color=auto"
+alias rm='function redirect(){ echo "use qing instead";}; redirect'
 PATH="/Users/zach/bin:${PATH}"
 
 ###
