@@ -20,6 +20,10 @@
     {
       "pattern": "https://courses.noiselab.io/courses/*",
       "passKeys": "f"
+    },
+    {
+      "pattern": "https://watch.nba.com/game/*",
+      "passKeys": "f,m"
     }
   ],
   "filterLinkHints": false,
