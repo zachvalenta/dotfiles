@@ -25,6 +25,7 @@ alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active
 alias sou='function sou(){ find . -name "$1.md";}; sou' # specify directory
 alias yin="cd /Volumes/MUSIC-USB; open ."
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/04"
+alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 
 ###
 # PROJECTS
@@ -84,6 +85,7 @@ alias gco="open $HOME/.gitconfig"
 # DOTFILES, CONF
 ###
 
+# 📍 symlinks for these
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
 VSCODE_DIR="$HOME/Library/Application\ Support/Code/User/"
 
@@ -95,7 +97,6 @@ alias cpvsc="cp $VSCODE_DIR/*.json $DOTFILES_DIR"
 alias rsvsc="cp $DOTFILES_DIR/settings.json $VSCODE_DIR; cp $DOTFILES_DIR/keybindings.json $VSCODE_DIR"
 alias cpgc="cp $HOME/.gitconfig $DOTFILES_DIR"
 alias vc="open $HOME/.vimrc"
-alias cpvc="cp $HOME/.vimrc $DOTFILES_DIR"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
