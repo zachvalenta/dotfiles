@@ -15,7 +15,7 @@
     },
     {
       "pattern": "https?://*.pluralsight.com/*",
-      "passKeys": "f,m,t,/"
+      "passKeys": "f,m,t"
     },
     {
       "pattern": "https://courses.noiselab.io/courses/*",
