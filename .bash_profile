@@ -14,6 +14,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
+alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
 alias desk="cd $HOME/Desktop"
 alias hr="vim $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias lj="open $HOME/Desktop/zvmac/materials/jay/lianjie"
@@ -21,8 +22,8 @@ alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
-alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
-alias sou='function sou(){ find . -name "$1.md";}; sou' # specify directory
+alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
+alias sou='function sou(){ find . -name "$1.md";}; sou'
 alias yin="cd /Volumes/MUSIC-USB; open ."
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/04"
 alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
@@ -31,14 +32,16 @@ alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 # PROJECTS
 ###
 
-alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; open $HOME/Desktop/zvmac/materials/sw/za/editors/practical-vim.pdf"
-alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
+# 📍 CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
+alias act="ls -l $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
 alias cpa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
-alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
+alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
+alias pypkg="open $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/blog/py-pkg.md"
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
+alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; open $HOME/Desktop/zvmac/materials/sw/za/editors/practical-vim.pdf"
 
 ###
 # EDITORS, TERMINALS, CLI
