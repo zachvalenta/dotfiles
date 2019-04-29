@@ -40,6 +40,7 @@ alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
 alias pypkg="open $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/blog/py-pkg.md"
+alias sre="cd $HOME/Desktop/zvmac/materials/sw/ops/david_gagliardi_sre_challenge; open ."
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; open $HOME/Desktop/zvmac/materials/sw/za/editors/practical-vim.pdf"
 
@@ -56,6 +57,7 @@ alias m="make"
 alias b="bat"
 alias tqphl="ansiweather -l 4560349"
 alias tqldn="ansiweather -l 2643743"
+alias tf="terraform"
 
 ###
 # A/V
@@ -65,7 +67,8 @@ alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl --format mp4'
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
-alias yoga="open $HOME/Desktop/zvmac/materials/jay/training/yoga/breathing.mp4"
+alias yoga-breathe="open $HOME/Desktop/zvmac/materials/jay/training/yoga/breathe.mp4"
+alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
 ###
 # GIT
@@ -106,6 +109,7 @@ alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias snip="cd /Users/zach/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Snippets"
 alias snipvsc="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias zbin="cd $HOME/bin"
+alias cpvsc="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 # alias cpngt="cp /usr/local/etc/nginx/nginx.conf $DOTFILES_DIR"
 # alias cpngf="cp $DOTFILES_DIR/nginx.conf /usr/local/etc/nginx"
 
