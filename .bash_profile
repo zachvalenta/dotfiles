@@ -40,9 +40,9 @@ alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
 alias pypkg="open $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/blog/py-pkg.md"
-alias sre="cd $HOME/Desktop/zvmac/materials/sw/ops/david_gagliardi_sre_challenge; open ."
+alias sre="cd $HOME/Desktop/zvmac/materials/sw/ops/tf"
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
-alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; open $HOME/Desktop/zvmac/materials/sw/za/editors/practical-vim.pdf"
+alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
 
 ###
 # EDITORS, TERMINALS, CLI
@@ -58,6 +58,7 @@ alias b="bat"
 alias tqphl="ansiweather -l 4560349"
 alias tqldn="ansiweather -l 2643743"
 alias tf="terraform"
+alias pdfg="pdfgrep -in"
 
 ###
 # A/V
