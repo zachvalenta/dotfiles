@@ -28,6 +28,7 @@ postgresql
 python@2
 shellcheck
 sphinx-doc
+terraform
 tmux
 translate-shell
 tree
