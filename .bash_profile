@@ -24,8 +24,9 @@ alias notes="cd $HOME/Desktop/zvmac/notes"
 alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 alias sou='function sou(){ find . -name "$1.md";}; sou'
+alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias yin="cd /Volumes/MUSIC-USB; open ."
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/04"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/05"
 alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 
 ###

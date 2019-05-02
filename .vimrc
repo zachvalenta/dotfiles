@@ -16,3 +16,4 @@ syntax enable "highlighting
 set cursorline " https://stackoverflow.com/a/7619510/6813490 + http://yannesposito.com/Scratch/en/blog/Vim-as-IDE/
 autocmd InsertEnter * highlight CursorLine ctermfg=white ctermbg=blue
 autocmd InsertLeave * highlight CursorLine ctermfg=None ctermbg=None
+" nnoremap Y yg_ "Make Y yank till end of line https://stackoverflow.com/a/45536949/6813490
