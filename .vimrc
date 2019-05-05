@@ -2,7 +2,7 @@
 set nocompatible
 filetype plugin on
 
-" SEARCH
+" SEARCH Practice Vim 10.51
 set incsearch " highlight matches as you type
 set hlsearch " highlight matches from last search
 

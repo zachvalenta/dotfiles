@@ -121,7 +121,14 @@ alias cpvsc="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 
 alias d="pwd"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
-alias l='function lsl(){ ls -hl ;}; lsl' # TODO: ternary for args/no-args
+function l(){
+    if [ "$1" ]; then
+        # echo "$1"
+        ls -hl "$1"
+    else
+        ls -hl .
+    fi
+}
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args
 alias tl='function treeLevel(){ tree -CL $1 $2;}; treeLevel'
