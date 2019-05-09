@@ -49,17 +49,12 @@ alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Deskto
 # EDITORS, TERMINALS, CLI
 ###
 
-# lexicographical, cruft
-alias subl="open -a 'Sublime Text'"
-alias vsc="open -a 'Visual Studio Code'"
-alias tmd="tmux detach-client"
-alias pg="pgcli"
-alias m="make"
 alias b="bat"
-alias tqphl="ansiweather -l 4560349"
-alias tqldn="ansiweather -l 2643743"
-alias tf="terraform"
+alias m="make"
 alias pdfg="pdfgrep -in"
+alias pg="pgcli"
+alias tf="terraform"
+alias vsc="open -a 'Visual Studio Code'"
 
 ###
 # A/V
