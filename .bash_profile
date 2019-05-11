@@ -36,7 +36,7 @@ alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 # 📍 CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
 alias act="ls -l $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
-alias cpa="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
+alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
