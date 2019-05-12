@@ -25,7 +25,7 @@ alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
 alias sou='function sou(){ find . -name "$1.md";}; sou'
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
-alias yin="cd /Volumes/MUSIC-USB; open ."
+alias yin="cd /Volumes/MUSIC-USB"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/05"
 alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 
@@ -36,13 +36,12 @@ alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 # 📍 CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
 alias act="ls -l $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
-alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
+alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
 alias pypkg="open $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/blog/py-pkg.md"
 alias sre="cd $HOME/Desktop/zvmac/materials/sw/ops/tf"
-alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
 
 ###
@@ -97,7 +96,6 @@ alias bp="open $HOME/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
 alias cpvsc="cp $VSCODE_DIR/*.json $DOTFILES_DIR"
 alias rsvsc="cp $DOTFILES_DIR/settings.json $VSCODE_DIR; cp $DOTFILES_DIR/keybindings.json $VSCODE_DIR"
-alias cpgc="cp $HOME/.gitconfig $DOTFILES_DIR"
 alias vc="open $HOME/.vimrc"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias brewup="brew outdated | xargs brew upgrade"
@@ -161,6 +159,7 @@ alias rund="on; python manage.py runserver"
 # PYTHON - FLASK
 ###
 
+alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
 alias cfenv="unset FLASK_APP"
 alias fenv="env | grep FLASK"
 alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
