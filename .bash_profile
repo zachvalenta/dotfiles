@@ -22,7 +22,7 @@ alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
-alias site="cd $HOME/Desktop/zvmac/materials/sw/network/4-app-layer/personal-site/zach-valenta/zachvalenta.github.io; open ."
+alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta"
 alias sou='function sou(){ find . -name "$1.md";}; sou'
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias yin="cd /Volumes/MUSIC-USB"
@@ -36,7 +36,7 @@ alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 # 📍 CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
 alias act="ls -l $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
-alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv
+alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias pin="vim $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active/active.md"
@@ -164,6 +164,7 @@ alias cfenv="unset FLASK_APP"
 alias fenv="env | grep FLASK"
 alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
 alias sfenv="export FLASK_APP=app"
+alias book="ting; b book-db/app.py"
 
 ###
 # PYTHON - ENV
