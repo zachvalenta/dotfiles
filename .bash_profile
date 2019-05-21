@@ -140,6 +140,7 @@ alias c="clear"
 alias cppath='pwd | pbcopy'
 alias grep="grep --color=auto"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
+alias ri="ncal -3"
 PATH="/Users/zach/bin:${PATH}"
 
 ###
