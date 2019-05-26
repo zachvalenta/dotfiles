@@ -1,4 +1,3 @@
-ansiweather
 asciinema
 automake
 bat
@@ -14,10 +13,10 @@ git
 gnu-prolog
 httpie
 irssi
+jq
 leiningen
 libksba
 makedepend
-mariadb
 neofetch
 nginx
 node
