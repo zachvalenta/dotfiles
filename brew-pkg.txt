@@ -16,6 +16,7 @@ irssi
 jq
 leiningen
 libksba
+dbcli/tap/litecli
 makedepend
 neofetch
 nginx
