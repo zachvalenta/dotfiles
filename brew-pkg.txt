@@ -7,6 +7,7 @@ cmus
 dep
 diff-so-fancy
 doxygen
+fd
 ffmpeg
 flyway
 git

@@ -23,7 +23,6 @@ alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta"
-alias sou='function sou(){ find . -name "$1.md";}; sou'
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias yin="cd /Volumes/MUSIC-USB"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/05"
