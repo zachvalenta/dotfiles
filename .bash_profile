@@ -173,6 +173,7 @@ alias book="ting; b book-db/app.py"
 # PYTHON - ENV
 ###
 
+export PIP_REQUIRE_VIRTUALENV=true
 alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
 alias on="source venv/bin/activate"
 alias off="deactivate"
