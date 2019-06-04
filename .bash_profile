@@ -52,7 +52,7 @@ alias b="bat"
 alias m="make"
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
-alias sl="sqlite3"
+alias sl="litecli"
 alias tf="terraform"
 alias vsc="open -a 'Visual Studio Code'"
 
@@ -140,6 +140,7 @@ function kai(){
 alias c="clear"
 alias cppath='pwd | pbcopy'
 alias grep="grep --color=auto"
+alias heat="cd $HOME/Desktop/term; make run"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias ri="ncal -3"
 PATH="/Users/zach/bin:${PATH}"
@@ -161,6 +162,7 @@ alias rund="on; python manage.py runserver"
 ###
 
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
+alias pac="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/pacific"
 alias ekk="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/ekker"
 alias herm="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/herman"
 alias cfenv="unset FLASK_APP"
