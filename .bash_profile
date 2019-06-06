@@ -162,9 +162,11 @@ alias rund="on; python manage.py runserver"
 ###
 
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
-alias pac="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/pacific"
 alias ekk="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/ekker"
 alias herm="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/herman"
+alias grin="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/grinberg"
+alias pac="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/pacific"
+alias ray="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
 alias cfenv="unset FLASK_APP"
 alias fenv="env | grep FLASK"
 alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
