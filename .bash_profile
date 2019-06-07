@@ -25,7 +25,7 @@ alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias yin="cd /Volumes/MUSIC-USB"
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/05"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
 alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 
 ###
