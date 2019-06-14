@@ -122,6 +122,14 @@ function l(){
         ls -hl .
     fi
 }
+function ll(){
+    if [ "$1" ]; then
+        # echo "$1"
+        ls -ahl "$1"
+    else
+        ls -ahl .
+    fi
+}
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args
 alias tl='function treeLevel(){ tree -CL $1 $2;}; treeLevel'
