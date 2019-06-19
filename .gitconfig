@@ -8,7 +8,6 @@
 [color]
 	ui = auto
 [alias]
-	a = add -A
 	ai = add -p
 	b = branch -v
 	c = commit -m

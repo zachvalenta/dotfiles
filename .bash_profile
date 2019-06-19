@@ -78,7 +78,13 @@ alias gd="git d"
 alias gds="git ds"
 alias gl="git l"
 alias gai="git ai"
-alias ga="git a"
+function ga(){
+    if [ "$1" ]; then
+        git add "$1"
+    else
+        git add -A
+    fi
+}
 alias gc="git c"
 # alias gu="git u" -> rename closer to `gr`
 alias gic="touch .gitignore; gie"
