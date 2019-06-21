@@ -137,8 +137,8 @@ function ll(){
     fi
 }
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
-alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args
-alias tl='function treeLevel(){ tree -CL $1 $2;}; treeLevel'
+alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args, if args 1-9 do treeLevel, ignore venv and .DS_Store
+alias tl='function treeLevel(){ tree -aCL $1 $2 -I '.git';}; treeLevel'
 
 ###
 # UTIL
