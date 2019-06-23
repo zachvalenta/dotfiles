@@ -60,17 +60,14 @@ alias pipin="pip install -r requirements.txt"
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
 alias desk="cd $HOME/Desktop"
-alias hr="vim $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open ."
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias notes="cd $HOME/Desktop/zvmac/notes"
-alias pas="cd $HOME/Desktop/zvmac/materials/za/passions; open ."
 alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias yin="cd /Volumes/MUSIC-USB"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
-alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 
 ###
 # projects
