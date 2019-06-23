@@ -175,24 +175,7 @@ export PYTHONDONTWRITEBYTECODE=1
 alias py3="python3"
 alias bpy="bpython"
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
-alias pyt="py3 -m unittest discover -v"
-alias rund="on; python manage.py runserver"
-
-###
-# python - flask
-###
-
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
-alias ekk="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/ekker"
-alias herm="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/herman"
-alias grin="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/grinberg"
-alias pac="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/pacific"
-alias ray="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/book-db"
-alias cfenv="unset FLASK_APP"
-alias fenv="env | grep FLASK"
-alias runf="on; export FLASK_APP=app; export FLASK_ENV=development; flask run"
-alias sfenv="export FLASK_APP=app"
-alias book="ting; b book-db/app.py"
 
 ###
 # python - env
