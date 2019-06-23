@@ -1,8 +1,12 @@
+###
+# source
+###
+
 echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "
 date
 
 ###
-# PROMPT
+# prompt
 ###
 
 export PS1="$ "
@@ -10,7 +14,7 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
-# PRIMARY
+# primary
 ###
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
@@ -29,7 +33,7 @@ alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
 alias zz="ls $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
 
 ###
-# PROJECTS
+# projects
 ###
 
 # 📍 CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
@@ -48,7 +52,7 @@ alias track="logs; fd tracking -X bat"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
 
 ###
-# EDITORS, TERMINALS, CLI
+# editors, terminals, cli
 ###
 
 alias b="bat"
@@ -60,7 +64,7 @@ alias tf="terraform"
 alias vsc="open -a 'Visual Studio Code'"
 
 ###
-# A/V
+# a/v
 ###
 
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
@@ -71,7 +75,7 @@ alias yoga-breathe="open $HOME/Desktop/zvmac/materials/jay/training/yoga/breathe
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
 ###
-# GIT
+# git
 ###
 
 alias gb="git b"
@@ -94,7 +98,7 @@ alias gie="open .gitignore"
 alias gco="open $HOME/.gitconfig"
 
 ###
-# DOTFILES, CONF
+# dotfiles, conf
 ###
 
 # 📍 symlinks for these
@@ -117,7 +121,7 @@ alias zbin="cd $HOME/bin"
 # alias cpngf="cp $DOTFILES_DIR/nginx.conf /usr/local/etc/nginx"
 
 ###
-# DIRECTORY-RELATED
+# directory-related
 ###
 
 alias d="pwd"
@@ -143,7 +147,7 @@ alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-ar
 alias tl='function treeLevel(){ tree -aCL $1 $2 -I '.git';}; treeLevel'
 
 ###
-# UTIL
+# util
 ###
 
 alias o="open"
@@ -163,7 +167,7 @@ alias ri="ncal -3"
 PATH="/Users/zach/bin:${PATH}"
 
 ###
-# PYTHON - GENERAL
+# python - general
 ###
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
@@ -175,7 +179,7 @@ alias pyt="py3 -m unittest discover -v"
 alias rund="on; python manage.py runserver"
 
 ###
-# PYTHON - FLASK
+# python - flask
 ###
 
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
@@ -191,7 +195,7 @@ alias sfenv="export FLASK_APP=app"
 alias book="ting; b book-db/app.py"
 
 ###
-# PYTHON - ENV
+# python - env
 ###
 
 export PIP_REQUIRE_VIRTUALENV=true
@@ -202,7 +206,7 @@ alias pipfr="pip freeze > requirements.txt"
 alias pipin="pip install -r requirements.txt"
 
 ###
-# CLEAN UP
+# clean up
 ###
 
 export GOPATH=$(go env GOPATH) # golang.org/doc.code.html --> double check
