@@ -14,6 +14,16 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
+# 📍 tmp
+###
+
+# 📍 CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
+alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
+alias pypkg="open /Users/zach/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/py-pkg.md"
+alias track="logs; fd tracking -X bat"
+alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
+
+###
 # git
 ###
 
@@ -74,20 +84,11 @@ alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
 # projects
 ###
 
-# 📍 CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
-alias act="ls -l $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/active"
-alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
-alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
-alias cpad="cd $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
-alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/services/nginx-wsgi"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias cm="vim +/'# PROFILE' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
-alias pypkg="open /Users/zach/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/py-pkg.md"
 alias sre="cd $HOME/Desktop/zvmac/materials/sw/ops/tf"
-alias track="logs; fd tracking -X bat"
-alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
 
 ###
 # editors, terminals, cli
