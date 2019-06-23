@@ -22,6 +22,7 @@ alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"
 alias pypkg="open /Users/zach/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/py-pkg.md"
 alias track="logs; fd tracking -X bat"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
+alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
 ###
 # git
@@ -88,7 +89,6 @@ alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias cm="vim +/'# PROFILE' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
-alias sre="cd $HOME/Desktop/zvmac/materials/sw/ops/tf"
 
 ###
 # editors, terminals, cli
@@ -110,8 +110,6 @@ alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl --format mp4'
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
-alias yoga-breathe="open $HOME/Desktop/zvmac/materials/jay/training/yoga/breathe.mp4"
-alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
 ###
 # dotfiles, conf
@@ -122,7 +120,7 @@ DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
 VSCODE_DIR="$HOME/Library/Application\ Support/Code/User/"
 
 alias dot="cd $DOTFILES_DIR"
-alias bp="open $HOME/.bash_profile"
+alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
 alias vscext="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 alias cpvsc="cp $VSCODE_DIR/*.json $DOTFILES_DIR"
