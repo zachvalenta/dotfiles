@@ -37,6 +37,23 @@ alias gc="git c"
 # alias gu="git u" -> rename closer to `gr`
 
 ###
+# python
+###
+
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
+export PYTHONDONTWRITEBYTECODE=1
+export PIP_REQUIRE_VIRTUALENV=true
+alias py3="python3"
+alias bpy="bpython"
+alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
+alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
+alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
+alias on="source venv/bin/activate"
+alias off="deactivate"
+alias pipfr="pip freeze > requirements.txt"
+alias pipin="pip install -r requirements.txt"
+
+###
 # primary
 ###
 
@@ -165,23 +182,6 @@ alias heat="cd $HOME/Desktop/term; make run"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias ri="ncal -3"
 PATH="/Users/zach/bin:${PATH}"
-
-###
-# python
-###
-
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
-export PYTHONDONTWRITEBYTECODE=1
-export PIP_REQUIRE_VIRTUALENV=true
-alias py3="python3"
-alias bpy="bpython"
-alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
-alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
-alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
-alias on="source venv/bin/activate"
-alias off="deactivate"
-alias pipfr="pip freeze > requirements.txt"
-alias pipin="pip install -r requirements.txt"
 
 ###
 # clean up
