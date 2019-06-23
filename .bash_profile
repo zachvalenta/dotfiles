@@ -167,21 +167,16 @@ alias ri="ncal -3"
 PATH="/Users/zach/bin:${PATH}"
 
 ###
-# python - general
+# python
 ###
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
+export PIP_REQUIRE_VIRTUALENV=true
 alias py3="python3"
 alias bpy="bpython"
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
-
-###
-# python - env
-###
-
-export PIP_REQUIRE_VIRTUALENV=true
 alias venv="py3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
 alias on="source venv/bin/activate"
 alias off="deactivate"
