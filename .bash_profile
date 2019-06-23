@@ -17,11 +17,12 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # git
 ###
 
+alias gco="open $HOME/.gitconfig"
+alias gic="touch .gitignore; gie"
+alias gie="open .gitignore"
 alias gb="git b"
 alias gs="git s"
 alias gd="git d"
-alias gds="git ds"
-alias gl="git l"
 alias gai="git ai"
 function ga(){
     if [ "$1" ]; then
@@ -30,11 +31,10 @@ function ga(){
         git add -A
     fi
 }
+alias gds="git ds"
+alias gl="git l"
 alias gc="git c"
 # alias gu="git u" -> rename closer to `gr`
-alias gic="touch .gitignore; gie"
-alias gie="open .gitignore"
-alias gco="open $HOME/.gitconfig"
 
 ###
 # primary
