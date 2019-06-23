@@ -14,6 +14,29 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
+# git
+###
+
+alias gb="git b"
+alias gs="git s"
+alias gd="git d"
+alias gds="git ds"
+alias gl="git l"
+alias gai="git ai"
+function ga(){
+    if [ "$1" ]; then
+        git add "$1"
+    else
+        git add -A
+    fi
+}
+alias gc="git c"
+# alias gu="git u" -> rename closer to `gr`
+alias gic="touch .gitignore; gie"
+alias gie="open .gitignore"
+alias gco="open $HOME/.gitconfig"
+
+###
 # primary
 ###
 
@@ -73,29 +96,6 @@ alias ytdv='youtube-dl --format mp4'
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias yoga-breathe="open $HOME/Desktop/zvmac/materials/jay/training/yoga/breathe.mp4"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
-
-###
-# git
-###
-
-alias gb="git b"
-alias gs="git s"
-alias gd="git d"
-alias gds="git ds"
-alias gl="git l"
-alias gai="git ai"
-function ga(){
-    if [ "$1" ]; then
-        git add "$1"
-    else
-        git add -A
-    fi
-}
-alias gc="git c"
-# alias gu="git u" -> rename closer to `gr`
-alias gic="touch .gitignore; gie"
-alias gie="open .gitignore"
-alias gco="open $HOME/.gitconfig"
 
 ###
 # dotfiles, conf
