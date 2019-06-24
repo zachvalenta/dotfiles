@@ -54,6 +54,7 @@ alias gc="git c"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
 export PIP_REQUIRE_VIRTUALENV=true
+
 alias py3="python3"
 alias bpy="bpython"
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
@@ -68,11 +69,18 @@ alias pipin="pip install -r requirements.txt"
 # 🦏  bash
 ###
 
+DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
+
 alias b="bat"
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
+alias bp="vsc $DOTFILES_DIR/.bash_profile"
+alias brewup="brew outdated | xargs brew upgrade"
+alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias cm="vim +/'# PROFILE' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
 alias desk="cd $HOME/Desktop"
+alias dot="cd $DOTFILES_DIR"
 alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open ."
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias m="make"
@@ -84,35 +92,23 @@ alias pg="pgcli"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta"
 alias sl="litecli"
 alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
+alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias tf="terraform"
+alias upbp="source $HOME/.bash_profile"
+alias vc="open $HOME/.vimrc"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
+alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 alias yin="cd /Volumes/MUSIC-USB"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
+alias zbin="cd $HOME/bin"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 
-###
-# dotfiles, conf
-###
-
-# 📍 symlinks for these
-DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
-
-alias dot="cd $DOTFILES_DIR"
-alias bp="vsc $DOTFILES_DIR/.bash_profile"
-alias upbp="source $HOME/.bash_profile"
-alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
-alias vc="open $HOME/.vimrc"
-alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
-alias brewup="brew outdated | xargs brew upgrade"
-alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
-alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
-alias zbin="cd $HOME/bin"
 
 ###
 # directory-related
