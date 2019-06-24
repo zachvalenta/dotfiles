@@ -17,7 +17,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍 tmp
 ###
 
-# 📍 CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
+# CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
 alias pypkg="open /Users/zach/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/py-pkg.md"
 alias track="logs; fd tracking -X bat"
@@ -122,9 +122,7 @@ VSCODE_DIR="$HOME/Library/Application\ Support/Code/User/"
 alias dot="cd $DOTFILES_DIR"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias upbp="source $HOME/.bash_profile"
-alias vscext="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
-alias cpvsc="cp $VSCODE_DIR/*.json $DOTFILES_DIR"
-alias rsvsc="cp $DOTFILES_DIR/settings.json $VSCODE_DIR; cp $DOTFILES_DIR/keybindings.json $VSCODE_DIR"
+alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 alias vc="open $HOME/.vimrc"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias brewup="brew outdated | xargs brew upgrade"
@@ -174,7 +172,6 @@ function kai(){
 alias c="clear"
 alias cppath='pwd | pbcopy'
 alias grep="grep --color=auto -n"
-alias heat="cd $HOME/Desktop/term; make run"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias ri="ncal -3"
 PATH="/Users/zach/bin:${PATH}"
