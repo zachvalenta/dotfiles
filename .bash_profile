@@ -142,10 +142,9 @@ alias d="pwd"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
 function l(){
     if [ "$1" ]; then
-        # echo "$1"
-        ls -hl "$1"
+        exa -al --git "$1"
     else
-        ls -hl .
+        exa -al --git
     fi
 }
 function ll(){
