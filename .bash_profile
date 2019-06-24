@@ -76,13 +76,22 @@ alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
+alias c="clear"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
 alias cm="vim +/'# PROFILE' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias cppath='pwd | pbcopy'
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
 alias d="pwd"
 alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
+alias grep="grep --color=auto -n"
+function kai(){
+    fname="$1.md";
+    cwd="$(pwd)";
+    touch "$cwd/$fname";
+    open "$cwd/$fname";
+}
 function l(){
     if [ "$1" ]; then
         exa -al --git "$1"
@@ -106,8 +115,12 @@ alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias notes="cd $HOME/Desktop/zvmac/notes"
+alias o="open"
+alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
+alias ri="ncal -3"
+alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta"
 alias sl="litecli"
 alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
@@ -131,25 +144,6 @@ alias zbin="cd $HOME/bin"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 
 ###
-# util
-###
-
-alias o="open"
-alias oo="open ."
-function kai(){
-    fname="$1.md";
-    cwd="$(pwd)";
-    touch "$cwd/$fname";
-    open "$cwd/$fname";
-}
-alias c="clear"
-alias cppath='pwd | pbcopy'
-alias grep="grep --color=auto -n"
-alias rm='function redirect(){ echo "use qing instead";}; redirect'
-alias ri="ncal -3"
-PATH="/Users/zach/bin:${PATH}"
-
-###
 # 🗑  clean up
 ###
 
@@ -168,5 +162,6 @@ export PATH="./node_modules/.bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+PATH="/Users/zach/bin:${PATH}"
 export PATH
 export MANPAGER=bat
