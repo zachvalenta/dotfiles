@@ -199,3 +199,4 @@ export PATH="./node_modules/.bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 export PATH
+export MANPAGER=bat
