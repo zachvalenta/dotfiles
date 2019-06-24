@@ -1,12 +1,12 @@
 ###
-# source
+# 🌇  source
 ###
 
 echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "
 date
 
 ###
-# prompt
+# 🎨  prompt
 ###
 
 export PS1="$ "
@@ -25,7 +25,7 @@ alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Deskto
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
 ###
-# git
+# 💾  git
 ###
 
 alias gco="open $HOME/.gitconfig"
@@ -48,7 +48,7 @@ alias gc="git c"
 # alias gu="git u" -> rename closer to `gr`
 
 ###
-# python
+# 🐍  python
 ###
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
@@ -65,7 +65,7 @@ alias pipfr="pip freeze > requirements.txt"
 alias pipin="pip install -r requirements.txt"
 
 ###
-# primary
+# 🦏  bash
 ###
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
@@ -174,7 +174,7 @@ alias ri="ncal -3"
 PATH="/Users/zach/bin:${PATH}"
 
 ###
-# clean up
+# 🗑  clean up
 ###
 
 export GOPATH=$(go env GOPATH) # golang.org/doc.code.html --> double check
