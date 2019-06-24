@@ -14,7 +14,7 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
-# 📍 tmp
+# 📍  tmp
 ###
 
 # CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
@@ -69,26 +69,21 @@ alias pipin="pip install -r requirements.txt"
 ###
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
+alias cm="vim +/'# PROFILE' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
 alias desk="cd $HOME/Desktop"
 alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open ."
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta"
 alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
+alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias yin="cd /Volumes/MUSIC-USB"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
-
-###
-# projects
-###
-
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
-alias cm="vim +/'# PROFILE' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
-alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 
 ###
 # editors, terminals, cli
