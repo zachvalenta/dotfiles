@@ -68,34 +68,29 @@ alias pipin="pip install -r requirements.txt"
 # 🦏  bash
 ###
 
+alias b="bat"
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
 alias cm="vim +/'# PROFILE' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
 alias desk="cd $HOME/Desktop"
 alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open ."
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
+alias m="make"
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias notes="cd $HOME/Desktop/zvmac/notes"
+alias pdfg="pdfgrep -in"
+alias pg="pgcli"
 alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta"
+alias sl="litecli"
 alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias tf="terraform"
+alias vsc="open -a 'Visual Studio Code'"
 alias yin="cd /Volumes/MUSIC-USB"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
-
-###
-# editors, terminals, cli
-###
-
-alias b="bat"
-alias m="make"
-alias pdfg="pdfgrep -in"
-alias pg="pgcli"
-alias sl="litecli"
-alias tf="terraform"
-alias vsc="open -a 'Visual Studio Code'"
 
 ###
 # a/v
