@@ -76,15 +76,34 @@ alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
+alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
 alias cm="vim +/'# PROFILE' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
+alias d="pwd"
 alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
+function l(){
+    if [ "$1" ]; then
+        exa -al --git "$1"
+    else
+        exa -al --git
+    fi
+}
+# necessary given switch to exa?
+function ll(){
+    if [ "$1" ]; then
+        # echo "$1"
+        ls -ahl "$1"
+    else
+        ls -ahl .
+    fi
+}
 alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open ."
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias m="make"
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
+alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias pdfg="pdfgrep -in"
@@ -95,6 +114,8 @@ alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quote
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args, if args 1-9 do treeLevel, ignore venv and .DS_Store
+alias tl='function treeLevel(){ tree -aCL $1 $2 -I '.git';}; treeLevel'
 alias tf="terraform"
 alias upbp="source $HOME/.bash_profile"
 alias vc="open $HOME/.vimrc"
@@ -108,32 +129,6 @@ alias ytdv='youtube-dl --format mp4'
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
-
-
-###
-# directory-related
-###
-
-alias d="pwd"
-alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
-function l(){
-    if [ "$1" ]; then
-        exa -al --git "$1"
-    else
-        exa -al --git
-    fi
-}
-function ll(){
-    if [ "$1" ]; then
-        # echo "$1"
-        ls -ahl "$1"
-    else
-        ls -ahl .
-    fi
-}
-alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
-alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args, if args 1-9 do treeLevel, ignore venv and .DS_Store
-alias tl='function treeLevel(){ tree -aCL $1 $2 -I '.git';}; treeLevel'
 
 ###
 # util
