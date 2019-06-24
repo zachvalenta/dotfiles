@@ -87,19 +87,14 @@ alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quote
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias tf="terraform"
+alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias yin="cd /Volumes/MUSIC-USB"
+alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
+alias ytdd="cd $HOME/Desktop/media/ytd; open ."
+alias ytdv='youtube-dl --format mp4'
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
-
-###
-# a/v
-###
-
-alias ytdd="cd $HOME/Desktop/media/ytd; open ."
-alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
-alias ytdv='youtube-dl --format mp4'
-alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
 ###
 # dotfiles, conf
