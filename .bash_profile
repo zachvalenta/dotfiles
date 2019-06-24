@@ -117,7 +117,6 @@ alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
 # 📍 symlinks for these
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
-VSCODE_DIR="$HOME/Library/Application\ Support/Code/User/"
 
 alias dot="cd $DOTFILES_DIR"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
