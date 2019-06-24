@@ -128,8 +128,6 @@ alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias zbin="cd $HOME/bin"
-# alias cpngt="cp /usr/local/etc/nginx/nginx.conf $DOTFILES_DIR"
-# alias cpngf="cp $DOTFILES_DIR/nginx.conf /usr/local/etc/nginx"
 
 ###
 # directory-related
