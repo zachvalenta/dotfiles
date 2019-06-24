@@ -173,7 +173,7 @@ function kai(){
 }
 alias c="clear"
 alias cppath='pwd | pbcopy'
-alias grep="grep --color=auto"
+alias grep="grep --color=auto -n"
 alias heat="cd $HOME/Desktop/term; make run"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias ri="ncal -3"
