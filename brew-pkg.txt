@@ -18,6 +18,7 @@ irssi
 jq
 leiningen
 libksba
+libssh2
 dbcli/tap/litecli
 makedepend
 neofetch
