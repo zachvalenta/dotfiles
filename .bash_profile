@@ -127,8 +127,13 @@ alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quote
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
-alias t='function treeC(){ tree -C "$1";}; treeC' # TODO: ternary for args/no-args, if args 1-9 do treeLevel, ignore venv and .DS_Store
-alias tl='function treeLevel(){ tree -aCL $1 $2 -I '.git';}; treeLevel'
+function t(){
+    if [ "$1" ]; then
+        exa -al --tree --level="$1" --git-ignore -I '.git'
+    else
+        exa -al --tree --git-ignore -I '.git'
+    fi
+}
 alias tf="terraform"
 alias upbp="source $HOME/.bash_profile"
 alias vc="open $HOME/.vimrc"
