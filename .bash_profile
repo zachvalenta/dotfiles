@@ -11,7 +11,7 @@ date
 
 export PS1="$ "
 export CLICOLOR=1
-export EXA_COLORS="*.py=38;5;114:Dockerfile=38;5;074;1"
+export EXA_COLORS="gm=32:*.py=38;5;114:Dockerfile=38;5;074;1"
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
@@ -72,6 +72,7 @@ alias pipin="pip install -r requirements.txt"
 
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
 
+alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
 alias b="bat"
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/scorecard; open ."
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
