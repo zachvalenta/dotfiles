@@ -11,7 +11,7 @@ date
 
 export PS1="$ "
 export CLICOLOR=1
-export EXA_COLORS="ga=38;5;112:gm=32:*.py=38;5;114:Dockerfile=38;5;074;1"
+export EXA_COLORS="ga=38;5;213:gm=32:*.py=38;5;114:Dockerfile=38;5;074;1"
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
