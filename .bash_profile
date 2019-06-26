@@ -37,11 +37,11 @@ alias gs="git s"
 alias gd="git d"
 alias gai="git ai"
 function ga(){
-    if [ "$1" ]; then
-        git add "$1"
-    else
-        git add -A
-    fi
+    # todo: if no args `git add -A`, if `-r` then `git reset --hard HEAD`
+    for var in "$@"
+    do
+        git add "$var"
+    done
 }
 alias gds="git ds"
 alias gl="git l"
