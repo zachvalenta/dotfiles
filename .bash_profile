@@ -87,6 +87,7 @@ alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
 alias d="pwd"
 alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
+alias ds="qing .DS_Store"
 alias grep="grep --color=auto -n"
 function kai(){
     fname="$1.md";
