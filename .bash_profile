@@ -37,16 +37,20 @@ alias gs="git s"
 alias gd="git d"
 alias gai="git ai"
 function ga(){
-    # todo: if no args `git add -A`, if `-r` then `git reset --hard HEAD`
-    for var in "$@"
-    do
-        git add "$var"
-    done
+    if [ $# -eq 0 ]; then
+        git add -A
+        return 0
+    else
+        for var in "$@"
+        do
+            git add "$var"
+        done
+    fi
 }
 alias gds="git ds"
+# todo: gr - control flow - iterate over files to unstage, if `-r` then `git reset --hard HEAD` w/ warning
 alias gl="git l"
 alias gc="git c"
-# alias gu="git u" -> rename closer to `gr`
 
 ###
 # 🐍  python
