@@ -101,9 +101,9 @@ function kai(){
 }
 function l(){
     if [ "$1" ]; then
-        exa -al --classify --git "$1" -I '.git'
+        exa -al --classify --git "$1" --git-ignore -I '.git'
     else
-        exa -al --classify --git -I '.git'
+        exa -al --classify --git --git-ignore -I '.git'
     fi
 }
 # necessary given switch to exa?
