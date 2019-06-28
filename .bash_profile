@@ -29,7 +29,7 @@ alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 # 💾  git
 ###
 
-alias gco="open $HOME/.gitconfig"
+alias gco="open $DOTFILES_DIR/.gitconfig"
 alias gic="touch .gitignore; gie"
 alias gie="open .gitignore"
 alias gb="git b"
@@ -101,9 +101,9 @@ function kai(){
 }
 function l(){
     if [ "$1" ]; then
-        exa -al --git "$1"
+        exa -al --classify --git "$1"
     else
-        exa -al --git
+        exa -al --classify --git
     fi
 }
 # necessary given switch to exa?
