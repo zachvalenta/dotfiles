@@ -106,15 +106,6 @@ function l(){
         exa -al --classify --git --git-ignore -I '.git|.DS_Store'
     fi
 }
-# necessary given switch to exa?
-function ll(){
-    if [ "$1" ]; then
-        # echo "$1"
-        ls -ahl "$1"
-    else
-        ls -ahl .
-    fi
-}
 alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open ."
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias m="make"
