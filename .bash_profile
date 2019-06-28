@@ -101,7 +101,7 @@ function kai(){
 }
 function l(){
     if [ "$1" ]; then
-        exa -al --classify --git "$1" --git-ignore -I '.git'
+        exa -al --classify --git --git-ignore -I '.git' "$1" 
     else
         exa -al --classify --git --git-ignore -I '.git'
     fi
