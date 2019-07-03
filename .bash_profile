@@ -124,10 +124,16 @@ alias sl="litecli"
 alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
-alias sy="vim +/'# META' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 function t(){
-    if [ "$1" ]; then
-        exa -al --tree --level="$1" --git-ignore -I '.git'
+    if [ $# -eq 2 ]; then
+        exa -al --tree --level="$1" --git-ignore -I '.git' "$2"
+    elif [ $# -eq 1 ]
+    then
+        if [[ "$string" =~ ^-?[0-9]+[.,]?[0-9]*$ ]]; then
+            exa -al --tree --level="$1" --git-ignore -I '.git'
+        else
+            exa -al --tree --git-ignore -I '.git' "$1"
+        fi
     else
         exa -al --tree --git-ignore -I '.git'
     fi
@@ -142,7 +148,7 @@ alias yin="cd /Volumes/MUSIC-USB"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/06"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/07"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 
