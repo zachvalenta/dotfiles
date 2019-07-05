@@ -18,7 +18,6 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍  tmp
 ###
 
-# CURRENT READING find . -name "_bookshelf.md" | xargs bat | grep -A 10 '## doing'
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
 alias pypkg="open /Users/zach/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/py-pkg.md"
 alias track="logs; fd tracking -X bat"
