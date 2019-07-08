@@ -19,7 +19,6 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
-alias pypkg="open /Users/zach/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/py-pkg.md"
 alias track="logs; fd tracking -X bat"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
