@@ -127,7 +127,7 @@ function t(){
         exa -al --tree --level="$1" --git-ignore -I '.git' "$2"
     elif [ $# -eq 1 ]
     then
-        if [[ "$string" =~ ^-?[0-9]+[.,]?[0-9]*$ ]]; then
+        if [[ "$1" =~ ^-?[0-9]+[.,]?[0-9]*$ ]]; then
             exa -al --tree --level="$1" --git-ignore -I '.git'
         else
             exa -al --tree --git-ignore -I '.git' "$1"
