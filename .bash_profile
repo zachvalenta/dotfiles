@@ -6,6 +6,13 @@ echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "
 date
 
 ###
+# 🌐  globals
+###
+
+DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
+export MANPAGER=bat
+
+###
 # 🎨  prompt
 ###
 
@@ -71,8 +78,6 @@ alias pipin="pip install -r requirements.txt"
 ###
 # 🦏  bash
 ###
-
-DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
 
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
 alias b="bat"
@@ -171,4 +176,3 @@ export PATH="./node_modules/.bin:$PATH"
 
 PATH="/Users/zach/bin:${PATH}"
 export PATH
-export MANPAGER=bat
