@@ -127,7 +127,7 @@ alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/site"
 alias sl="litecli"
 alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
-alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
+alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 function t(){
     if [ $# -eq 2 ]; then
         exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store' "$2"
