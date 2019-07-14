@@ -130,16 +130,16 @@ alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw; open ."
 function t(){
     if [ $# -eq 2 ]; then
-        exa -al --tree --level="$1" --git-ignore -I '.git' "$2"
+        exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store' "$2"
     elif [ $# -eq 1 ]
     then
         if [[ "$1" =~ ^-?[0-9]+[.,]?[0-9]*$ ]]; then
-            exa -al --tree --level="$1" --git-ignore -I '.git'
+            exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store'
         else
-            exa -al --tree --git-ignore -I '.git' "$1"
+            exa -al --tree --git-ignore -I '.git|.DS_Store' "$1"
         fi
     else
-        exa -al --tree --git-ignore -I '.git'
+        exa -al --tree --git-ignore -I '.git|.DS_Store'
     fi
 }
 alias tf="terraform"
