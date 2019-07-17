@@ -97,6 +97,9 @@ alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
 alias ds="qing .DS_Store"
 alias grep="grep --color=auto -n"
+function jbp(){
+    jb | grep "$1"
+}
 function kai(){
     fname="$1.md";
     cwd="$(pwd)";
