@@ -26,6 +26,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
+alias dock="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/docker-flask-skeleton"
 alias track="logs; fd tracking -X bat"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
@@ -119,11 +120,13 @@ alias m="make"
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
+alias mt="docker"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
+alias prune="docker container prune -f; docker image prune -f"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/site"
