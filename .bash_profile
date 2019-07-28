@@ -98,6 +98,7 @@ alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
 alias ds="qing .DS_Store"
 alias grep="grep --color=auto -n"
+alias ind="open ~/Desktop/zvmac/materials/sw/za/industry/site/zachvalenta.github.io/index.html"
 function jbp(){
     jb | grep "$1"
 }

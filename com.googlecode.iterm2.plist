@@ -15,7 +15,7 @@
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
 	<key>Default Arrangement Name</key>
-	<string>away</string>
+	<string>20190619</string>
 	<key>Default Bookmark Guid</key>
 	<string>DAEE77CE-CA2A-49A0-AC36-37CA292A7C5E</string>
 	<key>GlobalKeyMap</key>
@@ -182,11 +182,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 207 606 469 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>30 160 937 464 0 0 1280 777 </string>
+	<string>70 306 937 464 0 0 1920 1057 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 777 0 0 1280 777 </string>
+	<string>0 0 1280 777 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 4 1920 1053 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -4517,7 +4517,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-07-20T16:45:37Z</date>
+	<date>2019-07-25T15:58:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUSkippedVersion</key>
