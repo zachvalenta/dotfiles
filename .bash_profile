@@ -25,6 +25,12 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍  tmp
 ###
 
+function app(){
+    fname="$1.md";
+    ms="$HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
+    cp "$ms"/cv/cover-letter.md "$ms"/past/"$fname"
+    open "$ms"/past/"$fname"
+}
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
 alias dock="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/docker-flask-skeleton"
 alias track="logs; fd tracking -X bat"
