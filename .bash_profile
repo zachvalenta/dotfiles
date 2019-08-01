@@ -126,6 +126,7 @@ alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias m="make"
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
+alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
 alias mt="docker"
 alias notes="cd $HOME/Desktop/zvmac/notes"
