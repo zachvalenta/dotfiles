@@ -54,4 +54,13 @@
         "command": "-md-shortcut.toggleItalic",
         "when": "editorTextFocus && markdownShortcuts:enabled"
     },
+    {
+        "key": "shift+cmd+k",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
 ]
