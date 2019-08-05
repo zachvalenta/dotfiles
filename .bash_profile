@@ -168,7 +168,7 @@ alias yin="cd /Volumes/MUSIC-USB"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/07"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/08"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 
