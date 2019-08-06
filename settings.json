@@ -29,5 +29,6 @@
     "window.restoreWindows": "one",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Noctis Obscuro",
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "extensions.ignoreRecommendations": false
 }
