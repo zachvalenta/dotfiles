@@ -32,6 +32,7 @@ function app(){
     open "$ms"/past/"$fname"
 }
 alias bpl="cd $HOME/Desktop/zvmac/materials/sw/lang/python/bashplotlib"
+alias book="o $HOME/Desktop/zvmac/materials/sw/za/data/bookcase/book-list.md"
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
 alias dock="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/docker-flask-skeleton"
 alias hack="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/hacker-rank"
