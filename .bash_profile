@@ -18,7 +18,7 @@ export MANPAGER=bat
 
 export PS1="$ "
 export CLICOLOR=1
-export EXA_COLORS="ga=38;5;213:gm=32:*.py=38;5;114:Dockerfile=38;5;074;1:*.pdf=38;5;208:*.txt=38;5;244"
+export EXA_COLORS="ga=38;5;213:gm=32:*.py=38;5;114:Dockerfile=38;5;074;1:*.pdf=38;5;208:*.txt=38;5;244:*.html=38;5;137;1"
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
@@ -151,7 +151,7 @@ function t(){
         exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store' "$2"
     elif [ $# -eq 1 ]
     then
-        if [[ "$1" =~ ^-?[0-9]+[.,]?[0-9]*$ ]]; then
+        if [[ "$1" =~ ^-?[0-9]+[.,]?[0-9]*$ ]]; then  # break on dir prepended w/ digits e.g. `logs/2019`
             exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store'
         else
             exa -al --tree --git-ignore -I '.git|.DS_Store' "$1"
@@ -170,7 +170,7 @@ alias yin="cd /Volumes/ExFat\ main/media/music"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/08"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/09"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 
