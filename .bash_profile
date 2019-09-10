@@ -34,6 +34,7 @@ function app(){
 alias book="o $HOME/Desktop/zvmac/materials/sw/za/data/bookcase/book-list.md"
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
 alias data="cd $HOME/Desktop/zvmac/materials/sw/za/data/pg-exercises"
+alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django/web-1"
 alias hack="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/hacker-rank"
 alias track="logs; fd tracking -X bat"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
