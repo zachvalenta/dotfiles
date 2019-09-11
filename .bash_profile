@@ -25,12 +25,6 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍  tmp
 ###
 
-function app(){
-    fname="$1.md";
-    ms="$HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
-    cp "$ms"/cv/cover-letter.md "$ms"/past/"$fname"
-    open "$ms"/past/"$fname"
-}
 alias book="o $HOME/Desktop/zvmac/materials/sw/za/data/bookcase/book-list.md"
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
 alias data="cd $HOME/Desktop/zvmac/materials/sw/za/data/pg-exercises"
@@ -90,6 +84,12 @@ alias pipin="pip install -r requirements.txt"
 ###
 
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
+function app(){
+    fname="$1.md";
+    ms="$HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
+    cp "$ms"/cv/cover-letter.md "$ms"/za/"$fname"
+    open "$ms"/za/"$fname"
+}
 alias b="bat"
 alias blog="cd $HOME/Desktop/zvmac/materials/sw/za/industry/site/drafts/blog"
 alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/boxing"
