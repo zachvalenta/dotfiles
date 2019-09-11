@@ -38,7 +38,7 @@ alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django/web-1"
 alias hack="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/hacker-rank"
 alias track="logs; fd tracking -X bat"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
-alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
+alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
 
 ###
 # 💾  git
