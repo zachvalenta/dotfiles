@@ -162,6 +162,7 @@ function t(){
     fi
 }
 alias tf="terraform"
+alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md"
 alias upbp="source $HOME/.bash_profile"
 alias vc="open $HOME/.vimrc"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
