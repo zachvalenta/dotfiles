@@ -84,10 +84,10 @@ alias pipin="pip install -r requirements.txt"
 ###
 
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
-function app(){
+function app(){ # rm `rec` and replace with flag
     fname="$1.md";
     ms="$HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
-    cp "$ms"/cv/cover-letter.md "$ms"/za/"$fname"
+    cp "$ms"/cv/template-app.md "$ms"/za/"$fname"
     open "$ms"/za/"$fname"
 }
 alias b="bat"
@@ -140,6 +140,12 @@ alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
 alias prune="docker container prune -f"
+function rec(){
+    fname="$1.md";
+    ms="$HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
+    cp "$ms"/cv/template-recruiter.md "$ms"/za/"$fname"
+    open "$ms"/za/"$fname"
+}
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/site"
@@ -162,7 +168,7 @@ function t(){
     fi
 }
 alias tf="terraform"
-alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md"
+alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias upbp="source $HOME/.bash_profile"
 alias vc="open $HOME/.vimrc"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
@@ -174,7 +180,7 @@ alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/09"
 alias zbin="cd $HOME/bin"
-alias zp="vim +/'# LEADS' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 
 ###
 # 🗑  clean up
