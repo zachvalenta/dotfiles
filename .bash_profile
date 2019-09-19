@@ -98,7 +98,7 @@ alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
-alias cm="vim +/'# PROFILE' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 alias cppath='pwd | pbcopy'
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
@@ -139,6 +139,7 @@ alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
+alias pi="vim +/'batch' $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias prune="docker container prune -f"
 function rec(){
     fname="$1.md";
