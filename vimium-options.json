@@ -1,5 +1,5 @@
 {
-  "settingsVersion": "1.64.5",
+  "settingsVersion": "1.64.6",
   "exclusionRules": [
     {
       "pattern": "https?://duckduckgo.com/*",
@@ -15,7 +15,7 @@
     },
     {
       "pattern": "https?://*.pluralsight.com/*",
-      "passKeys": "f,m,t"
+      "passKeys": "f,m,t,<,>"
     },
     {
       "pattern": "https://courses.noiselab.io/courses/*",
