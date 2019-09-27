@@ -33,6 +33,7 @@ alias hack="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/hacker-rank"
 alias track="logs; fd tracking -X bat"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
 alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
+alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
 ###
 # 💾  git
@@ -107,6 +108,7 @@ alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
 alias dream="cd $HOME/Desktop/zvmac/notes/jay/za; open about.html"
 alias ds="qing .DS_Store"
+alias gop="cd ~/go"
 alias grep="grep --color=auto -n"
 alias ind="open ~/Desktop/zvmac/materials/sw/za/industry/site/zachvalenta.github.io/index.html"
 function jbp(){
@@ -187,8 +189,7 @@ alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
 # 🗑  clean up
 ###
 
-export GOPATH=$(go env GOPATH) # golang.org/doc.code.html --> double check
-alias gobin='function gobin(){ $GOPATH/bin/"$1";}; gobin'
+export GOPATH=$(go env GOPATH) # golang.org/doc.code.html
 
 function npm {
 	LOCAL_NPM="./node_modules/.bin/npm"
