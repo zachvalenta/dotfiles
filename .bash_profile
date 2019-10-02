@@ -141,7 +141,7 @@ alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
-alias pi="vim +/'batch' $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
+alias pi="vim +/'free' $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias prune="docker container prune -f"
 function rec(){
     fname="$1.md";
