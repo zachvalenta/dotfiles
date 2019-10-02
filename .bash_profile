@@ -71,6 +71,7 @@ export PYTHONDONTWRITEBYTECODE=1
 export PIP_REQUIRE_VIRTUALENV=true
 
 alias py3="python3"
+alias pipx="python3 -m pipx"
 alias bpy="bpython"
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
 alias ting="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
@@ -203,5 +204,7 @@ export PATH="./node_modules/.bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-PATH="/Users/zach/bin:${PATH}"
-export PATH
+# my bin
+export PATH="/Users/zach/bin:${PATH}"
+# pipx
+export PATH="$PATH:/Users/zach/.local/bin"
