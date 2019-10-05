@@ -100,7 +100,7 @@ alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
-alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/za/hiring.md"
 alias cppath='pwd | pbcopy'
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
@@ -184,7 +184,7 @@ alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/09"
 alias zbin="cd $HOME/bin"
-alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry/hiring.md"
+alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/za/hiring.md"
 
 ###
 # 🗑  clean up
