@@ -25,9 +25,9 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍  tmp
 ###
 
-alias book="o $HOME/Desktop/zvmac/materials/sw/za/data/bookcase/book-list.md"
+alias book="o $HOME/Desktop/zvmac/materials/sw/za/db/bookcase/book-list.md"
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
-alias data="cd $HOME/Desktop/zvmac/materials/sw/za/data/pg-exercises"
+alias data="cd $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises"
 alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django/web-1"
 alias hack="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/hacker-rank"
 alias track="logs; fd tracking -X bat"
@@ -93,17 +93,17 @@ function app(){ # rm `rec` and replace with flag
     open "$ms"/za/"$fname"
 }
 alias b="bat"
-alias blog="cd $HOME/Desktop/zvmac/materials/sw/za/industry/site/drafts/blog"
-alias box="cd $HOME/Desktop/zvmac/materials/sw/za/data/boxing"
+alias blog="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts/blog"
+alias box="cd $HOME/Desktop/zvmac/materials/sw/za/db/boxing"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
-alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/za/hiring.md"
+alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 alias cppath='pwd | pbcopy'
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
-alias cv="open $HOME/Desktop/zvmac/materials/sw/za/industry/hiring/cv/cv.md"
+alias cv="open $HOME/Desktop/zvmac/materials/sw/za/hiring/cv/cv.md"
 alias d="pwd"
 alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
@@ -111,7 +111,7 @@ alias dream="cd $HOME/Desktop/zvmac/notes/jay/za; open about.html"
 alias ds="qing .DS_Store"
 alias gop="cd ~/go"
 alias grep="grep --color=auto -n"
-alias ind="open ~/Desktop/zvmac/materials/sw/za/industry/site/zachvalenta.github.io/index.html"
+alias ind="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 function jbp(){
     jb | grep "$1"
 }
@@ -135,7 +135,7 @@ alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias mlib="cd /Volumes/MUSIC-LIB && t > ~/Desktop/music-lib-$(date +"%Y%m%d").log"
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/; cd $HOME/Desktop/zvmac/materials/sw; fd -e mp3"
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
 alias mt="docker"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias o="open"
@@ -152,7 +152,7 @@ function rec(){
 }
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
-alias site="cd $HOME/Desktop/zvmac/materials/sw/za/industry/site"
+alias site="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site"
 alias sl="litecli"
 alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
@@ -178,7 +178,7 @@ alias vc="open $HOME/.vimrc"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
-alias yin="cd /Volumes/ExFat\ main/media/music"
+alias yin="cd /Volumes/music-usb"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
