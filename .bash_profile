@@ -25,7 +25,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍  tmp
 ###
 
-alias book="o $HOME/Desktop/zvmac/materials/sw/za/db/bookcase/book-list.md"
+alias book="cd $HOME/Desktop/zvmac/materials/sw/za/db/bookcase; vsc book-list.md"
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
 alias data="cd $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises"
 alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django/web-1"
@@ -147,7 +147,7 @@ alias pi="vim +/'free' $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias prune="docker container prune -f"
 function rec(){
     fname="$1.md";
-    ms="$HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
+    ms="$HOME/Desktop/zvmac/materials/sw/za/hiring/"
     cp "$ms"/cv/template-recruiter.md "$ms"/za/"$fname"
     open "$ms"/za/"$fname"
 }

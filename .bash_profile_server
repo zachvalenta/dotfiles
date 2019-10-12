@@ -1,13 +1,13 @@
 echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "
 date
 
-export PS1="$ "
+export PS1="$USER $ "
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 alias py3="python3"
 
-alias bp="vim $DOTFILES_DIR/.bash_profile"
+alias bp="vim $HOME/.bash_profile"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
 alias grep="grep --color=auto -n"
@@ -26,4 +26,5 @@ function l(){
 }
 alias m="make"
 alias ri="ncal -3"
+alias vc="vim $HOME/.vimrc"
 alias upbp="source $HOME/.bash_profile"
