@@ -135,7 +135,7 @@ alias m="make"
 alias mat="cd $HOME/Desktop/zvmac/materials; open ."
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias mlib="cd /Volumes/MUSIC-LIB && t > ~/Desktop/music-lib-$(date +"%Y%m%d").log"
-alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/; cd $HOME/Desktop/zvmac/materials/sw; fd -e mp3"
+alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
 alias mt="docker"
 alias notes="cd $HOME/Desktop/zvmac/notes"
@@ -185,7 +185,7 @@ alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/10"
 alias zbin="cd $HOME/bin"
-alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/za/hiring.md"
+alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
 ###
 # 🗑  clean up
