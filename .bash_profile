@@ -29,7 +29,6 @@ alias book="cd $HOME/Desktop/zvmac/materials/sw/za/db/bookcase; vsc book-list.md
 alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
 alias data="cd $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises"
 alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django/web-1"
-alias hack="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos/hacker-rank"
 alias track="logs; fd tracking -X bat"
 alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
 alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
@@ -85,7 +84,7 @@ alias pipin="pip install -r requirements.txt"
 # 🦏  bash
 ###
 
-alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/cs/algos"
+alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos"
 function app(){ # rm `rec` and replace with flag
     fname="$1.md";
     ms="$HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
@@ -143,7 +142,7 @@ alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
-alias pi="vim +/'free' $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
+alias pi="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 alias prune="docker container prune -f"
 function rec(){
     fname="$1.md";
@@ -172,6 +171,7 @@ function t(){
         exa -al --tree --git-ignore -I '.git|.DS_Store'
     fi
 }
+alias tian="echo -en '\n'; bat -l markdown $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias tf="terraform"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias upbp="source $HOME/.bash_profile"
