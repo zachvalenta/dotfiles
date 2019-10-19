@@ -193,16 +193,6 @@ alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
 export GOPATH=$(go env GOPATH) # golang.org/doc.code.html
 
-function npm {
-	LOCAL_NPM="./node_modules/.bin/npm"
-	if [ -x $LOCAL_NPM ]; then
-		$LOCAL_NPM $*
-	else
-		`which npm` $*
-	fi
-}
-export PATH="./node_modules/.bin:$PATH"
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # my bin
