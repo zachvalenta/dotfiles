@@ -24,6 +24,10 @@
     {
       "pattern": "https://watch.nba.com/game/*",
       "passKeys": "f,m"
+    },
+    {
+      "pattern": "https?://github.com/*",
+      "passKeys": "b,t"
     }
   ],
   "filterLinkHints": false,
