@@ -57,7 +57,7 @@ function ga(){
     fi
 }
 alias gds="git ds"
-# todo: gr - control flow - iterate over files to unstage, if `-r` then `git reset --hard HEAD` w/ warning
+# todo: gr - move to bash function, add option to iterate over files to unstage
 alias gl="git l"
 alias gc="git c"
 
@@ -174,6 +174,7 @@ function t(){
 alias tian="echo -en '\n'; bat -l markdown $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias tf="terraform"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
+alias trs="trans :es -I"
 alias upbp="source $HOME/.bash_profile"
 alias vc="open $HOME/.vimrc"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
