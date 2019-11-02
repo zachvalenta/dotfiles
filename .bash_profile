@@ -16,7 +16,7 @@ export MANPAGER=bat
 # 🎨  prompt
 ###
 
-export PS1="$ "
+export PS1='`echo "${PWD%/*}" | sed -e "s;\(/.\)[^/]*;\1;g"`/${PWD##*/} \$ '  # https://superuser.com/a/1014107/728972
 export CLICOLOR=1
 export EXA_COLORS="ga=38;5;213:gm=32:*.py=38;5;114:Dockerfile=38;5;074;1:*.pdf=38;5;208:*.txt=38;5;244:*.html=38;5;137;1"
 export LSCOLORS=gxfxcxdxbxegedabaggagx
@@ -26,11 +26,6 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias book="cd $HOME/Desktop/zvmac/materials/sw/za/db/bookcase; vsc book-list.md"
-alias cpa="cp -r $HOME/Desktop/zvmac/materials/sw/lang/python/create-python-app"  # don't copy .git, venv https://github.com/ashbhat/create-flask-app
-alias data="cd $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises"
-alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django/web-1"
-alias track="logs; fd tracking -X bat"
-alias vimp="open $HOME/Desktop/zvmac/notes/sw/za/editors/vim.md; cd $HOME/Desktop/zvmac/materials/sw/za/editors; open practical-vim.pdf"
 alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
@@ -99,7 +94,8 @@ alias bps="vsc $DOTFILES_DIR/.bash_profile_server"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias c="clear"
-alias cd='function cdl(){ cd "$1"; pwd; l;}; cdl'
+alias cd='function cdl(){ cd "$1"; l;}; cdl'
+alias cheat="cht.sh --shell"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 alias cppath='pwd | pbcopy'
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
