@@ -26,6 +26,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias book="cd $HOME/Desktop/zvmac/materials/sw/za/db/bookcase; vsc book-list.md"
+alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skelly"
 alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
@@ -140,6 +141,7 @@ alias pdfg="pdfgrep -in"
 alias pg="pgcli"
 alias pi="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 alias prune="docker container prune -f"
+alias ra="ranger"
 function rec(){
     fname="$1.md";
     ms="$HOME/Desktop/zvmac/materials/sw/za/hiring/"
@@ -180,7 +182,7 @@ alias yin="cd /Volumes/music-usb"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/10"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/11"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
