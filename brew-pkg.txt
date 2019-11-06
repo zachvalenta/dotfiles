@@ -29,7 +29,6 @@ neofetch
 nginx
 node
 pdfgrep
-peco
 pgcli
 pkg-config
 postgresql
