@@ -143,15 +143,20 @@ alias pi="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://ed
 alias prune="docker container prune -f"
 alias ra="ranger"
 function rec(){
-    fname="$1.md";
-    ms="$HOME/Desktop/zvmac/materials/sw/za/hiring/"
-    cp "$ms"/cv/template-recruiter.md "$ms"/za/"$fname"
-    open "$ms"/za/"$fname"
+    if [ $# -eq 0 ]; then
+        echo "pass a filename"
+        return 1
+    else
+        fname="$1.md";
+        ms="$HOME/Desktop/zvmac/materials/sw/za/hiring/"
+        cp "$ms"/cv/template-recruiter.md "$ms"/za/"$fname"
+        open "$ms"/za/"$fname"
+    fi
 }
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias site="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site"
-alias sl="litecli"
+alias sl="litecli local.db"
 alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
