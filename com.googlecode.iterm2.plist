@@ -439,7 +439,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>d; sgz; tian</string>
+			<string>d</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -4668,7 +4668,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{289, 825}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -4681,7 +4681,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>541278677.84548104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>62</integer>
+	<integer>78</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>592524039.53487599</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -5380,7 +5380,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-03T03:24:53Z</date>
+	<date>2019-11-05T04:08:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
