@@ -34,4 +34,5 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Noctis Obscuro",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
 }
