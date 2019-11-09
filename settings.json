@@ -17,6 +17,8 @@
         "node_modules": true,
         "venv": true
     },
+    "outline.showModules": false,
+    "outline.showVariables": false,
     "[markdown]": {
         "editor.quickSuggestions": true
     },
