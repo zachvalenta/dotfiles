@@ -5,6 +5,7 @@ editorconfig.editorconfig-0.14.2
 liviuschera.noctis-10.15.0
 mauve.terraform-1.4.0
 mdickin.markdown-shortcuts-0.11.0
+mdickin.markdown-shortcuts-0.12.0
 mechatroner.rainbow-csv-1.3.1
 mikestead.dotenv-1.0.1
 ms-azuretools.vscode-docker-0.8.2
