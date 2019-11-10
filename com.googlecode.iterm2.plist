@@ -4681,7 +4681,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>541278677.84548104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>78</integer>
+	<integer>86</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>592524039.53487599</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -5380,8 +5380,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-05T04:08:25Z</date>
+	<date>2019-11-09T14:07:52Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
