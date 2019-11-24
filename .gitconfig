@@ -20,6 +20,7 @@
 	conf = config --global --list
 	nb = checkout -b
 	l = log --graph -n 10 --oneline --all --decorate  # more recent, prettier
+	la = log --graph --oneline --all --decorate
 	s = status -s  # shorter output
 	t = show -s --format=%ci  # timestamp of last commit
 	u = reset HEAD
