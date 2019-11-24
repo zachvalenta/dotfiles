@@ -84,10 +84,15 @@ alias pipin="pip install -r requirements.txt"
 
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos"
 function app(){ # rm `rec` and replace with flag
-    fname="$1.md";
-    ms="$HOME/Desktop/zvmac/materials/sw/za/industry/hiring"
-    cp "$ms"/cv/template-app.md "$ms"/za/"$fname"
-    open "$ms"/za/"$fname"
+    if [ $# -eq 0 ]; then
+        echo "pass a filename"
+        return 1
+    else
+        fname="$1.md";
+        ms="$HOME/Desktop/zvmac/materials/sw/za/hiring"
+        cp "$ms"/cv/template-app.md "$ms"/za/"$fname"
+        vsc "$ms"/za/"$fname"
+    fi
 }
 alias b="bat"
 alias blog="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts/blog"
@@ -136,6 +141,7 @@ alias mlib="cd /Volumes/MUSIC-LIB && t > ~/Desktop/music-lib-$(date +"%Y%m%d").l
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
 alias mt="docker"
+alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; open ."
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias o="open"
 alias oo="open ."
@@ -176,7 +182,6 @@ function t(){
         exa -al --tree --git-ignore -I '.git|.DS_Store'
     fi
 }
-alias tian="echo -en '\n'; bat -l markdown $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias tf="terraform"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias trs="trans :es -I"
