@@ -25,7 +25,6 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍  tmp
 ###
 
-alias book="cd $HOME/Desktop/zvmac/materials/sw/za/db/bookcase; vsc book-list.md"
 alias db="open $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises/README.md"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/system/nginx-wsgi"
 alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skelly"
@@ -35,6 +34,9 @@ alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 ###
 # 💾  git
 ###
+
+# todo - SSoT for core workflow (gb as `git branch`, rm alias in .gitconfig)
+# leave less-used cmd (count, far) as .gitconfig aliases
 
 alias gco="open $DOTFILES_DIR/.gitconfig"
 alias gic="touch .gitignore; gie"
@@ -96,7 +98,6 @@ function app(){ # rm `rec` and replace with flag
 }
 alias b="bat"
 alias blog="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts/blog"
-alias box="cd $HOME/Desktop/zvmac/materials/sw/za/db/boxing"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias bps="vsc $DOTFILES_DIR/.bash_profile_server"
 alias brewup="brew outdated | xargs brew upgrade"
