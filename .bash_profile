@@ -25,9 +25,12 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍  tmp
 ###
 
+alias box="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/boxing"
+alias book="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/bookcase"
+alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skelly"
+
 alias db="open $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises/README.md"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/system/nginx-wsgi"
-alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skelly"
 alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
