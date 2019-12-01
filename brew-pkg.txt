@@ -9,7 +9,6 @@ doxygen
 exa
 fd
 ffmpeg
-fish
 flyway
 fzf
 git

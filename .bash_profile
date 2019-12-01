@@ -168,7 +168,6 @@ function rec(){
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias site="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site"
-alias sl="litecli local.db"
 alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
@@ -205,8 +204,6 @@ alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 ###
 # 🗑  clean up
 ###
-
-export GOPATH=$(go env GOPATH) # golang.org/doc.code.html
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
