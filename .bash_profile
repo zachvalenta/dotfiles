@@ -9,7 +9,7 @@ date
 # 🌐  globals
 ###
 
-DOTFILES_DIR="$HOME/Desktop/zvmac/materials/jay/assets-digital/dotfiles"
+DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 export MANPAGER=bat
 
 ###
