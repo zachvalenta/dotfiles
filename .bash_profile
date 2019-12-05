@@ -27,7 +27,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 alias box="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/boxing"
 alias book="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/bookcase"
-alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skelly"
+alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
 
 alias db="open $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises/README.md"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/system/nginx-wsgi"

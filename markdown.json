@@ -27,7 +27,7 @@
             "",
 			"- [ ] _sw_: ",
 			"- [ ] `dance.md`: dancehall () hip-hop () house () salsa ()",
-			"- [ ] `music.md`: bass () guitar () keys () production () theory ()",
+			"- [ ] `music.md`: bass () guitar () keys () production ()",
 			"- [ ] `viz.md`: ",
 			"",
             "__reset__",
@@ -95,26 +95,6 @@
 			"",
             "* ",
             "",
-		]
-    },
-    "sprint": {
-		"prefix": "mds",
-		"description": "sprint outline",
-		"body": [
-			"# 🐛 highlights",
-			"",
-            "> ",
-            "",
-			"* _sw_: ",
-			"* _dance_: ",
-			"* _music_: ",
-			"* _viz_: ",
-			"* `training.md`: ",
-			"* _meditate_: ",
-			"* `shui`: ",
-			"* _bed_: ",
-            "",
-            "$1"
 		]
     },
     "note": {
