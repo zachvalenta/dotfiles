@@ -25,12 +25,16 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍  tmp
 ###
 
+# backend
 alias box="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/boxing"
 alias book="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/bookcase"
-alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
-
 alias db="open $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises/README.md"
+alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/system/nginx-wsgi"
+
+# misc
+alias pyvim="vim $HOME/Desktop/zvmac/notes/sw/lang/python.md"
+alias url="cd $HOME/Desktop/zvmac/materials/sw/za/system/url-shortener"
 alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
