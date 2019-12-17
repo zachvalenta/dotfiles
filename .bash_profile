@@ -64,7 +64,6 @@ function ga(){
     fi
 }
 alias gds="git ds"
-# todo: gr - move to bash function, add option to iterate over files to unstage
 alias gl="git l"
 alias gc="git c"
 
@@ -99,8 +98,8 @@ function app(){ # rm `rec` and replace with flag
     else
         fname="$1.md";
         ms="$HOME/Desktop/zvmac/materials/sw/za/hiring"
-        cp "$ms"/cv/template-app.md "$ms"/za/"$fname"
-        vsc "$ms"/za/"$fname"
+        cp "$ms"/cv/template-app.md "$ms"/throwaway/"$fname"
+        vsc "$ms"/throwaway/"$fname"
     fi
 }
 alias b="bat"
@@ -165,8 +164,8 @@ function rec(){
     else
         fname="$1.md";
         ms="$HOME/Desktop/zvmac/materials/sw/za/hiring/"
-        cp "$ms"/cv/template-recruiter.md "$ms"/za/"$fname"
-        open "$ms"/za/"$fname"
+        cp "$ms"/cv/template-recruiter.md "$ms"/throwaway/"$fname"
+        open "$ms"/throwaway/"$fname"
     fi
 }
 alias ri="ncal -3"
