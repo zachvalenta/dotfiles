@@ -32,6 +32,7 @@
         "**/bower_components": true
     },
     "vim.useSystemClipboard": true,
+    "update.mode": "none",
     "window.restoreWindows": "one",
     "window.zoomLevel": 0,
     "workbench.colorCustomizations": {
@@ -39,5 +40,5 @@
     },
     "workbench.colorTheme": "Noctis Obscuro",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "newUntitledFile"
 }
