@@ -57,4 +57,7 @@
         "command": "-editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
     },
+
+    {"key": "ctrl+c", "command": "workbench.action.clearEditorHistory"}
+
 ]
