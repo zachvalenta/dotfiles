@@ -58,6 +58,7 @@
         "when": "textInputFocus && !editorReadonly"
     },
 
-    {"key": "ctrl+c", "command": "workbench.action.clearEditorHistory"}
+    {"key": "ctrl+c", "command": "workbench.action.clearEditorHistory"},
+    {"key": "ctrl+b", "command": "workbench.action.toggleSidebarVisibility"}
 
 ]
