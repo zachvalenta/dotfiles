@@ -41,12 +41,25 @@ alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
 ###
+# 💃🏻  dance
+###
+
+DANCE_DIR="$HOME/Desktop/zvmac/materials/za/passions/dance"
+alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
+
+alias dh="cd $DANCE_DIR/dancehall; open .; vlc music"
+alias hh="cd $DANCE_DIR/hip-hop; open .; vlc music"
+alias house="cd $DANCE_DIR/house; open .; vlc music"
+alias ss="cd $DANCE_DIR/salsa; open .; vlc music"
+
+###
 # 🎹  music
 ###
 
-alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; open ."
-alias hey="cd $HOME/Desktop/zvmac/materials/za/passions/music/bass/songs/; open *.png"
-alias wu="cd $HOME/Desktop/zvmac/materials/za/passions/music/guitar/songs/; bat whats-up.md"
+MUSIC_DIR="$HOME/Desktop/zvmac/materials/za/passions/music"
+alias muz="cd $MUSIC_DIR; open ."
+alias hey="cd $MUSIC_DIR/bass/songs/; open *.png"
+alias wu="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
 
 ###
 # 💾  git
@@ -201,7 +214,6 @@ alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Deskt
 alias trs="trans :es -I"
 alias upbp="source $HOME/.bash_profile"
 alias vc="open $HOME/.vimrc"
-alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 alias water="shui; 2020"
