@@ -26,6 +26,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 # backend
+
 alias box="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/boxing"
 alias book="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/bookcase"
 alias db="open $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises/README.md"
@@ -33,10 +34,19 @@ alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
 alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/system/nginx-wsgi"
 
 # misc
-alias pyvim="vim $HOME/Desktop/zvmac/notes/sw/lang/python.md"
-alias url="cd $HOME/Desktop/zvmac/materials/sw/za/system/url-shortener"
+
+alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos; on; vsc ../algos"
+alias poet="cd $HOME/Desktop/poet"
 alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
+
+###
+# 🎹  music
+###
+
+alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; open ."
+alias hey="cd $HOME/Desktop/zvmac/materials/za/passions/music/bass/songs/; open *.png"
+alias wu="cd $HOME/Desktop/zvmac/materials/za/passions/music/guitar/songs/; bat whats-up.md"
 
 ###
 # 💾  git
@@ -90,7 +100,6 @@ alias pipin="pip install -r requirements.txt"
 # 🦏  bash
 ###
 
-alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos"
 function app(){ # rm `rec` and replace with flag
     if [ $# -eq 0 ]; then
         echo "pass a filename"
@@ -122,6 +131,7 @@ alias dream="cd $HOME/Desktop/zvmac/notes/jay/za; open about.html"
 alias ds="qing .DS_Store"
 alias gop="cd ~/go"
 alias grep="grep --color=auto -n"
+alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 alias ind="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 function jbp(){
     jb | grep "$1"
@@ -148,13 +158,11 @@ alias mlib="cd /Volumes/MUSIC-LIB && t > ~/Desktop/music-lib-$(date +"%Y%m%d").l
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
 alias mt="docker"
-alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; open ."
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
-alias pi="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 alias prune="docker container prune -f"
 alias ra="ranger"
 function rec(){
@@ -196,6 +204,7 @@ alias vc="open $HOME/.vimrc"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
+alias water="shui; 2020"
 alias yin="cd /Volumes/music-usb"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
