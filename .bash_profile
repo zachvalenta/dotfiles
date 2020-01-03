@@ -9,7 +9,9 @@ date
 # 🌐  globals
 ###
 
+DANCE_DIR="$HOME/Desktop/zvmac/materials/za/passions/dance"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
+MUSIC_DIR="$HOME/Desktop/zvmac/materials/za/passions/music"
 export MANPAGER=bat
 
 ###
@@ -25,18 +27,9 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 📍  tmp
 ###
 
-# backend
-
-alias box="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/boxing"
-alias book="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/bookcase"
-alias db="open $HOME/Desktop/zvmac/materials/sw/za/db/pg-exercises/README.md"
-alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
-alias ngf="cd $HOME/Desktop/zvmac/materials/sw/za/system/nginx-wsgi"
-
-# misc
-
-alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos; on; vsc ../algos"
+alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
 alias poet="cd $HOME/Desktop/poet"
+alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
 alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
 alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 
@@ -44,7 +37,6 @@ alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
 # 💃🏻  dance
 ###
 
-DANCE_DIR="$HOME/Desktop/zvmac/materials/za/passions/dance"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
 alias dh="cd $DANCE_DIR/dancehall; open .; vlc music"
@@ -56,10 +48,11 @@ alias ss="cd $DANCE_DIR/salsa; open .; vlc music"
 # 🎹  music
 ###
 
-MUSIC_DIR="$HOME/Desktop/zvmac/materials/za/passions/music"
 alias muz="cd $MUSIC_DIR; open ."
-alias hey="cd $MUSIC_DIR/bass/songs/; open *.png"
-alias wu="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
+alias bsong="cd $MUSIC_DIR/bass/songs/; open *.png"
+alias bmeth="cd $MUSIC_DIR/bass/method/; vlc 006-One-More-Time.mp3"
+alias gsong="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
+alias gmeth="cd $MUSIC_DIR/guitar/method/; vlc 014-Tom-Dooley.mp3"
 
 ###
 # 💾  git
@@ -125,7 +118,7 @@ function app(){ # rm `rec` and replace with flag
     fi
 }
 alias b="bat"
-alias blog="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts/blog"
+alias cg="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias bps="vsc $DOTFILES_DIR/.bash_profile_server"
 alias brewup="brew outdated | xargs brew upgrade"
@@ -221,7 +214,7 @@ alias yin="cd /Volumes/music-usb"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2019/12"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/01"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
