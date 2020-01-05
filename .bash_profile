@@ -50,9 +50,9 @@ alias ss="cd $DANCE_DIR/salsa; open .; vlc music"
 
 alias muz="cd $MUSIC_DIR; open ."
 alias bsong="cd $MUSIC_DIR/bass/songs/; open *.png"
-alias bmeth="cd $MUSIC_DIR/bass/method/; vlc 006-One-More-Time.mp3"
+alias bmeth="cd $MUSIC_DIR/bass/method/; vlc 007-Cattle-Crossing.mp3"
 alias gsong="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
-alias gmeth="cd $MUSIC_DIR/guitar/method/; vlc 014-Tom-Dooley.mp3"
+alias gmeth="cd $MUSIC_DIR/guitar/method/; vlc 015-Pay-Me-My-Money-Down.mp3"
 
 ###
 # 💾  git
@@ -155,7 +155,7 @@ function l(){
         exa -al --classify --git --git-ignore -I '.git|.DS_Store'
     fi
 }
-alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open ."
+alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open photos"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias m="make"
 alias mat="cd $HOME/Desktop/zvmac/materials"
