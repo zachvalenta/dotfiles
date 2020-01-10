@@ -439,7 +439,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>d; # water.md + SMS</string>
+			<string>sms</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -4676,7 +4676,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{245, 846}</string>
+		<string>{217, 834}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -4689,7 +4689,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>541278677.84548104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>209</integer>
+	<integer>229</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5399,7 +5399,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-01T16:07:59Z</date>
+	<date>2020-01-09T20:46:11Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>

@@ -28,15 +28,14 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
-alias poet="cd $HOME/Desktop/poet"
-alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
-alias yoga-hips="open $HOME/Desktop/zvmac/materials/jay/training/yoga/hips.mp4"
-alias yoga-wake="open $HOME/Desktop/zvmac/materials/jay/training/yoga/wake.mp4"
+alias sms="rg SM ~/Desktop/zvmac/notes/jay/za/channel.md"
+alias yoga="open $HOME/Desktop/zvmac/materials/jay/training/yoga"
 
 ###
 # 💃🏻  dance
 ###
 
+alias dance="cd $DANCE_DIR; open ."
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
 alias dh="cd $DANCE_DIR/dancehall; open .; vlc music"
@@ -53,6 +52,7 @@ alias bsong="cd $MUSIC_DIR/bass/songs/; open *.png"
 alias bmeth="cd $MUSIC_DIR/bass/method/; vlc 007-Cattle-Crossing.mp3"
 alias gsong="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
 alias gmeth="cd $MUSIC_DIR/guitar/method/; vlc 015-Pay-Me-My-Money-Down.mp3"
+alias gcor="cd $MUSIC_DIR/guitar/songs/; bat chords.md"
 
 ###
 # 💾  git
