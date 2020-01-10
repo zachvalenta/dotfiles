@@ -118,6 +118,7 @@ function app(){ # rm `rec` and replace with flag
     fi
 }
 alias b="bat"
+alias br="broot"
 alias cg="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias bps="vsc $DOTFILES_DIR/.bash_profile_server"

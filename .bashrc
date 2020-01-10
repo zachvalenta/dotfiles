@@ -5,3 +5,5 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:/Users/zach/.local/bin"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+source /Users/zach/Library/Preferences/org.dystroy.broot/launcher/bash/br
