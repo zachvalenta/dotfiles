@@ -51,7 +51,7 @@ alias muz="cd $MUSIC_DIR; open ."
 alias bsong="cd $MUSIC_DIR/bass/songs/; open *.png"
 alias bmeth="cd $MUSIC_DIR/bass/method/; vlc 007-Cattle-Crossing.mp3"
 alias gsong="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
-alias gmeth="cd $MUSIC_DIR/guitar/method/; vlc 015-Pay-Me-My-Money-Down.mp3"
+alias gmeth="cd $MUSIC_DIR/guitar/method/; vlc 016-12-Bar-Rock.mp3"
 alias gcor="cd $MUSIC_DIR/guitar/songs/; bat chords.md"
 
 ###
@@ -118,7 +118,7 @@ function app(){ # rm `rec` and replace with flag
     fi
 }
 alias b="bat"
-alias br="broot"
+# alias br="broot"
 alias cg="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias bps="vsc $DOTFILES_DIR/.bash_profile_server"
