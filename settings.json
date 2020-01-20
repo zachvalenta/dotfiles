@@ -22,7 +22,7 @@
     "[markdown]": {
         "editor.quickSuggestions": true
     },
-    "markdownShortcuts.bold.marker": "__",
+    "markdown.extension.italic.indicator": "_",
     "search.exclude": {
         "jay/logs/2018":true,
         "jay/logs/2019":true,
