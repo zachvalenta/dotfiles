@@ -23,6 +23,7 @@
     "[markdown]": {
         "editor.quickSuggestions": true
     },
+    "python.venvPath":"~/Library/Caches/pypoetry/virtualenvs",
     "markdown.extension.italic.indicator": "_",
     "search.exclude": {
         "jay/logs/2018":true,
