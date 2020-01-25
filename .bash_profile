@@ -29,7 +29,6 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
 alias sms="rg SM ~/Desktop/zvmac/notes/jay/za/channel.md"
-alias yoga="open $HOME/Desktop/zvmac/materials/jay/training/yoga"
 
 ###
 # 💃🏻  dance
@@ -49,7 +48,7 @@ alias ss="cd $DANCE_DIR/salsa; open .; vlc music"
 
 alias muz="cd $MUSIC_DIR; open ."
 alias bsong="cd $MUSIC_DIR/bass/songs/; open *.png"
-alias bmeth="cd $MUSIC_DIR/bass/method/; vlc 007-Cattle-Crossing.mp3"
+alias bmeth="cd $MUSIC_DIR/bass/method/; vlc 010-12-Bar-Blues.mp3"
 alias gsong="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
 alias gmeth="cd $MUSIC_DIR/guitar/method/; vlc 016-12-Bar-Rock.mp3"
 alias gcor="cd $MUSIC_DIR/guitar/songs/; bat chords.md"
