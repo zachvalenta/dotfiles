@@ -1,0 +1,15 @@
+venvs are in /Users/zach/.local/pipx/venvs
+apps are exposed on your $PATH at /Users/zach/.local/bin
+   package ansible 2.8.6, Python 3.6.1
+    - ansible
+    - ansible-config
+    - ansible-connection
+    - ansible-console
+    - ansible-doc
+    - ansible-galaxy
+    - ansible-inventory
+    - ansible-playbook
+    - ansible-pull
+    - ansible-vault
+   package poetry 1.0.0, Python 3.6.1
+    - poetry
