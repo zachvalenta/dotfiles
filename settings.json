@@ -41,7 +41,7 @@
     "workbench.colorCustomizations": {
         "activityBar.activeBorder": "#8A2BE2",
     },
-    "workbench.colorTheme": "Noctis Obscuro",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Noctis Obscuro"
 }
