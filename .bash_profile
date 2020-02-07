@@ -30,6 +30,9 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
 alias sms="rg SM ~/Desktop/zvmac/notes/jay/za/channel.md"
 
+alias crud="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/crud"
+alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
+
 ###
 # 💃🏻  dance
 ###
@@ -48,9 +51,9 @@ alias ss="cd $DANCE_DIR/salsa; open .; vlc music"
 
 alias muz="cd $MUSIC_DIR; open ."
 alias bsong="cd $MUSIC_DIR/bass/songs/; open *.png"
-alias bmeth="cd $MUSIC_DIR/bass/method/; vlc 010-12-Bar-Blues.mp3"
+alias bmeth="open $MUSIC_DIR/bass/method/"
 alias gsong="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
-alias gmeth="cd $MUSIC_DIR/guitar/method/; vlc 018-Riffin.mp3"
+alias gmeth="open $MUSIC_DIR/guitar/method/"
 alias gcor="cd $MUSIC_DIR/guitar/songs/; bat chords.md"
 
 ###
@@ -214,7 +217,7 @@ alias yin="cd /Volumes/music-usb"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/01"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/02"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
