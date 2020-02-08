@@ -28,10 +28,9 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
-alias sms="rg SM ~/Desktop/zvmac/notes/jay/za/channel.md"
-
 alias crud="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/crud"
 alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
+alias sms="rg SM ~/Desktop/zvmac/notes/jay/za/channel.md"
 
 ###
 # 💃🏻  dance
@@ -120,14 +119,12 @@ function app(){ # rm `rec` and replace with flag
     fi
 }
 alias b="bat"
-# alias br="broot"
-alias cg="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
-alias bps="vsc $DOTFILES_DIR/.bash_profile_server"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
+alias cg="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts"
 alias cheat="cht.sh --shell"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 alias cppath='pwd | pbcopy'
@@ -136,9 +133,7 @@ alias cv="open $HOME/Desktop/zvmac/materials/sw/za/hiring/cv/cv.md"
 alias d="pwd"
 alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
-alias dream="cd $HOME/Desktop/zvmac/notes/jay/za; open about.html"
 alias ds="qing .DS_Store"
-alias gop="cd ~/go"
 alias grep="grep --color=auto -n"
 alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 alias ind="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
@@ -163,7 +158,6 @@ alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias m="make"
 alias mat="cd $HOME/Desktop/zvmac/materials"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
-alias mlib="cd /Volumes/MUSIC-LIB && t > ~/Desktop/music-lib-$(date +"%Y%m%d").log"
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
 alias mt="docker"
@@ -188,7 +182,6 @@ function rec(){
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias site="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site"
-alias qt="o $HOME/Desktop/zvmac/materials/sw/za/industry/zach-valenta/blog/quotes.md"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 function t(){
@@ -205,17 +198,14 @@ function t(){
         exa -al --tree --git-ignore -I '.git|.DS_Store'
     fi
 }
-alias tf="terraform"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias trs="trans :es -I"
 alias upbp="source $HOME/.bash_profile"
 alias vc="open $HOME/.vimrc"
 alias vsc="open -a 'Visual Studio Code'"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
-alias water="shui; 2020"
 alias yin="cd /Volumes/music-usb"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
-alias ytdd="cd $HOME/Desktop/media/ytd; open ."
 alias ytdv='youtube-dl --format mp4'
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/02"
 alias zbin="cd $HOME/bin"
