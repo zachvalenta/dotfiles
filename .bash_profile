@@ -50,9 +50,7 @@ alias ss="cd $DANCE_DIR/salsa; open .; vlc music"
 
 alias muz="cd $MUSIC_DIR; open ."
 alias bsong="cd $MUSIC_DIR/bass/songs/; open *.png"
-alias bmeth="open $MUSIC_DIR/bass/method/"
 alias gsong="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
-alias gmeth="open $MUSIC_DIR/guitar/method/"
 alias gcor="cd $MUSIC_DIR/guitar/songs/; bat chords.md"
 
 ###
@@ -221,3 +219,5 @@ alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 export PATH="/Users/zach/bin:${PATH}"
 # pipx
 export PATH="$PATH:/Users/zach/.local/bin"
+# go
+export PATH=$PATH:$HOME/go/bin
