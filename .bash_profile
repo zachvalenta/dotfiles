@@ -30,7 +30,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
 alias crud="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/crud"
 alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
-alias sms="rg SM ~/Desktop/zvmac/notes/jay/za/channel.md"
+alias sms="rg todo ~/Desktop/zvmac/notes/jay/za/channel.md"
 
 ###
 # 💃🏻  dance
