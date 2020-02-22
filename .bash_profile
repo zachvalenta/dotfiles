@@ -29,6 +29,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
 alias crud="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/crud"
+alias db="cd $HOME/Desktop/zvmac/materials/sw/za/db"
 alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
 alias sms="rg todo ~/Desktop/zvmac/notes/jay/za/channel.md"
 
@@ -127,7 +128,6 @@ alias cheat="cht.sh --shell"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 alias cppath='pwd | pbcopy'
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
-alias cv="open $HOME/Desktop/zvmac/materials/sw/za/hiring/cv/cv.md"
 alias d="pwd"
 alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
@@ -158,14 +158,11 @@ alias mat="cd $HOME/Desktop/zvmac/materials"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
-alias mt="docker"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
-alias prune="docker container prune -f"
-alias ra="ranger"
 function rec(){
     if [ $# -eq 0 ]; then
         echo "pass a filename"
