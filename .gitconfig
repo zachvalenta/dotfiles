@@ -10,7 +10,7 @@
 [alias]
 	ai = add -p
 	b = branch -v
-	c = commit -m
+	c = commit -v
 	co = checkout
 	d = diff
 	ds = diff --staged
