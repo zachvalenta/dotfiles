@@ -1,0 +1,1 @@
+options.cmdlog_histfile = '~/.visidata/history/%Y%m.vd'
