@@ -30,20 +30,12 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
 alias crud="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/crud"
 alias db="cd $HOME/Desktop/zvmac/materials/sw/za/db"
+alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg _model_"
+alias ml="open $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/music-lib/README.md"
+alias swaf="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts/notes/1992-swafford-vintage-guide-to-classical-music.md"
 alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
 alias sms="rg todo ~/Desktop/zvmac/notes/jay/za/channel.md"
 
-###
-# 💃🏻  dance
-###
-
-alias dance="cd $DANCE_DIR; open ."
-alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
-
-alias dh="cd $DANCE_DIR/dancehall; open .; vlc music"
-alias hh="cd $DANCE_DIR/hip-hop; open .; vlc music"
-alias house="cd $DANCE_DIR/house; open .; vlc music"
-alias ss="cd $DANCE_DIR/salsa; open .; vlc music"
 
 ###
 # 🎹  music
@@ -129,6 +121,7 @@ alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 alias cppath='pwd | pbcopy'
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias d="pwd"
+alias dance="cd $DANCE_DIR; open ."
 alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
 alias ds="qing .DS_Store"
@@ -197,12 +190,13 @@ alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Deskt
 alias trs="trans :es -I"
 alias upbp="source $HOME/.bash_profile"
 alias vc="open $HOME/.vimrc"
+alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 alias yin="cd /Volumes/music-usb"
 alias ytd='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0'
 alias ytdv='youtube-dl --format mp4'
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/02"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/03"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
