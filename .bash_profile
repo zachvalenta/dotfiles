@@ -30,21 +30,12 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
 alias crud="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/crud"
 alias db="cd $HOME/Desktop/zvmac/materials/sw/za/db"
-alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg _model_"
+alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg -A 1 _model_"
 alias ml="open $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/music-lib/README.md"
 alias swaf="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts/notes/1992-swafford-vintage-guide-to-classical-music.md"
 alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
 alias sms="rg todo ~/Desktop/zvmac/notes/jay/za/channel.md"
 
-
-###
-# 🎹  music
-###
-
-alias muz="cd $MUSIC_DIR; open ."
-alias bsong="cd $MUSIC_DIR/bass/songs/; open *.png"
-alias gsong="cd $MUSIC_DIR/guitar/songs/; bat whats-up.md"
-alias gcor="cd $MUSIC_DIR/guitar/songs/; bat chords.md"
 
 ###
 # 💾  git
@@ -151,6 +142,8 @@ alias mat="cd $HOME/Desktop/zvmac/materials"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
+alias gcor="bat $MUSIC_DIR/guitar/chords.md"
+alias muz="cd $MUSIC_DIR"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias o="open"
 alias oo="open ."
