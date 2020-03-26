@@ -9,7 +9,6 @@ date
 # 🌐  globals
 ###
 
-DANCE_DIR="$HOME/Desktop/zvmac/materials/za/passions/dance"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 MUSIC_DIR="$HOME/Desktop/zvmac/materials/za/passions/music"
 export MANPAGER=bat
@@ -112,7 +111,7 @@ alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 alias cppath='pwd | pbcopy'
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias d="pwd"
-alias dance="cd $DANCE_DIR; open ."
+alias dance="cd $HOME/Desktop/zvmac/materials/za/passions/dance"
 alias desk="cd $HOME/Desktop"
 alias dot="cd $DOTFILES_DIR"
 alias ds="qing .DS_Store"
