@@ -32,7 +32,6 @@ alias db="cd $HOME/Desktop/zvmac/materials/sw/za/db"
 alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
 alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg -A 1 _model_"
 alias ml="open $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/music-lib/README.md"
-alias swaf="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts/notes/1992-swafford-vintage-guide-to-classical-music.md"
 alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
 
 

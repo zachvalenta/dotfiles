@@ -1,6 +1,7 @@
 asciinema
 automake
 bat
+broot
 cmake
 cmus
 dep
