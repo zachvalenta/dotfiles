@@ -28,6 +28,7 @@ ncdu
 neofetch
 nginx
 node
+pastel
 pdfgrep
 pgcli
 pkg-config
