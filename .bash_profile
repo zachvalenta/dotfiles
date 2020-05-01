@@ -10,7 +10,6 @@ date
 ###
 
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
-MUSIC_DIR="$HOME/Desktop/zvmac/materials/za/passions/music"
 export MANPAGER=bat
 
 ###
@@ -140,8 +139,7 @@ alias mat="cd $HOME/Desktop/zvmac/materials"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
-alias gcor="bat $MUSIC_DIR/guitar/chords.md"
-alias muz="cd $MUSIC_DIR; t 2"
+alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; t 2"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias o="open"
 alias oo="open ."
@@ -181,13 +179,14 @@ alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Deskt
 alias trs="trans :es -I"
 alias upbp="source $HOME/.bash_profile"
 alias vc="open $HOME/.vimrc"
+alias viz="cd $HOME/Desktop/zvmac/materials/za/passions/viz"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 alias yin="cd /Volumes/music-usb"
 alias ytd='youtube-dl --extract-audio --audio-format m4a'
 alias ytdv='youtube-dl --format mp4'
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/04"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/05"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
