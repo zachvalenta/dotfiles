@@ -39,6 +39,7 @@ ripgrep
 scc
 shellcheck
 sphinx-doc
+termtosvg
 terraform
 tig
 tldr
