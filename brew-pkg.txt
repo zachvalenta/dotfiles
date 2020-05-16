@@ -13,6 +13,7 @@ ffmpeg
 flyway
 fzf
 git
+git-delta
 cjbassi/gotop/gotop
 gron
 heroku/brew/heroku
