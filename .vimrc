@@ -1,19 +1,19 @@
-" DREW NEIL'S MINIMAL CONFIG [PV xxv]
+" [PV xxv]
 set nocompatible
 filetype plugin on
 
-" SEARCH Practice Vim 10.51
+" [PV 10.51]
 set incsearch " highlight matches as you type
 set hlsearch " highlight matches from last search
 
 " ZA
+set relativenumber "relative line numbers
+syntax enable "highlighting
+:set backspace=indent,eol,start "macOS delete key workaround https://stackoverflow.com/a/22390576
 set hidden "idk
 set number "show line numbers
-set relativenumber "relative line numbers
-:set backspace=indent,eol,start "macOS delete key workaround https://stackoverflow.com/a/22390576
-syntax enable "highlighting
-" CHANGE FORMATTING ON ENTER/EXIST INSERT MODE
-set cursorline " https://stackoverflow.com/a/7619510/6813490 + http://yannesposito.com/Scratch/en/blog/Vim-as-IDE/
+
+" highlight on enter/exist insert mode https://stackoverflow.com/a/7619510/6813490 http://yannesposito.com/Scratch/en/blog/Vim-as-IDE/
+set cursorline
 autocmd InsertEnter * highlight CursorLine ctermfg=white ctermbg=blue
 autocmd InsertLeave * highlight CursorLine ctermfg=None ctermbg=None
-" nnoremap Y yg_ "Make Y yank till end of line https://stackoverflow.com/a/45536949/6813490
