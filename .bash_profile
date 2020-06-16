@@ -35,6 +35,15 @@ alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
 
 
 ###
+# 🚢 docker
+###
+
+alias mt="docker"
+alias mtl="docker ps -a"  # list all containers
+alias mtc="docker container prune -f"  # rm all stopped containers
+alias mti="docker image prune -af"  # rm all dangling/unused images
+
+###
 # 💾  git
 ###
 
@@ -141,9 +150,9 @@ alias mat="cd $HOME/Desktop/zvmac/materials"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
-alias mt="docker"
 alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; t 2"
 alias notes="cd $HOME/Desktop/zvmac/notes"
+alias nf="cd ~/Desktop/zvmac/notes/za/non-fiction; t"
 alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
