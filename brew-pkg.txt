@@ -18,6 +18,7 @@ gron
 hadolint
 heroku/brew/heroku
 httpie
+eddieantonio/eddieantonio/imgcat
 irssi
 jq
 leiningen
