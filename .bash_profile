@@ -40,15 +40,14 @@ alias ml="open $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/music-lib/README.m
 alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; t 2"
 alias yin="cd /Volumes/music-usb"
 
-
 ###
 # 🚢 docker
 ###
 
 alias mt="docker"
-alias mtl="docker ps -a"  # list all containers
-alias mtc="docker container prune -f"  # rm all stopped containers
-alias mti="docker image prune -af"  # rm all dangling/unused images
+alias mtc="docker ps -a"  # list containers (running, stopped)
+alias mti="docker images"  # list images
+alias mtp="docker container prune -f; docker image prune -af"  # rm stopped containers, dangling/unused images
 
 ###
 # 💾  git
