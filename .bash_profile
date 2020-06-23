@@ -26,12 +26,19 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
-alias crud="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/crud"
 alias db="cd $HOME/Desktop/zvmac/materials/sw/za/db"
+alias fl="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
 alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
 alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg -A 1 _model_"
+
+###
+# 🎹 music
+###
+
+alias key="imgcat $HOME/Desktop/zvmac/materials/za/passions/music/theory/30-keys.jpg"
 alias ml="open $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/music-lib/README.md"
-alias skel="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/skeleton"
+alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; t 2"
+alias yin="cd /Volumes/music-usb"
 
 
 ###
@@ -150,7 +157,6 @@ alias mat="cd $HOME/Desktop/zvmac/materials"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
-alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; t 2"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias nf="cd ~/Desktop/zvmac/notes/za/non-fiction; t"
 alias o="open"
@@ -195,7 +201,6 @@ alias viz="cd $HOME/Desktop/zvmac/materials/za/passions/viz"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
-alias yin="cd /Volumes/music-usb"
 alias ytd='youtube-dl --extract-audio --audio-format m4a'
 alias ytdv='youtube-dl --format mp4'
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/06"
