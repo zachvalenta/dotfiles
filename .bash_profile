@@ -47,7 +47,7 @@ alias yin="cd /Volumes/music-usb"
 alias mt="docker"
 alias mtc="docker ps -a"  # list containers (running, stopped)
 alias mti="docker images"  # list images
-alias mtp="docker container prune -f; docker image prune -af"  # rm stopped containers, dangling/unused images
+alias mtp="docker stop $(docker ps -a -q); docker container prune -f; docker image prune -af"  # stop/rm containers, rm dangling/unused images https://gist.github.com/evanscottgray/8571828
 
 ###
 # 💾  git
