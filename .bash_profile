@@ -51,7 +51,7 @@ alias mti="docker images"  # list images
 alias mtv="docker volume ls"  # list volumes
 alias mtl="docker ps -a; docker images; docker volume ls"  # list all
 # stop containers, rm (stopped containers, unused volumes, dangling images), rm unused images
-alias mtp="docker ps -qa | xargs docker stop; docker system prune --volumes -f; docker image prune -af"
+alias mtp="docker ps -qa | xargs docker stop; docker system prune --volumes -f; docker image prune -af; mtl"
 
 ###
 # 💾  git
