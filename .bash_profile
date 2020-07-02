@@ -166,6 +166,7 @@ alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
+alias pod="cd $HOME/Desktop/pods"
 function rec(){
     if [ $# -eq 0 ]; then
         echo "pass a filename"
@@ -206,7 +207,7 @@ alias vsc="open -a 'Visual Studio Code'"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 alias ytd='youtube-dl --extract-audio --audio-format m4a'
 alias ytdv='youtube-dl --format mp4'
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/06"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/07"
 alias zbin="cd $HOME/bin"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
