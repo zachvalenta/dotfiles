@@ -37,6 +37,7 @@ alias track="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/tracking"
 # 🎹 music
 ###
 
+alias div="imgcat $HOME/Desktop/zvmac/materials/za/passions/music/theory/note-divisions.jpg"
 alias key="imgcat $HOME/Desktop/zvmac/materials/za/passions/music/theory/30-keys.jpg"
 alias ml="open $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/music-lib/README.md"
 alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; t 2"
