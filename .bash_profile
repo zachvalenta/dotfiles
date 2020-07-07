@@ -22,18 +22,6 @@ export EXA_COLORS="ga=38;5;213:gm=32:*.py=38;5;114:Dockerfile=38;5;074;1:docker-
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
-# 📍  tmp
-###
-
-alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
-alias db="cd $HOME/Desktop/zvmac/materials/sw/za/db"
-alias fl="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
-alias flp="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/docker-flask-postgres"
-alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
-alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg -A 1 _model_"
-alias track="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/tracking"
-
-###
 # 🎹 music
 ###
 
@@ -133,7 +121,7 @@ alias pipfr="pip freeze > requirements.txt"
 alias pipin="pip install -r requirements.txt"
 
 ###
-# 🦏  bash
+# 🛠 tools
 ###
 
 function app(){ # rm `rec` and replace with flag
@@ -148,28 +136,16 @@ function app(){ # rm `rec` and replace with flag
     fi
 }
 alias b="bat"
-alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
-alias cg="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts"
 alias cheat="cht.sh --shell"
-alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 alias cppath='pwd | pbcopy'
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias d="pwd"
-alias dance="cd $HOME/Desktop/zvmac/materials/za/passions/dance; t 3"
-alias desk="cd $HOME/Desktop"
-alias dot="cd $DOTFILES_DIR"
 alias ds="qing .DS_Store"
-alias duan="vim +/'## shorts' $HOME/Desktop/zvmac/notes/za/non-fiction/business/operations.md"
-alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/non-fiction/za/cogsci.md"
-alias goc="cd $HOME/go"
-alias gop="cd $HOME/Desktop/zvmac/materials/sw/lang/future/golang"
 alias grep="grep --color=auto -n"
-alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
-alias ind="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 function jbp(){
     jb | grep "$1"
 }
@@ -186,14 +162,8 @@ function l(){
         exa -al --classify --git --git-ignore -I '.git|.DS_Store'
     fi
 }
-alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open photos"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias m="make"
-alias mat="cd $HOME/Desktop/zvmac/materials"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
-alias notes="cd $HOME/Desktop/zvmac/notes"
-alias nf="cd ~/Desktop/zvmac/notes/za/non-fiction; t"
 alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
@@ -211,9 +181,6 @@ function rec(){
 }
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
-alias site="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site"
-alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
-alias sw="cd $HOME/Desktop/zvmac/materials/sw"
 function t(){
     if [ $# -eq 2 ]; then
         exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store' "$2"
@@ -228,17 +195,54 @@ function t(){
         exa -al --tree --git-ignore -I '.git|.DS_Store'
     fi
 }
-alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias trs="trans :es -I"
 alias upbp="source $HOME/.bash_profile"
-alias vc="open $HOME/.vimrc"
-alias viz="cd $HOME/Desktop/zvmac/materials/za/passions/viz"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/07"
-alias zbin="cd $HOME/bin"
+
+###
+# 🛣 navigate
+###
+
+# open specific files
+alias bp="vsc $DOTFILES_DIR/.bash_profile"
+alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
+alias duan="vim +/'## shorts' $HOME/Desktop/zvmac/notes/za/non-fiction/business/operations.md"
+alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/non-fiction/za/cogsci.md"
+alias ind="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
+alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
+alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
+alias vc="open $HOME/.vimrc"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
+
+# goto - code
+alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
+alias db="cd $HOME/Desktop/zvmac/materials/sw/za/db"
+alias dot="cd $DOTFILES_DIR"
+alias fl="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
+alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
+alias goc="cd $HOME/go"
+alias gop="cd $HOME/Desktop/zvmac/materials/sw/lang/future/golang"
+alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
+alias sw="cd $HOME/Desktop/zvmac/materials/sw"
+alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg -A 1 _model_"
+alias zbin="cd $HOME/bin"
+
+# goto - general
+alias dance="cd $HOME/Desktop/zvmac/materials/za/passions/dance; t 3"
+alias cg="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts"
+alias desk="cd $HOME/Desktop"
+alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open photos"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
+alias mat="cd $HOME/Desktop/zvmac/materials"
+alias nf="cd ~/Desktop/zvmac/notes/za/non-fiction; t"
+alias notes="cd $HOME/Desktop/zvmac/notes"
+alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
+alias track="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/tracking"
+alias site="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site"
+alias viz="cd $HOME/Desktop/zvmac/materials/za/passions/viz"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/07"
 
 ###
 # 🗑  clean up
