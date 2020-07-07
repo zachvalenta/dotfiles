@@ -60,13 +60,22 @@ alias ytdv='youtube-dl --format mp4'
 alias mt="docker"
 function mtl(){  # list all
     echo -e "\n";
-    echo "🚢";
+
+    echo "🚢 containers";
+    printf %"$COLUMNS"s | tr " " "-"
+    echo -e "\n";
     docker ps -a;
     echo -e "\n";
-    echo "💾";
+
+    echo "💾 images";
+    printf %"$COLUMNS"s | tr " " "-"
+    echo -e "\n";
     docker images;
     echo -e "\n";
-    echo "🗄";
+
+    echo "🗄  volumes";
+    printf %"$COLUMNS"s | tr " " "-"
+    echo -e "\n";
     docker volume ls;
     echo -e "\n";
 }
