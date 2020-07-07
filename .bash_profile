@@ -110,6 +110,7 @@ function ga(){
 }
 alias gds="git ds"
 alias gl="git l"
+alias glb="git cherry -v master '$(git rev-parse --abbrev-ref HEAD)'"
 alias gc="git c"
 
 ###
