@@ -11,5 +11,9 @@ apps are exposed on your $PATH at /Users/zach/.local/bin
     - ansible-playbook
     - ansible-pull
     - ansible-vault
-   package poetry 1.0.0, Python 3.6.1
+   package flake8 3.8.3, Python 3.6.1
+    - flake8
+   package poetry 1.0.5, Python 3.6.1
     - poetry
+   package visidata 1.5.2, Python 3.6.1
+    - vd
