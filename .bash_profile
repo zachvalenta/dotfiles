@@ -111,7 +111,6 @@ export PIP_REQUIRE_VIRTUALENV=true
 
 alias py3="python3"
 alias tre="/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin/python3"
-alias pipx="python3 -m pipx"
 alias bpy="bpython"
 alias venv="python3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
 alias on="source venv/bin/activate"
@@ -120,6 +119,13 @@ alias off="deactivate"
 ###
 # 🛠 tools
 ###
+
+# packages
+alias brewfr="brew leaves > $DOTFILES_DIR/pkg-brew.txt"
+alias brewup="brew outdated | xargs brew upgrade"
+alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/pkg-vsc.txt"
+alias pipx="python3 -m pipx"
+alias pipxfr="pipx list > $DOTFILES_DIR/pkg-pipx.txt"
 
 # hiring
 function app(){ # rm `rec` and replace with flag
@@ -146,8 +152,6 @@ function rec(){
 }
 
 alias b="bat"
-alias brewup="brew outdated | xargs brew upgrade"
-alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
 alias cheat="cht.sh --shell"
@@ -198,7 +202,6 @@ alias trs="trans :es -I"
 alias upbp="source $HOME/.bash_profile"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
-alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc-pkg.txt"
 
 ###
 # 🛣 navigate
