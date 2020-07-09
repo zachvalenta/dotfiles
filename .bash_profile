@@ -125,6 +125,7 @@ alias pipin="pip install -r requirements.txt"
 # 🛠 tools
 ###
 
+# hiring
 function app(){ # rm `rec` and replace with flag
     if [ $# -eq 0 ]; then
         echo "pass a filename"
@@ -136,6 +137,18 @@ function app(){ # rm `rec` and replace with flag
         vsc "$ms"/throwaway/"$fname"
     fi
 }
+function rec(){
+    if [ $# -eq 0 ]; then
+        echo "pass a filename"
+        return 1
+    else
+        fname="$1.md";
+        ms="$HOME/Desktop/zvmac/materials/sw/za/hiring/"
+        cp "$ms"/cv/template-recruiter.md "$ms"/throwaway/"$fname"
+        open "$ms"/throwaway/"$fname"
+    fi
+}
+
 alias b="bat"
 alias brewup="brew outdated | xargs brew upgrade"
 alias brewfr="brew leaves > $DOTFILES_DIR/brew-pkg.txt"
@@ -169,17 +182,6 @@ alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias pg="pgcli"
-function rec(){
-    if [ $# -eq 0 ]; then
-        echo "pass a filename"
-        return 1
-    else
-        fname="$1.md";
-        ms="$HOME/Desktop/zvmac/materials/sw/za/hiring/"
-        cp "$ms"/cv/template-recruiter.md "$ms"/throwaway/"$fname"
-        open "$ms"/throwaway/"$fname"
-    fi
-}
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 function t(){
