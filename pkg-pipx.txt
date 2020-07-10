@@ -11,6 +11,9 @@ apps are exposed on your $PATH at /Users/zach/.local/bin
     - ansible-playbook
     - ansible-pull
     - ansible-vault
+   package black 19.10b0, Python 3.6.1
+    - black
+    - blackd
    package flake8 3.8.3, Python 3.6.1
     - flake8
    package poetry 1.0.5, Python 3.6.1
