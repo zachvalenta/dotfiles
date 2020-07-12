@@ -120,9 +120,10 @@ alias off="deactivate"
 # 🛠 tools
 ###
 
-# packages
+# packages and extensions
 alias brewfr="brew leaves > $DOTFILES_DIR/pkg-brew.txt"
 alias brewup="brew outdated | xargs brew upgrade"
+alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/pkg-vsc.txt"
 alias pipx="python3 -m pipx"
 alias pipxfr="pipx list > $DOTFILES_DIR/pkg-pipx.txt"
@@ -156,7 +157,6 @@ alias c="clear"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
 alias cheat="cht.sh --shell"
 alias cppath='pwd | pbcopy'
-alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias d="pwd"
 alias ds="qing .DS_Store"
 alias grep="grep --color=auto -n"
@@ -210,7 +210,7 @@ alias vsc="open -a 'Visual Studio Code'"
 # open specific files
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
-alias duan="vim +/'## shorts' $HOME/Desktop/zvmac/notes/za/non-fiction/business/operations.md"
+alias duan="vim +/'# SHORTS' $HOME/Desktop/zvmac/notes/za/non-fiction/business/rough-cut.md"
 alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/non-fiction/za/cogsci.md"
 alias ind="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
