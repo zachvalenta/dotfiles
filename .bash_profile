@@ -128,6 +128,29 @@ alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/pkg-vsc.txt"
 alias pipx="python3 -m pipx"
 alias pipxfr="pipx list > $DOTFILES_DIR/pkg-pipx.txt"
 
+# exa ports of ls and tree
+function l(){
+    if [ "$1" ]; then
+        exa -al --classify --git --git-ignore -I '.git|.DS_Store' "$1" 
+    else
+        exa -al --classify --git --git-ignore -I '.git|.DS_Store'
+    fi
+}
+function t(){
+    if [ $# -eq 2 ]; then
+        exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store' "$2"
+    elif [ $# -eq 1 ]
+    then
+        if [[ "$1" =~ ^-?[0-9]+[.,]?[0-9]*$ ]]; then  # break on dir prepended w/ digits e.g. `logs/2019`
+            exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store'
+        else
+            exa -al --tree --git-ignore -I '.git|.DS_Store' "$1"
+        fi
+    else
+        exa -al --tree --git-ignore -I '.git|.DS_Store'
+    fi
+}
+
 # hiring
 function app(){ # rm `rec` and replace with flag
     if [ $# -eq 0 ]; then
@@ -152,14 +175,7 @@ function rec(){
     fi
 }
 
-alias b="bat"
-alias c="clear"
-alias cd='function cdl(){ cd "$1"; l;}; cdl'
-alias cheat="cht.sh --shell"
-alias cppath='pwd | pbcopy'
-alias d="pwd"
-alias ds="qing .DS_Store"
-alias grep="grep --color=auto -n"
+# misc
 function jbp(){
     jb | grep "$1"
 }
@@ -169,13 +185,14 @@ function kai(){
     touch "$cwd/$fname";
     open "$cwd/$fname";
 }
-function l(){
-    if [ "$1" ]; then
-        exa -al --classify --git --git-ignore -I '.git|.DS_Store' "$1" 
-    else
-        exa -al --classify --git --git-ignore -I '.git|.DS_Store'
-    fi
-}
+alias b="bat"
+alias c="clear"
+alias cd='function cdl(){ cd "$1"; l;}; cdl'
+alias cheat="cht.sh --shell"
+alias cppath='pwd | pbcopy'
+alias d="pwd"
+alias ds="qing .DS_Store"
+alias grep="grep --color=auto -n"
 alias m="make"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
 alias o="open"
@@ -184,20 +201,6 @@ alias pdfg="pdfgrep -in"
 alias pg="pgcli"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
-function t(){
-    if [ $# -eq 2 ]; then
-        exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store' "$2"
-    elif [ $# -eq 1 ]
-    then
-        if [[ "$1" =~ ^-?[0-9]+[.,]?[0-9]*$ ]]; then  # break on dir prepended w/ digits e.g. `logs/2019`
-            exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store'
-        else
-            exa -al --tree --git-ignore -I '.git|.DS_Store' "$1"
-        fi
-    else
-        exa -al --tree --git-ignore -I '.git|.DS_Store'
-    fi
-}
 alias trs="trans :es -I"
 alias upbp="source $HOME/.bash_profile"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
@@ -230,7 +233,7 @@ alias gop="cd $HOME/Desktop/zvmac/materials/sw/lang/future/golang"
 alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
 alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
 alias sw="cd $HOME/Desktop/zvmac/materials/sw"
-alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg -A 1 _model_"
+alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg _model_"
 alias zbin="cd $HOME/bin"
 
 # goto - general
