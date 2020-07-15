@@ -6,6 +6,7 @@ cmake
 cmus
 dep
 diff-so-fancy
+dive
 doxygen
 exa
 fd
