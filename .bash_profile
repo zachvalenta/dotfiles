@@ -26,7 +26,7 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 ###
 
 alias div="imgcat $HOME/Desktop/zvmac/materials/za/passions/music/theory/note-divisions.jpg"
-alias key="imgcat $HOME/Desktop/zvmac/materials/za/passions/music/theory/30-keys.jpg"
+alias key="cd $HOME/Desktop/zvmac/materials/za/passions/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
 alias ml="open $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/music-lib/README.md"
 alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; t 2"
 alias yin="cd /Volumes/music-usb"
@@ -35,7 +35,7 @@ alias yin="cd /Volumes/music-usb"
 # 📡 media
 ###
 
-alias pods="cd $HOME/Desktop/pods/one-off"
+alias pods="cd $HOME/Desktop/pods"
 alias podp="cd $HOME/Desktop/pods/one-off; kaiff"
 alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ytd='youtube-dl --extract-audio --audio-format m4a'
@@ -81,11 +81,12 @@ alias mtpc="docker ps -qa | xargs docker stop; docker system prune --volumes -f"
 alias gco="open $DOTFILES_DIR/.gitconfig"
 alias gic="touch .gitignore; gie"
 alias gie="open .gitignore"
-alias gb="git b"
-alias gs="git s"
-alias gd="git d"
-alias gai="git ai"
-function ga(){
+alias gb="git b"  # current branch
+alias gs="git s"  # status
+alias gd="git d"  # diff working directory and repo
+alias gds="git ds"  # diff staging area and repo
+alias gai="git ai"  # interactive stage
+function ga(){  # add specific file(s) or add all (sans args)
     if [ $# -eq 0 ]; then
         git add -A
         return 0
@@ -96,10 +97,9 @@ function ga(){
         done
     fi
 }
-alias gds="git ds"
-alias gl="git l"
-alias glb="git cherry -v master '$(git rev-parse --abbrev-ref HEAD)'"
-alias gc="git c"
+alias gl="git l"  # prettified log of previous 10 commits
+alias glb="git cherry -v master '$(git rev-parse --abbrev-ref HEAD)'"  # log commits on current branch *not* on master
+alias gc="git c"  # commit
 
 ###
 # 🐍  python
