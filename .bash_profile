@@ -11,6 +11,7 @@ date
 
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 export MANPAGER=bat
+export RIPGREP_CONFIG_PATH="$DOTFILES_DIR/.ripgreprc"
 
 ###
 # 🎨  prompt
