@@ -127,7 +127,7 @@ alias brewup="brew outdated | xargs brew upgrade"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/pkg-vsc.txt"
 alias pipx="python3 -m pipx"
-alias pipxfr="pipx list > $DOTFILES_DIR/pkg-pipx.txt"
+alias pipxfr="pipx list > $DOTFILES_DIR/python/pkg-pipx.txt"
 
 # exa ports of ls and tree
 function l(){
