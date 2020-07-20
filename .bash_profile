@@ -38,7 +38,7 @@ alias yin="cd /Volumes/music-usb"
 
 alias pods="cd $HOME/Desktop/pods"
 alias podp="cd $HOME/Desktop/pods/one-off; kaiff"
-alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
+alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -e m4a -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ytd='youtube-dl --extract-audio --audio-format m4a'
 alias ytdv='youtube-dl --format mp4'
 
@@ -125,7 +125,7 @@ alias off="deactivate"
 alias brewfr="brew leaves > $DOTFILES_DIR/pkg-brew.txt"
 alias brewup="brew outdated | xargs brew upgrade"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
-alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/pkg-vsc.txt"
+alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc/pkg-vsc.txt"
 alias pipx="python3 -m pipx"
 alias pipxfr="pipx list > $DOTFILES_DIR/python/pkg-pipx.txt"
 
