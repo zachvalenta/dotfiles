@@ -196,6 +196,7 @@ alias ds="qing .DS_Store"
 alias grep="grep --color=auto -n"
 alias m="make"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
+alias nsl='function nsl(){ echo ""; nslookup "$1" | tail -3;}; nsl'
 alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
