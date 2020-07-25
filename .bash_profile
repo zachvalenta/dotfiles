@@ -10,6 +10,7 @@ date
 ###
 
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
+NOTES_DIR="$HOME/Desktop/zvmac/notes"
 export MANPAGER=bat
 export RIPGREP_CONFIG_PATH="$DOTFILES_DIR/.ripgreprc"
 
@@ -215,10 +216,12 @@ alias vsc="open -a 'Visual Studio Code'"
 # open specific files
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
+alias darpa="imgcat $HOME/Desktop/zvmac/materials/sw/network/darpa.png"
 alias duan="vim +/'# SHORTS' $HOME/Desktop/zvmac/notes/za/non-fiction/business/rough-cut.md"
 alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/non-fiction/za/cogsci.md"
 alias ind="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
+alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
@@ -249,6 +252,7 @@ alias mat="cd $HOME/Desktop/zvmac/materials"
 alias nf="cd ~/Desktop/zvmac/notes/za/non-fiction; t"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
+alias til="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/today-i-learned"
 alias track="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/tracking"
 alias viz="cd $HOME/Desktop/zvmac/materials/za/passions/viz"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/07"
