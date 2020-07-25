@@ -9,6 +9,7 @@ date
 # 🌐  globals
 ###
 
+CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 NOTES_DIR="$HOME/Desktop/zvmac/notes"
 export MANPAGER=bat
@@ -216,10 +217,10 @@ alias vsc="open -a 'Visual Studio Code'"
 # open specific files
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
-alias darpa="imgcat $HOME/Desktop/zvmac/materials/sw/network/darpa.png"
+alias darpa="imgcat $CODE_DIR/network/darpa.png"
 alias duan="vim +/'# SHORTS' $HOME/Desktop/zvmac/notes/za/non-fiction/business/rough-cut.md"
 alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/non-fiction/za/cogsci.md"
-alias ind="open $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
+alias ind="open $CODE_DIR/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
@@ -227,36 +228,36 @@ alias vc="open $HOME/.vimrc"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
 # goto - code
-alias algos="cd $HOME/Desktop/zvmac/materials/sw/za/algos/algos"
+alias algos="cd $CODE_DIR/za/algos/algos"
 alias db="cd $HOME/Desktop/zvmac/materials/sw/za/db"
 alias dot="cd $DOTFILES_DIR"
-alias fl="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask"
+alias fl="cd $CODE_DIR/lang/python/flask"
 alias flenv="cd $HOME/Desktop/zvmac/materials/sw/lang/python/flask/docker-flask-envs-secrets"
-alias dj="cd $HOME/Desktop/zvmac/materials/sw/lang/python/django"
+alias dj="cd $CODE_DIR/lang/python/django"
 alias goc="cd $HOME/go"
-alias gop="cd $HOME/Desktop/zvmac/materials/sw/lang/future/golang"
-alias ms="cd $HOME/Desktop/zvmac/materials/sw/za/hiring"
-alias py="cd $HOME/Desktop/zvmac/materials/sw/lang/python"
-alias sw="cd $HOME/Desktop/zvmac/materials/sw"
-alias sjk="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku; rg _model_"
+alias gop="cd $CODE_DIR/lang/future/golang"
+alias ms="cd $CODE_DIR/hiring"
+alias py="cd $CODE_DIR/lang/python"
+alias sw="cd $CODE_DIR"
+alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias zbin="cd $HOME/bin"
 
 # goto - general
 alias dance="cd $HOME/Desktop/zvmac/materials/za/passions/dance; t 3"
-alias cg="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site/drafts"
+alias cg="cd $CODE_DIR/lang/html-css/personal-site/drafts"
 alias desk="cd $HOME/Desktop"
-alias jay="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/music-site"
+alias jay="cd $CODE_DIR/sw/lang/html-css/music-site"
 alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open photos"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias mat="cd $HOME/Desktop/zvmac/materials"
 alias nf="cd ~/Desktop/zvmac/notes/za/non-fiction; t"
 alias notes="cd $HOME/Desktop/zvmac/notes"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
-alias til="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/today-i-learned"
-alias track="cd $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/tracking"
+alias til="cd $CODE_DIR/lang/html-css/today-i-learned"
+alias track="cd $CODE_DIR/db/shujuku/tracking"
 alias viz="cd $HOME/Desktop/zvmac/materials/za/passions/viz"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/07"
-alias zach="cd $HOME/Desktop/zvmac/materials/sw/lang/html-css/personal-site"
+alias zach="cd $CODE_DIR/lang/html-css/personal-site"
 
 ###
 # 🗑  clean up
