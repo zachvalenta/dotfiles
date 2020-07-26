@@ -127,7 +127,7 @@ alias off="deactivate"
 alias brewfr="brew leaves > $DOTFILES_DIR/pkg-brew.txt"
 alias brewup="brew outdated | xargs brew upgrade"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
-alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vsc/pkg-vsc.txt"
+alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vs-code/pkg-vsc.txt"
 alias pipx="python3 -m pipx"
 alias pipxfr="pipx list > $DOTFILES_DIR/python/pkg-pipx.txt"
 
