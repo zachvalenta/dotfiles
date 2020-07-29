@@ -12,6 +12,7 @@ syntax enable "highlighting
 :set backspace=indent,eol,start "macOS delete key workaround https://stackoverflow.com/a/22390576
 set hidden "idk
 set number "show line numbers
+set ts=4 " map tab key to add 4 spaces https://www.fullstackpython.com/vim.html
 
 " highlight on enter/exist insert mode https://stackoverflow.com/a/7619510/6813490 http://yannesposito.com/Scratch/en/blog/Vim-as-IDE/
 set cursorline
