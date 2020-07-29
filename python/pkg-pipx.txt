@@ -11,6 +11,8 @@ apps are exposed on your $PATH at /Users/zach/.local/bin
     - ansible-playbook
     - ansible-pull
     - ansible-vault
+   package ansible-lint 4.2.0, Python 3.6.1
+    - ansible-lint
    package black 19.10b0, Python 3.6.1
     - black
     - blackd
