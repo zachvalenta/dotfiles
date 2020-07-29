@@ -29,10 +29,9 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 🎹 music
 ###
 
-alias div="imgcat $MAT_DIR/za/passions/music/theory/note-divisions.jpg"
-alias key="cd $MAT_DIR/za/passions/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
-alias ml="open $MAT_DIR/sw/za/db/shujuku/music-lib/README.md"
-alias muz="cd $MAT_DIR/za/passions/music; t 2"
+alias div="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg"
+alias key="cd $MAT_DIR/za/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
+alias muz="cd $MAT_DIR/za/music; t 2"
 alias yin="cd /Volumes/music-usb"
 
 ###
@@ -41,7 +40,7 @@ alias yin="cd /Volumes/music-usb"
 
 alias pods="cd $MAT_DIR/za/pods"
 alias podp="cd $MAT_DIR/za/pods/one-off; kaiff"
-alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
+alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -E yuyan/ -E music/ -E dance/ -E pods/"
 alias ytd='youtube-dl --extract-audio --audio-format m4a'
 alias ytdv='youtube-dl --format mp4'
 
@@ -245,7 +244,7 @@ alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias zbin="cd $HOME/bin"
 
 # goto - general
-alias dance="cd $HOME/Desktop/zvmac/materials/za/passions/dance; t 3"
+alias dance="cd $MAT_DIR/za/dance; t 3"
 alias cg="cd $CODE_DIR/lang/html-css/personal-site/drafts"
 alias desk="cd $HOME/Desktop"
 alias jay="cd $CODE_DIR/sw/lang/html-css/music-site"
@@ -256,7 +255,7 @@ alias notes='cd $NOTES_DIR; exa -al --tree --git-ignore -I ".git|.DS_Store|jay"'
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias til="cd $CODE_DIR/lang/html-css/today-i-learned"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
-alias viz="cd $MAT_DIR/za/passions/viz"
+alias viz="cd $MAT_DIR/za/viz"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/07"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
 
