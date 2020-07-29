@@ -1,1 +1,5 @@
-Dotfiles and miscellanea for: bash, Git, httpie, Homebrew pkgs, iTerm, Vim, Vimium, VS Code, et al.
+Dotfiles and config for: 
+
+* python: pdb, pdb++, pipx packages, Poetry config
+* vs code: settings, keybindings, extensions, snippets
+* misc: bash, Git, httpie, Homebrew pkgs, iTerm, Vim, Vimium
