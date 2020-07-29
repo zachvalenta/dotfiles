@@ -12,6 +12,7 @@ date
 CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 NOTES_DIR="$HOME/Desktop/zvmac/notes"
+MAT_DIR="$HOME/Desktop/zvmac/materials"
 export MANPAGER=bat
 export RIPGREP_CONFIG_PATH="$DOTFILES_DIR/.ripgreprc"
 
@@ -28,19 +29,19 @@ export LSCOLORS=gxfxcxdxbxegedabaggagx
 # 🎹 music
 ###
 
-alias div="imgcat $HOME/Desktop/zvmac/materials/za/passions/music/theory/note-divisions.jpg"
-alias key="cd $HOME/Desktop/zvmac/materials/za/passions/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
-alias ml="open $HOME/Desktop/zvmac/materials/sw/za/db/shujuku/music-lib/README.md"
-alias muz="cd $HOME/Desktop/zvmac/materials/za/passions/music; t 2"
+alias div="imgcat $MAT_DIR/za/passions/music/theory/note-divisions.jpg"
+alias key="cd $MAT_DIR/za/passions/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
+alias ml="open $MAT_DIR/sw/za/db/shujuku/music-lib/README.md"
+alias muz="cd $MAT_DIR/za/passions/music; t 2"
 alias yin="cd /Volumes/music-usb"
 
 ###
 # 📡 media
 ###
 
-alias pods="cd $HOME/Desktop/pods"
-alias podp="cd $HOME/Desktop/pods/one-off; kaiff"
-alias mp3="cd $HOME/Desktop/zvmac/materials/za; fd -e mp3 -e m4a -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
+alias pods="cd $MAT_DIR/za/pods"
+alias podp="cd $MAT_DIR/za/pods/one-off; kaiff"
+alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -E non-fiction/yuyan/ -E passions/music/ -E passions/dance/"
 alias ytd='youtube-dl --extract-audio --audio-format m4a'
 alias ytdv='youtube-dl --format mp4'
 
@@ -220,7 +221,7 @@ alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 alias darpa="imgcat $CODE_DIR/network/darpa.png"
 alias duan="vim +/'# SHORTS' $HOME/Desktop/zvmac/notes/za/non-fiction/business/rough-cut.md"
 alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/za/cogsci.md"
-alias ind="open $CODE_DIR/Desktop/zvmac/materials/sw/lang/html-css/personal-site/zachvalenta.github.io/index.html"
+alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
@@ -236,7 +237,7 @@ alias fl="cd $CODE_DIR/lang/python/flask"
 alias dj="cd $CODE_DIR/lang/python/django"
 alias goc="cd $HOME/go"
 alias gop="cd $CODE_DIR/lang/future/golang"
-alias grib="cd $HOME/Desktop/zvmac/materials/sw/lang/future/c/gribble"
+alias grib="cd $CODE_DIR/lang/future/c/gribble"
 alias ms="cd $CODE_DIR/hiring"
 alias py="cd $CODE_DIR/lang/python"
 alias sw="cd $CODE_DIR"
@@ -248,14 +249,14 @@ alias dance="cd $HOME/Desktop/zvmac/materials/za/passions/dance; t 3"
 alias cg="cd $CODE_DIR/lang/html-css/personal-site/drafts"
 alias desk="cd $HOME/Desktop"
 alias jay="cd $CODE_DIR/sw/lang/html-css/music-site"
-alias lj="cd $HOME/Desktop/zvmac/materials/jay/lianjie; open photos"
+alias lj="cd $MAT_DIR/jay/lianjie; open photos"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
-alias mat="cd $HOME/Desktop/zvmac/materials"
+alias mat="cd $MAT_DIR"
 alias notes='cd $NOTES_DIR; exa -al --tree --git-ignore -I ".git|.DS_Store|jay"'
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias til="cd $CODE_DIR/lang/html-css/today-i-learned"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
-alias viz="cd $HOME/Desktop/zvmac/materials/za/passions/viz"
+alias viz="cd $MAT_DIR/za/passions/viz"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/07"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
 
