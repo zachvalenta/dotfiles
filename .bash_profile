@@ -11,13 +11,14 @@ date
 
 CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
-NOTES_DIR="$HOME/Desktop/zvmac/notes"
 MAT_DIR="$HOME/Desktop/zvmac/materials"
+NOTES_DIR="$HOME/Desktop/zvmac/notes"
+
 export MANPAGER=bat
 export RIPGREP_CONFIG_PATH="$DOTFILES_DIR/.ripgreprc"
 
 ###
-# 🎨  prompt
+# 🎨  output
 ###
 
 export PS1='`echo "${PWD%/*}" | sed -e "s;\(/.\)[^/]*;\1;g"`/${PWD##*/} \$ '  # https://superuser.com/a/1014107/728972
@@ -229,6 +230,7 @@ alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
 
 # goto - code
 alias algos="cd $CODE_DIR/za/algos/algos"
+alias ans="cd $CODE_DIR/infra/ansible/hello-macos"
 alias book="cd $CODE_DIR/db/shujuku/bookcase"
 alias db="cd $CODE_DIR/db"
 alias dot="cd $DOTFILES_DIR"
@@ -244,14 +246,16 @@ alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias zbin="cd $HOME/bin"
 
 # goto - general
+alias mat="cd $MAT_DIR"
+alias notes='cd $NOTES_DIR; exa -al --tree --git-ignore -I ".git|.DS_Store|jay"'
+alias lj="cd $MAT_DIR/jay/lianjie; open photos"
+alias ht="cd $MAT_DIR/za"  # t 2 on all dir with depth greater than 1 `ls | xargs -I {} find {} -type d | wc -l`
+
 alias dance="cd $MAT_DIR/za/dance; t 3"
 alias cg="cd $CODE_DIR/lang/html-css/personal-site/drafts"
 alias desk="cd $HOME/Desktop"
-alias jay="cd $CODE_DIR/sw/lang/html-css/music-site"
-alias lj="cd $MAT_DIR/jay/lianjie; open photos"
+alias jay="cd $CODE_DIR/lang/html-css/music-site"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
-alias mat="cd $MAT_DIR"
-alias notes='cd $NOTES_DIR; exa -al --tree --git-ignore -I ".git|.DS_Store|jay"'
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias til="cd $CODE_DIR/lang/html-css/today-i-learned"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
