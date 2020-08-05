@@ -5,6 +5,7 @@
         "httpie": "1.0.2"
     },
     "default_options": [
-        "--style=monokai"
+        "--style=monokai",
+        "--print=HhBb"
     ]
 }
