@@ -29,12 +29,12 @@ makedepend
 ncdu
 neofetch
 neomutt
+newsboat
 nginx
 node
 pastel
 pdfgrep
 pgcli
-pkg-config
 postgresql
 python@2
 ranger
