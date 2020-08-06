@@ -8,13 +8,13 @@ dep
 diff-so-fancy
 dive
 doxygen
-dust
 exa
 fd
 ffmpeg
 flyway
 fzf
 git
+googler
 cjbassi/gotop/gotop
 gron
 hadolint
