@@ -8,6 +8,7 @@ dep
 diff-so-fancy
 dive
 doxygen
+dust
 exa
 fd
 ffmpeg
