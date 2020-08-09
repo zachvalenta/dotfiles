@@ -125,7 +125,7 @@ alias off="deactivate"
 ###
 
 # packages and extensions
-alias brewfr="brew leaves > $DOTFILES_DIR/pkg-brew.txt"
+alias brewfr="brew ls --versions > $DOTFILES_DIR/pkg-brew.txt"
 alias brewup="brew outdated | xargs brew upgrade"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vs-code/pkg-vsc.txt"
