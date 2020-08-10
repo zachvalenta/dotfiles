@@ -20,6 +20,8 @@ apps are exposed on your $PATH at /Users/zach/.local/bin
     - flake8
    package http-prompt 1.0.0, Python 3.6.1
     - http-prompt
+   package litecli 1.4.1, Python 3.6.1
+    - litecli
    package poetry 1.0.5, Python 3.6.1
     - poetry
    package visidata 1.5.2, Python 3.6.1
