@@ -190,7 +190,6 @@ function kai(){
     open "$cwd/$fname";
 }
 alias b="bat"
-alias br="broot"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
 alias cppath='pwd | pbcopy'
@@ -272,11 +271,8 @@ alias zach="cd $CODE_DIR/lang/html-css/personal-site"
 # 🗑  clean up
 ###
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-# my bin
-export PATH="/Users/zach/bin:${PATH}"
-# pipx
-export PATH="$PATH:/Users/zach/.local/bin"
-# go
-export PATH=$PATH:$HOME/go/bin
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function* --> Homebrew thing?
+export PATH="/Users/zach/bin:${PATH}"  # my bin
+export PATH="$PATH:/Users/zach/.local/bin"  # pipx
+export PATH=$PATH:$HOME/go/bin  # golang
+source /Users/zach/Library/Preferences/org.dystroy.broot/launcher/bash/br  # broot
