@@ -190,9 +190,9 @@ function kai(){
     open "$cwd/$fname";
 }
 alias b="bat"
+alias br="broot"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
-alias cheat="cht.sh --shell"
 alias cppath='pwd | pbcopy'
 alias d="pwd"
 alias ds="qing .DS_Store"
