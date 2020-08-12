@@ -1,1 +1,2 @@
 http://thorstenball.com/atom.xml
+https://jvns.ca/atom.xml
