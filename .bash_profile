@@ -214,6 +214,12 @@ alias vsc="open -a 'Visual Studio Code'"
 # 🛣 navigate
 ###
 
+# tmp
+alias todo="cd $CODE_DIR/lang/python/django/django-drf-vincent-todo"
+alias ym="cd $CODE_DIR/lang/python/django/migrations-sandbox"
+alias crud="cd $CODE_DIR/lang/python/django/crud"
+alias knr="cd $CODE_DIR/lang/future/c"
+
 # open specific files
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
@@ -225,15 +231,9 @@ alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://ed
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
-alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw//za/hiring.md"
+alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
 
 # goto - code
-alias todo="cd $CODE_DIR/lang/python/django/django-drf-vincent-todo"
-alias ym="cd $CODE_DIR/lang/python/django/migrations-sandbox"
-alias crud="cd $CODE_DIR/lang/python/django/crud"
-alias ans="cd $CODE_DIR/infra/ansible/hello-macos"
-alias knr="cd $CODE_DIR/lang/future/c"
-
 alias algos="cd $CODE_DIR/za/algos/algos"
 alias book="cd $CODE_DIR/db/shujuku/bookcase"
 alias db="cd $CODE_DIR/db"
@@ -268,7 +268,7 @@ alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/08"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
 
 ###
-# 🗑  clean up
+# mv to top
 ###
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function* --> Homebrew thing?
