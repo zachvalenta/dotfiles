@@ -24,6 +24,14 @@ execution = "$EDITOR {file}"
 invocation = "create {subpath}"
 execution = "$EDITOR {directory}/{subpath}"
 
+[[verbs]]
+key = "alt-p"
+execution = ":open_preview"
+
+[[verbs]]
+key = "alt-q"
+execution = ":close_preview"
+
 # If $PAGER isn't set on your computer, you should either set it
 #  or just replace it with your viewer of choice in the 'execution'
 #  pattern.
