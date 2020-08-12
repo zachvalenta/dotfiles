@@ -1,7 +1,0 @@
-forecast:7
-symbols:true
-show_humidity:true
-greeting_text:Weather in
-humidity_text:Humidity
-sunrise_text:Sunrise
-sunset_text:Sunset
