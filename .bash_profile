@@ -16,6 +16,11 @@ NOTES_DIR="$HOME/Desktop/zvmac/notes"
 
 export MANPAGER=bat
 export RIPGREP_CONFIG_PATH="$DOTFILES_DIR/.ripgreprc"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function* --> Homebrew thing?
+export PATH="/Users/zach/bin:${PATH}"  # my bin
+export PATH="$PATH:/Users/zach/.local/bin"  # pipx
+export PATH=$PATH:$HOME/go/bin  # golang
+source /Users/zach/Library/Preferences/org.dystroy.broot/launcher/bash/br  # broot
 
 ###
 # 🎨  output
@@ -202,7 +207,6 @@ alias nsl='function nsl(){ echo ""; nslookup "$1" | tail -3;}; nsl'
 alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
-alias pg="pgcli"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias trs="trans :es -I"
@@ -266,13 +270,3 @@ alias track="cd $CODE_DIR/db/shujuku/tracking"
 alias viz="cd $MAT_DIR/za/viz"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/08"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
-
-###
-# mv to top
-###
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function* --> Homebrew thing?
-export PATH="/Users/zach/bin:${PATH}"  # my bin
-export PATH="$PATH:/Users/zach/.local/bin"  # pipx
-export PATH=$PATH:$HOME/go/bin  # golang
-source /Users/zach/Library/Preferences/org.dystroy.broot/launcher/bash/br  # broot
