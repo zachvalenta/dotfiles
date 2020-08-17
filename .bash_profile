@@ -109,6 +109,7 @@ function ga(){  # add specific file(s) or add all (sans args)
 alias gl="git l"  # prettified log of previous 10 commits
 alias glb="git cherry -v master '$(git rev-parse --abbrev-ref HEAD)'"  # log commits on current branch *not* on master
 alias gc="git c"  # commit
+alias gshow="git log --format=%B -n 1"  # msg description for commit
 
 ###
 # 🐍  python
@@ -219,6 +220,8 @@ alias vsc="open -a 'Visual Studio Code'"
 ###
 
 # tmp
+alias sling="cat ~/Desktop/sling.md | pbcopy"
+alias qu='vim "+normal G$" ~/Desktop/music-queue.md'
 alias todo="cd $CODE_DIR/lang/python/django/django-drf-vincent-todo"
 alias ym="cd $CODE_DIR/lang/python/django/migrations-sandbox"
 alias crud="cd $CODE_DIR/lang/python/django/crud"
