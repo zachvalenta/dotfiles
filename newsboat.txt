@@ -1,3 +1,4 @@
 http://thorstenball.com/atom.xml
 https://jvns.ca/atom.xml
 https://www.martinfowler.com/feed.atom
+https://macwright.com/rss.xml
