@@ -28,7 +28,7 @@ source /Users/zach/Library/Preferences/org.dystroy.broot/launcher/bash/br  # bro
 
 export PS1='`echo "${PWD%/*}" | sed -e "s;\(/.\)[^/]*;\1;g"`/${PWD##*/} \$ '  # https://superuser.com/a/1014107/728972
 export CLICOLOR=1
-export EXA_COLORS="ga=38;5;213:gm=32:*.py=38;5;114:Dockerfile=38;5;074;1:docker-compose.yml=38;5;074;1:*.pdf=38;5;208:*.txt=38;5;244:*.html=38;5;137;1:*.env*=31;0;01:*.sql*=38;5;28"
+export EXA_COLORS="ga=38;5;213:gm=32:*.py=38;5;114:Dockerfile=38;5;074;1:docker-compose.*=38;5;074;1:*.pdf=38;5;208:*.txt=38;5;244:*.html=38;5;137;1:*.env*=31;0;01:*.sql*=38;5;28"
 export LSCOLORS=gxfxcxdxbxegedabaggagx
 
 ###
@@ -195,6 +195,16 @@ function kai(){
     touch "$cwd/$fname";
     open "$cwd/$fname";
 }
+function htp(){
+    if [ $# -eq 0 ]; then
+        port=8000
+    else
+        port="$1"
+    fi
+    base_url="http://localhost"
+    full_url="${base_url}:${port}"
+    http-prompt "${full_url}"
+}
 alias b="bat"
 alias c="clear"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
@@ -241,7 +251,7 @@ alias vc="open $HOME/.vimrc"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
 
 # goto - code
-alias algos="cd $CODE_DIR/za/algos/algos"
+alias algos="cd $CODE_DIR/algos/algos"
 alias book="cd $CODE_DIR/db/shujuku/bookcase"
 alias db="cd $CODE_DIR/db"
 alias dot="cd $DOTFILES_DIR"
