@@ -18,6 +18,8 @@ apps are exposed on your $PATH at /Users/zach/.local/bin
     - blackd
    package flake8 3.8.3, Python 3.6.1
     - flake8
+   package gixy 0.1.20, Python 3.6.1
+    - gixy
    package http-prompt 1.0.0, Python 3.6.1
     - http-prompt
    package litecli 1.4.1, Python 3.6.1
