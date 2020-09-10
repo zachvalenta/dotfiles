@@ -47,7 +47,7 @@ alias yin="cd /Volumes/music-usb"
 ###
 
 alias pods="cd $MAT_DIR/za/pods"
-alias podp="cd $MAT_DIR/za/pods/one-off; kaiff"
+alias podp="cd $MAT_DIR/za/pods; kaiff"
 alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -E yuyan/ -E music/ -E dance/ -E pods/"
 alias ytd='youtube-dl --extract-audio --audio-format m4a'
 alias ytdv='youtube-dl --format mp4'
@@ -246,13 +246,14 @@ alias darpa="imgcat $CODE_DIR/network/darpa.png"
 alias duan="vim +/'# SHORTS' $HOME/Desktop/zvmac/notes/za/non-fiction/business/rough-cut.md"
 alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/za/cogsci.md"
 alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
-alias hc="vim '+normal G$' $HOME/Desktop/zvmac/notes/jay/za/tmp.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
+alias hc="bat $HOME/Desktop/zvmac/notes/jay/za/tmp.md"
 alias ops="bat --line-range 227:236 $NOTES_DIR/sw/za/algos.md"
 alias shui="bat $NOTES_DIR/jay/za/water.md"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
-alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
+alias url="vim ~/Desktop/links.md"
+alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
 # goto - code
 alias algos="cd $CODE_DIR/algos/algos"
