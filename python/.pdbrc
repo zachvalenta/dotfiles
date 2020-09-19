@@ -1,3 +1,7 @@
-alias i pp dir(%1)
+# list src after navigation cmd
 alias n n;;l
+alias r r;;l
+
+# print obj
 alias p pp %1
+alias i pp dir(%1)
