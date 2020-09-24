@@ -163,30 +163,6 @@ function t(){
     fi
 }
 
-# hiring
-function app(){ # rm `rec` and replace with flag
-    if [ $# -eq 0 ]; then
-        echo "pass a filename"
-        return 1
-    else
-        fname="$1.md";
-        ms="$HOME/Desktop/zvmac/materials/sw/za/hiring"
-        cp "$ms"/cv/template-app.md "$ms"/throwaway/"$fname"
-        vsc "$ms"/throwaway/"$fname"
-    fi
-}
-function rec(){
-    if [ $# -eq 0 ]; then
-        echo "pass a filename"
-        return 1
-    else
-        fname="$1.md";
-        ms="$HOME/Desktop/zvmac/materials/sw/za/hiring/"
-        cp "$ms"/cv/template-recruiter.md "$ms"/throwaway/"$fname"
-        open "$ms"/throwaway/"$fname"
-    fi
-}
-
 # misc
 function jbp(){
     jb | grep "$1"
@@ -252,12 +228,11 @@ alias shui="bat $NOTES_DIR/jay/za/water.md"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
-alias url="vim ~/Desktop/links.md"
+alias nf="vim +/'Hofstadter' $NOTES_DIR/za/za/politics.md"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
 # goto - code
 alias algos="cd $CODE_DIR/algos/algos"
-alias book="cd $CODE_DIR/db/shujuku/bookcase"
 alias db="cd $CODE_DIR/db"
 alias dot="cd $DOTFILES_DIR"
 alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; bat misc.md"
@@ -268,8 +243,9 @@ alias gop="cd $CODE_DIR/lang/future/golang"
 alias grib="cd $CODE_DIR/lang/future/c/gribble"
 alias ms="cd $CODE_DIR/hiring"
 alias py="cd $CODE_DIR/lang/python"
-alias sw="cd $CODE_DIR; t 2"
+alias shu="cd $CODE_DIR/db/shujuku/bookcase"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
+alias sw="cd $CODE_DIR; t 2"
 alias zbin="cd $HOME/bin"
 
 # goto - general
