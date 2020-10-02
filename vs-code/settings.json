@@ -26,9 +26,9 @@
     "python.venvPath":"~/Library/Caches/pypoetry/virtualenvs",
     "markdown.extension.italic.indicator": "_",
     "search.exclude": {
-        "jay/logs/2018":true,
-        "jay/logs/2019":true,
-        "jay/logs/2020":true,
+        "jay/logs/18":true,
+        "jay/logs/19":true,
+        "jay/logs/20":true,
         "**/.git": true,
         "**/node_modules": true,
         "**/bower_components": true
