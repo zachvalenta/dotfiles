@@ -1,6 +1,6 @@
 " [PV xxv]
-set nocompatible
-filetype plugin on
+set nocompatible " disable Vi compatability https://vi.stackexchange.com/q/25149
+filetype plugin on " enables built-in plugins (for stuff like netrw)
 
 " [PV 10.51]
 set incsearch " highlight matches as you type
