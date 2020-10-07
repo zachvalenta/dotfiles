@@ -38,7 +38,9 @@ export PS1='\w$(__git_ps1 " (%s)")\$ '
 ###
 
 alias div="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg"
+alias hx="cd $MAT_DIR/za/music/theory; imgcat chords1.jpg; imgcat chords2.jpg"
 alias key="cd $MAT_DIR/za/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
+alias modes="cd $NOTES_DIR; rg 'harmonization of modes' -A 5 -B 1"
 alias muz="cd $MAT_DIR/za/music; t 2"
 alias yin="cd /Volumes/music-usb"
 
@@ -228,14 +230,13 @@ alias shui="bat $NOTES_DIR/jay/za/water.md"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
-alias nf="vim +/'Hofstadter' $NOTES_DIR/za/za/politics.md"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
 # goto - code
 alias algos="cd $CODE_DIR/algos/algos"
 alias db="cd $CODE_DIR/db"
 alias dot="cd $DOTFILES_DIR"
-alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; bat misc.md"
+alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; vim misc.md"
 alias fl="cd $CODE_DIR/lang/python/flask"
 alias dj="cd $CODE_DIR/lang/python/django"
 alias goc="cd $HOME/go"
@@ -263,5 +264,5 @@ alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias til="cd $CODE_DIR/lang/html-css/today-i-learned"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
 alias viz="cd $MAT_DIR/za/viz"
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/2020/09"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/20/10"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
