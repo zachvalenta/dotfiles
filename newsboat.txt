@@ -4,3 +4,5 @@ https://www.martinfowler.com/feed.atom
 https://macwright.com/rss.xml
 https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine.rss
 https://krebsonsecurity.com/feed/
+http://www.daemonology.net/hn-weekly-ask/index.rss
+http://www.daemonology.net/hn-daily/index.rss
