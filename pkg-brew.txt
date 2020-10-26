@@ -1,5 +1,5 @@
-adns 1.5.1 1.6.0
-aom 1.0.0 2.0.0
+adns 1.6.0
+aom 2.0.0
 asciinema 2.0.2_2
 autoconf 2.69
 automake 1.16.1_1
@@ -22,11 +22,11 @@ flyway 5.2.4
 fontconfig 2.13.1
 freetype 2.10.1 2.10.2
 frei0r 1.7.0
-fribidi 1.0.10 1.0.9
+fribidi 1.0.10
 fzf 0.18.0
 gawk 5.1.0
-gdbm 1.18.1_1 1.18.1
-gettext 0.20.2_1 0.21
+gdbm 1.18.1_1
+gettext 0.21
 giflib 5.2.1
 git 2.28.0
 glib 2.64.4_2
@@ -45,6 +45,7 @@ hadolint 1.17.6
 harfbuzz 2.7.0
 heroku 7.33.3
 heroku-node 11.14.0
+hexyl 0.8.0
 httpie 2.2.0
 icu4c 67.1
 ilmbase 2.2.1
@@ -57,19 +58,19 @@ json-c 0.15
 krb5 1.18.2
 lame 3.100
 leiningen 2.8.3
-leptonica 1.79.0 1.80.0
+leptonica 1.80.0
 libao 1.2.2
 libass 0.14.0_1
 libassuan 2.5.3
 libbluray 1.2.0
 libcue 2.2.1
 libde265 1.0.3
-libevent 2.1.11_1 2.1.12
+libevent 2.1.12
 libffi 3.3
-libgcrypt 1.8.5 1.8.6
+libgcrypt 1.8.6
 libgpg-error 1.36 1.38 1.37
 libheif 1.3.2_2
-libidn 1.36 1.35
+libidn 1.36
 libidn2 2.3.0
 libksba 1.4.0
 libogg 1.3.4
@@ -87,18 +88,18 @@ libtool 2.4.6_1
 libunistring 0.9.10
 libusb 1.0.23
 libvidstab 1.1.0
-libvorbis 1.3.7 1.3.6
-libvpx 1.9.0 1.8.2
-libyaml 0.2.4 0.2.2 0.2.5
+libvorbis 1.3.7
+libvpx 1.9.0
+libyaml 0.2.5
 libzip 1.5.2
-little-cms2 2.11 2.9
+little-cms2 2.11
 lmdb 0.9.25
 lua 5.3.5_1
 lzo 2.10
 mad 0.15.1b
 makedepend 1.0.5
 mp4v2 2.0.0
-mpfr 4.0.1 4.1.0
+mpfr 4.1.0
 ncdu 1.14.1
 ncurses 6.2
 neofetch 6.0.0
@@ -120,13 +121,13 @@ opus 1.3.1
 p11-kit 0.23.20_1
 pastel 0.7.1
 pcre 8.44
-pcre2 10.33 10.35
+pcre2 10.35
 pdfgrep 2.1.2
-perl 5.32.0 5.28.1 5.30.0
+perl 5.32.0
 pgcli 3.0.0
 pinentry 1.1.0_1
 pixman 0.40.0
-pkg-config 0.29.2_3 0.29.2
+pkg-config 0.29.2_3
 poppler 0.90.1
 postgresql 12.3_4
 python 3.7.5
@@ -165,8 +166,8 @@ unbound 1.11.0 1.10.1
 utf8proc 2.5.0
 vim 8.2.1350
 webp 1.1.0
-x264 r3011 r2917_1 r2917
-x265 3.3 3.4 3.0
+x264 r3011
+x265 3.4
 xapian 1.4.16
 xvid 1.3.7
 xz 5.2.5
