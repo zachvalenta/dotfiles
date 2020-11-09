@@ -209,12 +209,7 @@ alias vsc="open -a 'Visual Studio Code'"
 ###
 
 # tmp
-alias sling="cat ~/Desktop/sling.md | pbcopy"
 alias qu='vim "+normal G$" ~/Desktop/zvmac/materials/sw/db/shujuku/music-lib/music-queue.md'
-alias todo="cd $CODE_DIR/lang/python/django/django-drf-vincent-todo"
-alias ym="cd $CODE_DIR/lang/python/django/migrations-sandbox"
-alias crud="cd $CODE_DIR/lang/python/django/crud"
-alias knr="cd $CODE_DIR/lang/future/c"
 
 # open specific files
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
@@ -233,14 +228,10 @@ alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http:
 
 # goto - code
 alias algos="cd $CODE_DIR/algos/algos"
-alias db="cd $CODE_DIR/db"
 alias dot="cd $DOTFILES_DIR"
-alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film"
 alias fl="cd $CODE_DIR/lang/python/flask"
 alias dj="cd $CODE_DIR/lang/python/django"
-alias goc="cd $HOME/go"
-alias gop="cd $CODE_DIR/lang/future/golang"
-alias grib="cd $CODE_DIR/lang/future/c/gribble"
+alias knr="cd $CODE_DIR/lang/future/c"
 alias ms="cd $CODE_DIR/hiring"
 alias py="cd $CODE_DIR/lang/python"
 alias shu="cd $CODE_DIR/db/shujuku/bookcase"
@@ -249,18 +240,15 @@ alias sw="cd $CODE_DIR; t 2"
 alias zbin="cd $HOME/bin"
 
 # goto - general
+alias dance="cd $MAT_DIR/za/dance; t 3"
+alias desk="cd $HOME/Desktop"
+alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film"
+alias jay="cd $CODE_DIR/lang/html-css/music-site"
+alias lj="cd $MAT_DIR/jay/lianjie; open photos"
+alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias mat="cd $MAT_DIR"
 alias notes='cd $NOTES_DIR; exa -al --tree --git-ignore -I ".git|.DS_Store|jay"'
-alias lj="cd $MAT_DIR/jay/lianjie; open photos"
-alias ht="cd $MAT_DIR/za"  # t 2 on all dir with depth greater than 1 `ls | xargs -I {} find {} -type d | wc -l`
-
-alias dance="cd $MAT_DIR/za/dance; t 3"
-alias cg="cd $CODE_DIR/lang/html-css/personal-site/drafts"
-alias desk="cd $HOME/Desktop"
-alias jay="cd $CODE_DIR/lang/html-css/music-site"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
-alias til="cd $CODE_DIR/lang/html-css/today-i-learned"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
 alias viz="cd $MAT_DIR/za/viz"
 alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/20/11"
