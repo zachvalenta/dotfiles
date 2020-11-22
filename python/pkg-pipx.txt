@@ -26,5 +26,7 @@ apps are exposed on your $PATH at /Users/zach/.local/bin
     - litecli
    package poetry 1.0.5, Python 3.6.1
     - poetry
+   package powerline-shell 0.7.0, Python 3.6.1
+    - powerline-shell
    package visidata 1.5.2, Python 3.6.1
     - vd
