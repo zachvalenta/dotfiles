@@ -24,7 +24,7 @@ apps are exposed on your $PATH at /Users/zach/.local/bin
     - http-prompt
    package litecli 1.4.1, Python 3.6.1
     - litecli
-   package poetry 1.0.5, Python 3.6.1
+   package poetry 1.1.4, Python 3.6.1
     - poetry
    package powerline-shell 0.7.0, Python 3.6.1
     - powerline-shell
