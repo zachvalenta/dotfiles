@@ -23,6 +23,7 @@
 	s = status -s  # shorter output
 	t = show -s --format=%ci  # timestamp of last commit
 	u = reset HEAD
+    wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads  # https://carolynvanslyck.com/blog/2020/12/git-wip/
 [color]
 	ui = always
 [color "diff"]

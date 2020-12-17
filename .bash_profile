@@ -256,5 +256,5 @@ alias notes='cd $NOTES_DIR; exa -al --tree --git-ignore -I ".git|.DS_Store|jay"'
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
 alias viz="cd $MAT_DIR/za/viz"
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/20/11"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/20/12"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
