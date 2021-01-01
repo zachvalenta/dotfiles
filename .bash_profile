@@ -42,9 +42,9 @@ fi
 # 🎹 music
 ###
 
+alias bian="cd $NOTES_DIR; rg '## interchange' -A 16 -B 1; rg '## modes' -A 14 -B 1; rg '## changes' -A 5 -B 1"
 alias div="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg"
 alias key="cd $MAT_DIR/za/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
-alias modes="cd $NOTES_DIR; rg '## modes' -A 14 -B 1"
 alias muz="cd $MAT_DIR/za/music; t 2"
 alias yin="cd /Volumes/music-usb"
 
@@ -215,6 +215,7 @@ alias vsc="open -a 'Visual Studio Code'"
 
 # tmp
 alias qu='vim "+normal G$" ~/Desktop/zvmac/materials/sw/db/shujuku/music-lib/music-queue.md'
+alias sling="cat ~/Desktop/sling.md | pbcopy"
 
 # open specific files
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
@@ -223,12 +224,13 @@ alias darpa="imgcat $CODE_DIR/network/darpa.png"
 alias duan="vim +/'# SHORTS' $HOME/Desktop/zvmac/notes/za/non-fiction/business/rough-cut.md"
 alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/za/cogsci.md"
 alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
-alias hc="bat $HOME/Desktop/zvmac/notes/jay/za/tmp.md"
+alias news="bat $NOTES_DIR/jay/za/news.md"
 alias ops="bat --line-range 227:236 $NOTES_DIR/sw/za/algos.md"
 alias shui="bat $NOTES_DIR/jay/za/water.md"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
+alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
 # goto - code
@@ -239,6 +241,7 @@ alias dj="cd $CODE_DIR/lang/python/django"
 alias knr="cd $CODE_DIR/lang/future/c"
 alias ms="cd $CODE_DIR/hiring"
 alias py="cd $CODE_DIR/lang/python"
+alias read="vim $CODE_DIR/db/shujuku/bookcase/readings.md"
 alias shu="cd $CODE_DIR/db/shujuku/bookcase"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias sw="cd $CODE_DIR; t 2"
