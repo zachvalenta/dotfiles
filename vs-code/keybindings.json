@@ -10,6 +10,8 @@
     { "key": "cmd+8", "command": "workbench.action.openEditorAtIndex8" },
     { "key": "cmd+9", "command": "workbench.action.openEditorAtIndex9" },
 
+    { "key": "alt+cmd+r", "command": "workbench.action.closeEditorsToTheRight" },
+
     { "key": "cmd+l", "command": "workbench.action.gotoLine" },
     { "key": "cmd+r", "command": "workbench.action.gotoSymbol" },
 
