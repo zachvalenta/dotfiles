@@ -43,9 +43,9 @@ fi
 ###
 
 alias bian="cd $NOTES_DIR; rg '## interchange' -A 16 -B 1; rg '## modes' -A 14 -B 1; rg '## changes' -A 5 -B 1"
-alias div="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg"
 alias key="cd $MAT_DIR/za/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
 alias muz="cd $MAT_DIR/za/music; t 2"
+alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 7 -B 1 $NOTES_DIR; echo -e '\n'"
 alias yin="cd /Volumes/music-usb"
 
 ###
@@ -214,8 +214,7 @@ alias vsc="open -a 'Visual Studio Code'"
 ###
 
 # tmp
-alias qu='vim "+normal G$" ~/Desktop/zvmac/materials/sw/db/shujuku/music-lib/music-queue.md'
-alias sling="cat ~/Desktop/sling.md | pbcopy"
+alias qu="vim ~/Desktop/2020-albums.md"
 
 # open specific files
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
@@ -259,5 +258,5 @@ alias notes='cd $NOTES_DIR; exa -al --tree --git-ignore -I ".git|.DS_Store|jay"'
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
 alias viz="cd $MAT_DIR/za/viz"
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/20/12"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/21/01"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
