@@ -170,24 +170,11 @@ function t(){
 }
 
 # misc
-function jbp(){
-    jb | grep "$1"
-}
 function kai(){
     fname="$1.md";
     cwd="$(pwd)";
     touch "$cwd/$fname";
     open "$cwd/$fname";
-}
-function htp(){
-    if [ $# -eq 0 ]; then
-        port=8000
-    else
-        port="$1"
-    fi
-    base_url="http://localhost"
-    full_url="${base_url}:${port}"
-    http-prompt "${full_url}"
 }
 alias b="bat"
 alias c="clear"
@@ -198,13 +185,11 @@ alias ds="qing .DS_Store"
 alias grep="grep --color=auto -n"
 alias m="make"
 alias mkd='function mkd(){ mkdir "$1"; cd "$1";}; mkd'
-alias nsl='function nsl(){ echo ""; nslookup "$1" | tail -3;}; nsl'
 alias o="open"
 alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
-alias trs="trans :es -I"
 alias upbp="source $HOME/.bash_profile"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
@@ -224,7 +209,6 @@ alias duan="vim +/'# SHORTS' $HOME/Desktop/zvmac/notes/za/non-fiction/business/r
 alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/za/cogsci.md"
 alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias news="bat $NOTES_DIR/jay/za/news.md"
-alias ops="bat --line-range 227:236 $NOTES_DIR/sw/za/algos.md"
 alias shui="bat $NOTES_DIR/jay/za/water.md"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
@@ -240,7 +224,6 @@ alias dj="cd $CODE_DIR/lang/python/django"
 alias knr="cd $CODE_DIR/lang/future/c"
 alias ms="cd $CODE_DIR/hiring"
 alias py="cd $CODE_DIR/lang/python"
-alias read="vim $CODE_DIR/db/shujuku/bookcase/readings.md"
 alias shu="cd $CODE_DIR/db/shujuku/bookcase"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias sw="cd $CODE_DIR; t 2"
@@ -249,7 +232,7 @@ alias zbin="cd $HOME/bin"
 # goto - general
 alias dance="cd $MAT_DIR/za/dance; t 3"
 alias desk="cd $HOME/Desktop"
-alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film"
+alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; vim misc.md"
 alias jay="cd $CODE_DIR/lang/html-css/music-site"
 alias lj="cd $MAT_DIR/jay/lianjie; open photos"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
