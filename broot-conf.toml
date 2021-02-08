@@ -32,6 +32,14 @@ execution = ":open_preview"
 key = "alt-q"
 execution = ":close_preview"
 
+[[verbs]]
+key = "alt-k"
+execution = ":line_up"
+
+[[verbs]]
+key = "alt-j"
+execution = ":line_down"
+
 # If $PAGER isn't set on your computer, you should either set it
 #  or just replace it with your viewer of choice in the 'execution'
 #  pattern.
