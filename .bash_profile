@@ -21,6 +21,7 @@ export PATH="/Users/zach/bin:${PATH}"  # my bin
 export PATH="$PATH:/Users/zach/.local/bin"  # pipx
 export PATH=$PATH:$HOME/go/bin  # golang
 source /Users/zach/Library/Preferences/org.dystroy.broot/launcher/bash/br  # broot
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash  # fzf for bash history
 
 ###
 # 🎨  output
