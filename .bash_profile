@@ -202,7 +202,7 @@ alias vsc="open -a 'Visual Studio Code'"
 # tmp
 alias qu="vim ~/Desktop/2020-albums.md"
 
-# open specific files
+# open/list specific files
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
 alias darpa="imgcat $CODE_DIR/network/darpa.png"
@@ -212,9 +212,10 @@ alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/inde
 alias news="bat $NOTES_DIR/jay/za/news.md"
 alias shui="bat $NOTES_DIR/jay/za/water.md"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
+alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"
+alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
-alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
 # goto - code
@@ -223,6 +224,7 @@ alias dot="cd $DOTFILES_DIR"
 alias fl="cd $CODE_DIR/lang/python/flask"
 alias dj="cd $CODE_DIR/lang/python/django"
 alias knr="cd $CODE_DIR/lang/future/c"
+alias me="cd $HOME"
 alias ms="cd $CODE_DIR/hiring"
 alias py="cd $CODE_DIR/lang/python"
 alias shu="cd $CODE_DIR/db/shujuku/bookcase"
@@ -238,9 +240,9 @@ alias jay="cd $CODE_DIR/lang/html-css/music-site"
 alias lj="cd $MAT_DIR/jay/lianjie; open photos"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias mat="cd $MAT_DIR"
-alias notes='cd $NOTES_DIR; exa -al --tree --git-ignore -I ".git|.DS_Store|jay"'
+alias notes="cd $NOTES_DIR; exa -al --tree --git-ignore -I '.git|.DS_Store|jay'; jb"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
 alias viz="cd $MAT_DIR/za/viz"
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/21/01"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/21/02"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
