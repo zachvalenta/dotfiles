@@ -56,8 +56,8 @@ alias yin="cd /Volumes/music-usb"
 alias pods="cd $MAT_DIR/za/pods"
 alias podp="cd $MAT_DIR/za/pods; kaiff"
 alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -E yuyan/ -E music/ -E dance/ -E pods/"
-alias ytd='youtube-dl --extract-audio --audio-format m4a'
-alias ytdv='youtube-dl --format mp4'
+alias ytd="youtube-dl -i --extract-audio --audio-format m4a"
+alias ytdv="youtube-dl --format mp4"
 
 ###
 # 🚢 docker
