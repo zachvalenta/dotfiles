@@ -1,4 +1,3 @@
-// Place your key bindings in this file to overwrite the defaults
 [
     { "key": "cmd+1", "command": "workbench.action.openEditorAtIndex1" },
     { "key": "cmd+2", "command": "workbench.action.openEditorAtIndex2" },
@@ -10,57 +9,15 @@
     { "key": "cmd+8", "command": "workbench.action.openEditorAtIndex8" },
     { "key": "cmd+9", "command": "workbench.action.openEditorAtIndex9" },
 
-    { "key": "alt+cmd+r", "command": "workbench.action.closeEditorsToTheRight" },
-
     { "key": "cmd+l", "command": "workbench.action.gotoLine" },
     { "key": "cmd+r", "command": "workbench.action.gotoSymbol" },
+    { "key": "ctrl+d", "command": "editor.action.revealDefinition", "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor" }, 
+    { "key": "cmd+alt+enter", "command": "editor.action.openLink" },
 
-    {
-        "key": "cmd+i",
-        "command": "md-shortcut.toggleItalic",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
-    },
-    {
-        "key": "cmd+b",
-        "command": "md-shortcut.toggleBold",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
-    },
+    { "key": "alt+cmd+r", "command": "workbench.action.closeEditorsToTheRight" },
+    { "key": "ctrl+c", "command": "workbench.action.clearEditorHistory" },
+    { "key": "ctrl+b", "command": "workbench.action.toggleSidebarVisibility" },
 
-    {
-        "key": "cmd+alt+enter",
-        "command": "editor.action.openLink"
-    },
-    {
-        "key": "cmd+down", 
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly" 
-    },
-    {
-        "key": "cmd+up", 
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly" 
-    },
-    {
-        "key": "alt+cmd+v",
-        "command": "md-shortcut.toggleLink",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "-md-shortcut.toggleLink",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
-    },
-    {
-        "key": "shift+cmd+k",
-        "command": "workbench.action.terminal.kill"
-    },
-    {
-        "key": "shift+cmd+k",
-        "command": "-editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
-    },
-
-    {"key": "ctrl+c", "command": "workbench.action.clearEditorHistory"},
-    {"key": "ctrl+b", "command": "workbench.action.toggleSidebarVisibility"}
-
+    { "key": "cmd+i", "command": "md-shortcut.toggleItalic", "when": "editorTextFocus && markdownShortcuts:enabled" },
+    { "key": "cmd+b", "command": "md-shortcut.toggleBold", "when": "editorTextFocus && markdownShortcuts:enabled" }
 ]
