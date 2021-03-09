@@ -43,7 +43,7 @@ fi
 # 🎹 music
 ###
 
-alias bian="cd $NOTES_DIR; rg '## interchange' -A 16 -B 1; rg '## modes' -A 14 -B 1; rg '## changes' -A 5 -B 1"
+alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 16 -B 1; rg '## modes' -A 14 -B 1; rg '## changes' -A 5 -B 1"
 alias key="cd $MAT_DIR/za/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
 alias muz="cd $MAT_DIR/za/music; t 2"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 7 -B 1 $NOTES_DIR; echo -e '\n'"
@@ -148,6 +148,7 @@ alias pipx="python3 -m pipx"
 alias pipxfr="pipx list > $DOTFILES_DIR/python/pkg-pipx.txt"
 
 # exa ports of ls and tree
+alias lh="l | head"
 function l(){
     if [ "$1" ]; then
         exa -al --classify --git --git-ignore -I '.git|.DS_Store' "$1" 
@@ -233,16 +234,16 @@ alias sw="cd $CODE_DIR; t 2"
 alias zbin="cd $HOME/bin"
 
 # goto - general
-alias dance="cd $MAT_DIR/za/dance; t 3"
+alias dance="cd $MAT_DIR/za/dance"
 alias desk="cd $HOME/Desktop"
 alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; vim misc.md"
 alias jay="cd $CODE_DIR/lang/html-css/music-site"
-alias lj="cd $MAT_DIR/jay/lianjie; open photos"
+alias lj="cd $MAT_DIR/jay/lianjie"
 alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
 alias mat="cd $MAT_DIR"
 alias notes="cd $NOTES_DIR; exa -al --tree --git-ignore -I '.git|.DS_Store|jay'; jb"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
-alias viz="cd $MAT_DIR/za/viz"
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/21/02"
+alias viz="cd $MAT_DIR/za/viz/figure/2021-winter-mellem"
+alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/21/03"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
