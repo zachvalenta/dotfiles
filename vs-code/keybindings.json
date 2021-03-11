@@ -11,7 +11,7 @@
 
     { "key": "cmd+l", "command": "workbench.action.gotoLine" },
     { "key": "cmd+r", "command": "workbench.action.gotoSymbol" },
-    { "key": "ctrl+d", "command": "editor.action.revealDefinition", "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor" }, 
+    { "key": "alt+d", "command": "editor.action.revealDefinition", "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor" }, 
     { "key": "cmd+alt+enter", "command": "editor.action.openLink" },
 
     { "key": "alt+cmd+r", "command": "workbench.action.closeEditorsToTheRight" },
