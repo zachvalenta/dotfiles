@@ -8,6 +8,7 @@
     { "key": "cmd+7", "command": "workbench.action.openEditorAtIndex7" },
     { "key": "cmd+8", "command": "workbench.action.openEditorAtIndex8" },
     { "key": "cmd+9", "command": "workbench.action.openEditorAtIndex9" },
+    { "key": "cmd+0", "command": "workbench.action.lastEditorInGroup" },
 
     { "key": "cmd+l", "command": "workbench.action.gotoLine" },
     { "key": "cmd+r", "command": "workbench.action.gotoSymbol" },
