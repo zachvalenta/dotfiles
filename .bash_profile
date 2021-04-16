@@ -11,6 +11,7 @@ date
 
 CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
+LOGS_DIR="$HOME/Desktop/zvmac/notes/jay/logs"
 MAT_DIR="$HOME/Desktop/zvmac/materials"
 NOTES_DIR="$HOME/Desktop/zvmac/notes"
 
@@ -157,6 +158,7 @@ function l(){
     fi
 }
 function t(){
+    # document control flow
     if [ $# -eq 2 ]; then
         exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store' "$2"
     elif [ $# -eq 1 ]
@@ -192,6 +194,7 @@ alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
+alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"  # list all sym links
 alias upbp="source $HOME/.bash_profile"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
@@ -200,26 +203,29 @@ alias vsc="open -a 'Visual Studio Code'"
 # 🛣 navigate
 ###
 
-# tmp
-alias qu="vim ~/Desktop/2020-albums.md"
-
-# open/list specific files
-alias bp="vsc $DOTFILES_DIR/.bash_profile"
+# read files
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
-alias darpa="imgcat $CODE_DIR/network/darpa.png"
-alias duan="vim +/'# SHORTS' $HOME/Desktop/zvmac/notes/za/non-fiction/business/rough-cut.md"
-alias inc="vim +/'__incremental reading__' $HOME/Desktop/zvmac/notes/za/za/cogsci.md"
-alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
+alias ik="rg -A 5 -B 1 goals $LOGS_DIR/21/2021-year.md"
 alias news="bat $NOTES_DIR/jay/za/news.md"
 alias shui="bat $NOTES_DIR/jay/za/water.md"
-alias sou="bat $NOTES_DIR/jay/za/sou.md"
-alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"
 alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
-alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
-alias vc="open $HOME/.vimrc"
+function tw(){
+    rg "$1" $HOME/Desktop/zvmac/notes/jay/logs/rn.md
+}
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
+# open files
+alias bp="vsc $DOTFILES_DIR/.bash_profile"
+alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
+alias sou="bat $NOTES_DIR/jay/za/sou.md"
+alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
+alias vc="open $HOME/.vimrc"
+
 # goto - code
+alias db="cd $CODE_DIR/db"
+alias sand="cd $CODE_DIR/db/query-sandbox"
+alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
+
 alias algos="cd $CODE_DIR/algos/algos"
 alias dot="cd $DOTFILES_DIR"
 alias fl="cd $CODE_DIR/lang/python/flask"
@@ -229,7 +235,6 @@ alias me="cd $HOME"
 alias ms="cd $CODE_DIR/hiring"
 alias py="cd $CODE_DIR/lang/python"
 alias shu="cd $CODE_DIR/db/shujuku/bookcase"
-alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias sw="cd $CODE_DIR; t 2"
 alias zbin="cd $HOME/bin"
 
@@ -239,11 +244,11 @@ alias desk="cd $HOME/Desktop"
 alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; vim misc.md"
 alias jay="cd $CODE_DIR/lang/html-css/music-site"
 alias lj="cd $MAT_DIR/jay/lianjie"
-alias logs="cd $HOME/Desktop/zvmac/notes/jay/logs"
+alias logs="cd $LOGS_DIR"
 alias mat="cd $MAT_DIR"
 alias notes="cd $NOTES_DIR; exa -al --tree --git-ignore -I '.git|.DS_Store|jay'; jb"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
-alias viz="cd $MAT_DIR/za/viz/figure/2021-winter-mellem"
-alias yue="cd $HOME/Desktop/zvmac/notes/jay/logs/21/03"
+alias viz="cd $MAT_DIR/za/viz/figure/21/04-06-mellem"
+alias yue="cd $LOGS_DIR/21/04"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
