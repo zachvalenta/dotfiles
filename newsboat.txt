@@ -7,3 +7,7 @@ https://krebsonsecurity.com/feed/
 http://www.daemonology.net/hn-weekly-ask/index.rss
 http://www.daemonology.net/hn-daily/index.rss
 https://danluu.com/atom.xml
+https://www.jefftk.com/news.rss
+https://worldspiritsockpuppet.com/feed.xml
+https://blog.cerebralab.com/feed.xml
+https://www.econlib.org/feed/indexCaplan_xml
