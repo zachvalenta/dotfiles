@@ -1,14 +1,17 @@
-# print objs in scope after list src
-# might be able to run `l` on set_trace() in Python 3.7 using `header` arg https://docs.python.org/3/library/pdb.html#pdb.set_trace
-from pprint import pprint
-alias loc pprint(locals())
-alias l l;;loc
-alias ll ll;;loc
-
-# list src after navigation cmd
+# list src after step over
 alias n n;;l
+
+# list src after step out
 alias r r;;l
 
 # print obj
 alias p pp %1
+
+# print obj attr
 alias i pp dir(%1)
+
+# print obj in scope after step over
+from pprint import pprint
+alias loc pprint(locals())
+alias l l;;loc
+alias ll ll;;loc
