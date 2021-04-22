@@ -218,6 +218,7 @@ alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http:
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
+alias st="bat $NOTES_DIR/jay/za/start-of-day.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
 

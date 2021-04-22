@@ -14,7 +14,6 @@
 	co = checkout
 	d = diff
 	ds = diff --staged
-    ma = checkout master
 	count = rev-list --count HEAD
 	far = remote -v show
 	conf = config --global --list
