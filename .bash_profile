@@ -1,20 +1,17 @@
 ###
-# 🌇  source
+# 🌇  SOURCE
 ###
-
 echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "
 date
 
 ###
-# 🌐  globals
+# 🌐  GLOBALS
 ###
-
 CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 LOGS_DIR="$HOME/Desktop/zvmac/notes/jay/logs"
 MAT_DIR="$HOME/Desktop/zvmac/materials"
 NOTES_DIR="$HOME/Desktop/zvmac/notes"
-
 export MANPAGER=bat
 export RIPGREP_CONFIG_PATH="$DOTFILES_DIR/.ripgreprc"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function* --> Homebrew thing?
@@ -25,45 +22,33 @@ source /Users/zach/Library/Preferences/org.dystroy.broot/launcher/bash/br  # bro
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash  # fzf for bash history
 
 ###
-# 🎨  output
+# 🎨  OUTPUT
 ###
-
 export CLICOLOR=1
 export EXA_COLORS="ga=38;5;213:gm=32:*.py=38;5;114:Dockerfile=38;5;074;1:docker-compose.*=38;5;074;1:*.pdf=38;5;208:*.txt=38;5;244:*.html=38;5;137;1:*.env*=31;0;01:*.sql*=38;5;28"
 export LSCOLORS=gxfxcxdxbxegedabaggagx
-
 function _update_ps1() {
     PS1=$(powerline-shell $?)
 }
-
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
 ###
-# 🎹 music
+# 🏔 FOCUS
 ###
-
-alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 16 -B 1; rg '## modes' -A 14 -B 1; rg '## changes' -A 5 -B 1"
-alias key="cd $MAT_DIR/za/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
-alias muz="cd $MAT_DIR/za/music; t 2"
-alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 7 -B 1 $NOTES_DIR; echo -e '\n'"
-alias yin="cd /Volumes/music-usb"
-
-###
-# 📡 media
-###
-
-alias pods="cd $MAT_DIR/za/pods"
-alias podp="cd $MAT_DIR/za/pods; kaiff"
-alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -E yuyan/ -E music/ -E dance/ -E pods/"
-alias ytd="youtube-dl -i --extract-audio --audio-format m4a"
-alias ytdv="youtube-dl --format mp4"
+alias jz="rg 'FOCUS' $HOME/.bash_profile -A 8"
+alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
+alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
+alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
+function tw(){
+    rg "$1" $HOME/Desktop/zvmac/notes/jay/logs/rn.md
+}
+alias year="bat $LOGS_DIR/21/2021-year.md"
 
 ###
-# 🚢 docker
+# 🚢 DOCKER
 ###
-
 alias mt="docker"
 function mtl(){  # list all
     echo -e "\n";
@@ -91,12 +76,9 @@ alias mtp="docker ps -qa | xargs docker stop; docker system prune --volumes -f; 
 alias mtpc="docker ps -qa | xargs docker stop; docker system prune --volumes -f"
 
 ###
-# 💾  git
+# 💾  GIT
 ###
-
-# todo - SSoT for core workflow (gb as `git branch`, rm alias in .gitconfig)
-# leave less-used cmd (count, far) as .gitconfig aliases
-
+# todo - SSoT for core workflow (gb as `git branch`, rm alias in .gitconfig), leave less-used cmd (count, far) as .gitconfig aliases
 alias gco="open $DOTFILES_DIR/.gitconfig"
 alias gic="touch .gitignore; gie"
 alias gie="open .gitignore"
@@ -122,13 +104,11 @@ alias gc="git c"  # commit
 alias gshow="git log --format=%B -n 1"  # msg description for commit
 
 ###
-# 🐍  python
+# 🐍  PYTHON
 ###
-
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
 export PIP_REQUIRE_VIRTUALENV=true
-
 alias py3="python3"
 alias tre="/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin/python3"
 alias bpy="bpython"
@@ -137,10 +117,10 @@ alias on="source venv/bin/activate"
 alias off="deactivate"
 
 ###
-# 🛠 tools
+# 🛠 UTILS
 ###
 
-# packages and extensions
+# pkg
 alias brewfr="brew ls --versions > $DOTFILES_DIR/pkg-brew.txt"
 alias brewup="brew outdated | xargs brew upgrade"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
@@ -173,7 +153,7 @@ function t(){
     fi
 }
 
-# misc
+# za
 function kai(){
     fname="$1.md";
     cwd="$(pwd)";
@@ -198,31 +178,23 @@ alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"  # list
 alias upbp="source $HOME/.bash_profile"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
+alias ytd="youtube-dl -i --extract-audio --audio-format m4a"
+alias ytdv="youtube-dl --format mp4"
 
 ###
-# 🛣 navigate
+# 🛣 NAVIGATION
 ###
 
-# read files
-alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
-alias ik="rg -A 5 -B 1 goals $LOGS_DIR/21/2021-year.md"
-alias news="bat $NOTES_DIR/jay/za/news.md"
-alias shui="bat $NOTES_DIR/jay/za/water.md"
-alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
-function tw(){
-    rg "$1" $HOME/Desktop/zvmac/notes/jay/logs/rn.md
-}
-alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
-
-# open files
+# read/open
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
 alias st="bat $NOTES_DIR/jay/za/start-of-day.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
+alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
-# goto - code
+# code
 alias db="cd $CODE_DIR/db"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
@@ -239,7 +211,17 @@ alias shu="cd $CODE_DIR/db/shujuku/bookcase"
 alias sw="cd $CODE_DIR; t 2"
 alias zbin="cd $HOME/bin"
 
-# goto - general
+# music
+alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 22 -B 1; rg '## changes' -A 20 -B 1"
+alias cs="cd $NOTES_DIR/za; rg 'upper structures' -A 35 -B 1"
+alias hx="cd $NOTES_DIR/za; rg '## chords' -A 37 -B 1"
+alias key="cd $MAT_DIR/za/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
+alias mode="cd $NOTES_DIR/za; rg '## modes' -A 14 -B 1"
+alias muz="cd $MAT_DIR/za/music; t 2"
+alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 7 -B 1 $NOTES_DIR; echo -e '\n'"
+alias yin="cd /Volumes/music-usb"
+
+# za
 alias dance="cd $MAT_DIR/za/dance"
 alias desk="cd $HOME/Desktop"
 alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; vim misc.md"
@@ -247,9 +229,10 @@ alias jay="cd $CODE_DIR/lang/html-css/music-site"
 alias lj="cd $MAT_DIR/jay/lianjie"
 alias logs="cd $LOGS_DIR"
 alias mat="cd $MAT_DIR"
+alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -E yuyan/ -E music/ -E dance/ -E pods/"
 alias notes="cd $NOTES_DIR; exa -al --tree --git-ignore -I '.git|.DS_Store|jay'; jb"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
-alias viz="cd $MAT_DIR/za/viz/figure/21/04-06-mellem"
-alias yue="cd $LOGS_DIR/21/04"
+alias viz="cd $MAT_DIR/za/viz/figure/21/04-06-mellem/chapter-3-volume/face"
+alias yue="cd $LOGS_DIR/21/05"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
