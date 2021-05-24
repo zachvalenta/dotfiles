@@ -40,9 +40,10 @@ fi
 alias jz="rg 'FOCUS' $HOME/.bash_profile -A 8"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
 alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
+alias st="bat $NOTES_DIR/jay/za/start-of-day.md"
 alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 function tw(){
-    rg "$1" $HOME/Desktop/zvmac/notes/jay/logs/rn.md
+    rg "$1" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
 }
 alias year="bat $LOGS_DIR/21/2021-year.md"
 
@@ -189,7 +190,6 @@ alias ytdv="youtube-dl --format mp4"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
-alias st="bat $NOTES_DIR/jay/za/start-of-day.md"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
@@ -213,12 +213,12 @@ alias zbin="cd $HOME/bin"
 
 # music
 alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 22 -B 1; rg '## changes' -A 20 -B 1"
-alias cs="cd $NOTES_DIR/za; rg 'upper structures' -A 35 -B 1"
 alias hx="cd $NOTES_DIR/za; rg '## chords' -A 37 -B 1"
 alias key="cd $MAT_DIR/za/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
 alias mode="cd $NOTES_DIR/za; rg '## modes' -A 14 -B 1"
 alias muz="cd $MAT_DIR/za/music; t 2"
-alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 7 -B 1 $NOTES_DIR; echo -e '\n'"
+alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
+alias us="cd $NOTES_DIR/za; rg 'upper structures' -A 35 -B 1"
 alias yin="cd /Volumes/music-usb"
 
 # za
