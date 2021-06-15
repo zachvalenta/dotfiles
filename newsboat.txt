@@ -10,6 +10,8 @@ https://www.jefftk.com/news.rss
 https://worldspiritsockpuppet.com/feed.xml
 https://www.martinfowler.com/feed.atom
 https://macwright.com/rss.xml
+https://eli.thegreenplace.net/feeds/all.atom.xml
 https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine.rss
 https://www.econlib.org/feed/indexCaplan_xml
 https://scholars-stage.blogspot.com/feeds/posts/default
+https://scottlocklin.wordpress.com/feed/

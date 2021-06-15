@@ -125,8 +125,8 @@
 		"prefix": "mdt",
 		"description": "tracking outline",
 		"body": [
-			"* _muz_: ",
             "* _dev_: ",
+			"* _muz_: ",
             "",
 			"* _dance_: ",
             "* _viz_: ",

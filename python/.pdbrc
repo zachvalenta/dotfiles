@@ -1,3 +1,7 @@
+# grab pprint
+from pprint import pprint
+pp = pprint.PrettyPrinter(indent=4)
+
 # list src after step over
 alias n n;;l
 
@@ -11,7 +15,6 @@ alias p pp %1
 alias i pp dir(%1)
 
 # print obj in scope after step over
-from pprint import pprint
-alias loc pprint(locals())
+alias loc pp(locals())
 alias l l;;loc
 alias ll ll;;loc

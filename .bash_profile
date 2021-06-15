@@ -37,15 +37,28 @@ fi
 ###
 # 🏔 FOCUS
 ###
-alias jz="rg 'FOCUS' $HOME/.bash_profile -A 8"
-alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
+
+# START OF DAY
+alias jz="rg 'FOCUS' $HOME/.bash_profile -A 14"
 alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
+alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
 alias st="bat $NOTES_DIR/jay/za/start-of-day.md"
+alias year="bat $LOGS_DIR/21/2021-year.md"
+
+# END OF WEEK
 alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 function tw(){
     rg "$1" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
 }
-alias year="bat $LOGS_DIR/21/2021-year.md"
+
+# MUSIC
+alias jc="rg -A 5 '## maintain' $NOTES_DIR/za/music"
+function mq(){
+    echo -e "\n";
+    rg -A 7 '## current' $NOTES_DIR/za/music/instruments.md
+    echo -e "\n";
+    rg -A 3 '## current' $NOTES_DIR/za/music/theory.md
+}
 
 ###
 # 🚢 DOCKER
@@ -198,7 +211,6 @@ alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http:
 alias db="cd $CODE_DIR/db"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
-
 alias algos="cd $CODE_DIR/algos/algos"
 alias dot="cd $DOTFILES_DIR"
 alias fl="cd $CODE_DIR/lang/python/flask"
@@ -212,18 +224,19 @@ alias sw="cd $CODE_DIR; t 2"
 alias zbin="cd $HOME/bin"
 
 # music
-alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 22 -B 1; rg '## changes' -A 20 -B 1"
+alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 19 -B 1; rg '## changes' -A 17 -B 1"
 alias hx="cd $NOTES_DIR/za; rg '## chords' -A 37 -B 1"
-alias key="cd $MAT_DIR/za/music/theory; imgcat 30-keys.jpg; imgcat circle-of-fifths.png"
+alias key="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/music/theory/circle-of-fifths.png"
 alias mode="cd $NOTES_DIR/za; rg '## modes' -A 14 -B 1"
 alias muz="cd $MAT_DIR/za/music; t 2"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
-alias us="cd $NOTES_DIR/za; rg 'upper structures' -A 35 -B 1"
+alias us="rg 'upper structures' -A 33 -B 1 $NOTES_DIR/za"
 alias yin="cd /Volumes/music-usb"
 
 # za
 alias dance="cd $MAT_DIR/za/dance"
 alias desk="cd $HOME/Desktop"
+alias frank="open $MAT_DIR/sw/lang/html-css/personal-site/content/notes/2011-fukuyama-political-order.md"
 alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; vim misc.md"
 alias jay="cd $CODE_DIR/lang/html-css/music-site"
 alias lj="cd $MAT_DIR/jay/lianjie"
@@ -234,5 +247,5 @@ alias notes="cd $NOTES_DIR; exa -al --tree --git-ignore -I '.git|.DS_Store|jay';
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias track="cd $CODE_DIR/db/shujuku/tracking"
 alias viz="cd $MAT_DIR/za/viz/figure/21/04-06-mellem/chapter-3-volume/face"
-alias yue="cd $LOGS_DIR/21/05"
+alias yue="cd $LOGS_DIR/21/06"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
