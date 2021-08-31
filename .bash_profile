@@ -39,11 +39,12 @@ fi
 ###
 
 # DAILY
-alias jz="rg 'FOCUS' $HOME/.bash_profile -A 14"
+alias jz="rg 'FOCUS' $HOME/.bash_profile -A 15"
 alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
 alias year="bat $LOGS_DIR/21/2021-year.md"
 alias day="bat $NOTES_DIR/jay/za/day.md"
+alias track="cd $CODE_DIR/db/shujuku/tracking; make bed y=21"
 
 # WEEKLY
 alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
@@ -60,7 +61,7 @@ function mq(){
     rg -A 3 '## current' $NOTES_DIR/za/music/theory.md
     echo -e "\n";
     # s (case-sensitive) U (multiline-mode, necessary for regex)
-    rg -sUA 8 'music\n' $DOTFILES_DIR/.bash_profile
+    rg -sUA 10 'music\n' $DOTFILES_DIR/.bash_profile
 }
 
 ###
@@ -231,6 +232,7 @@ alias zbin="cd $HOME/bin"
 alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 19 -B 1; rg '## changes' -A 17 -B 1"
 alias hx="cd $NOTES_DIR/za; rg '## chords' -A 37 -B 1"
 alias key="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/music/theory/circle-of-fifths.png"
+alias ml="cd $MAT_DIR/za/music/za/music-library; vim README.md"
 alias mode="cd $NOTES_DIR/za; rg '## modes' -A 14 -B 1"
 alias muz="cd $MAT_DIR/za/music; t 2"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
@@ -249,7 +251,6 @@ alias mat="cd $MAT_DIR"
 alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -e mpga -E yuyan/ -E music/ -E dance/ -E pods/"
 alias notes="cd $NOTES_DIR; exa -al --tree --git-ignore -I '.git|.DS_Store|jay'; jb"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
-alias track="cd $CODE_DIR/db/shujuku/tracking"
 alias viz="cd $MAT_DIR/za/viz"
 alias yue="cd $LOGS_DIR/21/08"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
