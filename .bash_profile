@@ -53,12 +53,13 @@ function tw(){
 }
 
 # MUSIC
-alias jc="rg -A 5 '## maintain' $NOTES_DIR/za/music"
 function mq(){
     echo -e "\n";
-    rg -A 11 '## current' $NOTES_DIR/za/music/instruments.md
-    echo -e "\n";
     rg -A 3 '## current' $NOTES_DIR/za/music/theory.md
+    echo -e "\n";
+    rg -A 10 '## current' $NOTES_DIR/za/music/guitar.md
+    echo -e "\n";
+    rg -A 16 '## current' $NOTES_DIR/za/music/instruments.md
     echo -e "\n";
     # s (case-sensitive) U (multiline-mode, necessary for regex)
     rg -sUA 10 'music\n' $DOTFILES_DIR/.bash_profile
@@ -240,7 +241,7 @@ alias us="rg 'upper structures' -A 33 -B 1 $NOTES_DIR/za"
 alias yin="cd /Volumes/music-usb"
 
 # za
-alias dance="cd $MAT_DIR/za/dance/house"
+alias dance="cd $MAT_DIR/za/dance"
 alias desk="cd $HOME/Desktop"
 alias frank="open $MAT_DIR/sw/lang/html-css/personal-site/content/notes/2011-fukuyama-political-order.md"
 alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; vim film.md"
@@ -252,5 +253,7 @@ alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -e mpga -E yuyan/ -E music/ -E dance
 alias notes="cd $NOTES_DIR; exa -al --tree --git-ignore -I '.git|.DS_Store|jay'; jb"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias viz="cd $MAT_DIR/za/viz"
+alias yy="cd $MAT_DIR/za/yuyan/spanish"
+alias trs="trans -I"
 alias yue="cd $LOGS_DIR/21/08"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
