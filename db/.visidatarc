@@ -1,1 +1,2 @@
 options.cmdlog_histfile = '~/.visidata/history/%Y%m%d.vd'
+options.motd_url=None
