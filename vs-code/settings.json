@@ -30,6 +30,7 @@
         "jay/logs/19":true,
         "jay/logs/20":true,
         "jay/logs/21":true,
+        "jay/logs/22":true,
         "**/.git": true,
         "**/node_modules": true,
         "**/bower_components": true
