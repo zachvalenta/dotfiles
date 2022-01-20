@@ -38,36 +38,21 @@ fi
 # 🏔 FOCUS
 ###
 
-# DAILY
-alias jz="rg 'FOCUS' $HOME/.bash_profile -A 15"
+alias jz="rg 'FOCUS' $HOME/.bash_profile -A 10"
+# daily
 alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
-alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
-alias year="bat $LOGS_DIR/21/2021-year.md"
-alias day="bat $NOTES_DIR/jay/za/day.md"
-alias track="cd $CODE_DIR/db/shujuku/tracking; make bed y=21"
-
-# WEEKLY
 alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
-function tw(){
-    rg "$1" $HOME/Desktop/zvmac/notes/jay/logs/rn.md | awk 'NF>1{print $NF}' | awk '{s+=$0}END{print s}'
-}
-
-# MUSIC
-function mq(){
-    echo -e "\n";
-    rg -A 3 '## current' $NOTES_DIR/za/music/theory.md
-    echo -e "\n";
-    rg -A 10 '## current' $NOTES_DIR/za/music/guitar.md
-    echo -e "\n";
-    rg -A 16 '## current' $NOTES_DIR/za/music/instruments.md
-    echo -e "\n";
-    # s (case-sensitive) U (multiline-mode, necessary for regex)
-    rg -sUA 10 'music\n' $DOTFILES_DIR/.bash_profile
-}
+alias day="bat $NOTES_DIR/jay/za/day.md"
+alias year="bat $LOGS_DIR/21/2021-year.md"
+# dev & music
+alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
+alias dq="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/sw"
+alias mq="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/za/music"
 
 ###
 # 🚢 DOCKER
 ###
+
 alias mt="docker"
 function mtl(){  # list all
     echo -e "\n";
@@ -213,6 +198,7 @@ alias vc="open $HOME/.vimrc"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
 # code
+alias board="rg -UA 3 '## current\n\n[\w|\*]'"
 alias db="cd $CODE_DIR/db"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
