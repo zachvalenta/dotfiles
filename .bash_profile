@@ -82,6 +82,7 @@ alias mtpc="docker ps -qa | xargs docker stop; docker system prune --volumes -f"
 ###
 # 💾  GIT
 ###
+
 # todo - SSoT for core workflow (gb as `git branch`, rm alias in .gitconfig), leave less-used cmd (count, far) as .gitconfig aliases
 alias gco="open $DOTFILES_DIR/.gitconfig"
 alias gic="touch .gitignore; gie"
@@ -110,6 +111,7 @@ alias gshow="git log --format=%B -n 1"  # msg description for commit
 ###
 # 🐍  PYTHON
 ###
+
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
 export PIP_REQUIRE_VIRTUALENV=true
@@ -189,58 +191,55 @@ alias ytdv="youtube-dl --format mp4"
 # 🛣 NAVIGATION
 ###
 
-# read/open
+# sw - general
+alias sw="cd $CODE_DIR"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
-alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
-alias sou="bat $NOTES_DIR/jay/za/sou.md"
-alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias vc="open $HOME/.vimrc"
-alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
+alias dot="cd $DOTFILES_DIR"
+alias zbin="cd $HOME/bin"
+alias me="cd $HOME"
+alias py="cd $CODE_DIR/lang/python"
+alias algos="cd $CODE_DIR/algos/algos"
 
-# code
-alias board="rg -UA 3 '## current\n\n[\w|\*]'"
+# sw - data
 alias db="cd $CODE_DIR/db"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
-alias jobs="cd $CODE_DIR/db/shujuku/jobs"
-alias algos="cd $CODE_DIR/algos/algos"
-alias dot="cd $DOTFILES_DIR"
-alias fl="cd $CODE_DIR/lang/python/flask"
-alias dj="cd $CODE_DIR/lang/python/django"
-alias knr="cd $CODE_DIR/lang/future/c"
-alias me="cd $HOME"
-alias ms="cd $CODE_DIR/hiring"
-alias py="cd $CODE_DIR/lang/python"
 alias shu="cd $CODE_DIR/db/shujuku/bookcase"
-alias sw="cd $CODE_DIR; t 2"
-alias zbin="cd $HOME/bin"
+alias jobs="cd $CODE_DIR/db/shujuku/jobs"
+alias ms="cd $CODE_DIR/hiring"
+alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
 # music
 alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 19 -B 1; rg '## changes' -A 17 -B 1"
 alias hx="cd $NOTES_DIR/za; rg '## chords' -A 37 -B 1"
+alias jita="cd /Users/zach/Desktop/zvmac/materials/za/music/guitar/brazil/1-maxixe"
 alias key="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/music/theory/circle-of-fifths.png"
-alias ml="cd $MAT_DIR/za/music/za/music-library; vim README.md"
+alias ml="vim $MAT_DIR/za/music/za/music-library/README.md"
 alias mode="cd $NOTES_DIR/za; rg '## modes' -A 14 -B 1"
 alias muz="cd $MAT_DIR/za/music; t 2"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
-alias us="rg 'upper structures' -A 33 -B 1 $NOTES_DIR/za"
+alias us="rg 'upper structures' -A 37 B 1 $NOTES_DIR/za"
 alias yin="cd /Volumes/music-usb"
 
 # za
-alias dance="cd $MAT_DIR/za/dance"
+alias dance="cd $MAT_DIR/za/dance; t 2; t | wc -l"
 alias desk="cd $HOME/Desktop"
 alias frank="open $MAT_DIR/sw/lang/html-css/personal-site/content/notes/2011-fukuyama-political-order.md"
 alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; vim film.md"
+alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias jay="cd $CODE_DIR/lang/html-css/music-site"
 alias lj="cd $MAT_DIR/jay/lianjie"
 alias logs="cd $LOGS_DIR"
 alias mat="cd $MAT_DIR"
 alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -e mpga -E yuyan/ -E music/ -E dance/ -E pods/"
 alias notes="cd $NOTES_DIR; exa -al --tree --git-ignore -I '.git|.DS_Store|jay'; jb"
-alias skate="cd /Users/zach/Desktop/zvmac/materials/za/skating; t"
+alias skate="cd /Users/zach/Desktop/zvmac/materials/za/skating; t jam/; t rhythm/; t turning/; t | wc -l"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
+alias sou="bat $NOTES_DIR/jay/za/sou.md"
+alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias viz="cd $MAT_DIR/za/viz"
 alias yy="cd $MAT_DIR/za/yuyan/spanish; open ibarra-modern-grammar.pdf"
 alias trs="trans -I"
-alias yue="cd $LOGS_DIR/21/08"
+alias yue="cd $LOGS_DIR/21/11"
 alias zach="cd $CODE_DIR/lang/html-css/personal-site"
