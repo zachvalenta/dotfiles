@@ -18,3 +18,6 @@ https://scottlocklin.wordpress.com/feed/
 https://rootsofprogress.org/feed.xml
 https://nintil.com/rss.xml
 https://austinvernon.eth.link/rss.xml
+https://dynomight.net/feed.xml
+https://www.gleech.org/feed.xml
+https://www.cold-takes.com/rss/
