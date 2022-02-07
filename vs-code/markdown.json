@@ -46,60 +46,17 @@
 			"```"
 		]
 	},
-	"pycode": {
-		"prefix": "pc",
-		"description": "Python code block",
-		"body": [
-			"```python",
-			"$1",
-			"```"
-		]
-    },
-    "mianshi": {
-		"prefix": "mdms",
-		"description": "outline for job app",
-		"body": [
-			"# TODO",
-			"",
-            "## 参考",
-            "",
-			"🔗 `hiring.md` 'during'",
-			"",
-            "## doing",
-            "",
-			"- [ ] ",
-			"",
-            "## next",
-            "",
-			"- [ ] ",
-			"",
-            "## done",
-			"",
-			"- [x] 2019.$1: ",
-			"",
-            "# INFO",
-            "",
-            "## company",
-            "",
-			"* ",
-            "",
-            "## role",
-			"",
-            "* ",
-            "",
-		]
-    },
     "note": {
 		"prefix": "mdn",
 		"description": "note outline",
 		"body": [
-			"# TODO",
+			"# 看板",
 			"",
             "## 参考",
             "",
 			"",
 			"",
-            "## doing",
+            "## now",
             "",
 			"📍 $1",
 			"",
