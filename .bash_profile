@@ -148,6 +148,7 @@ alias py3="python3"
 alias tre="/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin/python3"
 alias bpy="bpython"
 alias venv="python3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
+alias venv2="python3 -m venv venv-$(echo $PWD | awk -F'/' '{print $NF}')"
 alias on="source venv/bin/activate"
 alias off="deactivate"
 
