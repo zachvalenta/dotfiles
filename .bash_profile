@@ -1,8 +1,7 @@
 ###
 # 🌇  SOURCE
 ###
-echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "
-date
+echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "; date
 
 ###
 # 🌐  GLOBALS
@@ -38,16 +37,26 @@ fi
 # 🏔 FOCUS
 ###
 
-alias jz="rg 'FOCUS' $HOME/.bash_profile -A 10"
 # daily
+alias jz="rg 'FOCUS' $HOME/.bash_profile -A 18"
 alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
-alias tq="vim $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias day="bat $NOTES_DIR/jay/za/day.md"
+
+# weekly
+alias tq="vim $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias year="bat $LOGS_DIR/22/2022-year.md"
-# dev & music
+
+# kanban
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
-alias dq="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/sw"
-alias mq="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/za/music"
+alias kbd="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/sw"
+alias kbm="rg -UA 7 '## current\n\n[\w|\*]' $NOTES_DIR/za/music"
+alias kbr="\cd $NOTES_DIR; rg -UA 3 '## current\n\n[\w|\*]' -g '!sw/*' -g '!za/music/*'"
+
+# kbr
+alias zach="cd $CODE_DIR/lang/html-css/personal-site"
+alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
+alias vind="vim $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
+alias tuan="cd /Users/zach/Desktop/zvmac/materials/sw/db/shujuku/bookcase/notes/non-fiction/#clusters"
 
 ###
 # 🎹 MUSIC
