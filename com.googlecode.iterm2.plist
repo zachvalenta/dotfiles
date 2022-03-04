@@ -2815,6 +2815,8 @@
 	<false/>
 	<key>SwitchPaneModifier</key>
 	<integer>4</integer>
+	<key>SwitchTabModifier</key>
+	<integer>5</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>UseLionStyleFullscreen</key>
