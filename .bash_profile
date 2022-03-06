@@ -14,7 +14,7 @@ NOTES_DIR="$HOME/Desktop/zvmac/notes"
 export MANPAGER=bat
 export RIPGREP_CONFIG_PATH="$DOTFILES_DIR/.ripgreprc"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function* --> Homebrew thing?
-export PATH="/Users/zach/bin:${PATH}"  # my bin
+export PATH="$HOME/Desktop/zvmac/materials/sw/os/za/bin:${PATH}"  # my bin
 export PATH="$PATH:/Users/zach/.local/bin"  # pipx
 export PATH=$PATH:$HOME/go/bin  # golang
 source /Users/zach/Library/Preferences/org.dystroy.broot/launcher/bash/br  # broot
@@ -226,13 +226,15 @@ alias zach="cd $CODE_DIR/lang/html-css/personal-site"
 alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias vind="vim $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
 alias tuan="cd /Users/zach/Desktop/zvmac/materials/sw/db/shujuku/bookcase/notes/non-fiction/#clusters"
+# dev env
+alias denv="cd $DOTFILES_DIR/.."
+alias bin="cd $DOTFILES_DIR/../bin"
+alias dot="cd $DOTFILES_DIR"
 
 # sw - general
 alias sw="cd $CODE_DIR"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias vc="open $HOME/.vimrc"
-alias dot="cd $DOTFILES_DIR"
-alias zbin="cd $HOME/bin"
 alias me="cd $HOME"
 alias py="cd $CODE_DIR/lang/python"
 alias algos="cd $CODE_DIR/algos/algos"
