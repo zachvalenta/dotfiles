@@ -34,22 +34,20 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 fi
 
 ###
-# 🏔 FOCUS
+# 🏔 workflow
 ###
 
-# daily
-alias jz="rg 'FOCUS' $HOME/.bash_profile -A 18"
-alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
-alias day="bat $NOTES_DIR/jay/za/day.md"
+alias wf="rg 'FOCUS' $HOME/.bash_profile -A 18 -B 5"
 
-# weekly
-alias tq="vim $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
+# reminders
+alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
+alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
 alias year="bat $LOGS_DIR/22/2022-year.md"
 
 # kanban
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
 alias kbd="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/sw"
-alias kbm="rg -UA 7 '## current\n\n[\w|\*]' $NOTES_DIR/za/music"
+alias kbm="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/za/music"
 alias kbr="\cd $NOTES_DIR; rg -UA 3 '## current\n\n[\w|\*]' -g '!sw/*' -g '!za/music/*'"
 
 # kbr
@@ -66,10 +64,10 @@ alias tuan="cd /Users/zach/Desktop/zvmac/materials/sw/db/shujuku/bookcase/notes/
 alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 19 -B 1; rg '## changes' -A 17 -B 1"
 alias hx="cd $NOTES_DIR/za; rg '## chords' -A 37 -B 1"
 alias key="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/music/theory/circle-of-fifths.png"
-alias mode="cd $NOTES_DIR/za; rg '## modes' -A 14 -B 1"
+alias mode="cd $NOTES_DIR/za; rg -U '## modes\n' -A 14 -B 1"
 
 # other theory
-alias us="rg 'upper structures' -A 37 B 1 $NOTES_DIR/za"
+alias us="rg '## upper structures' -A 17 B 1 $NOTES_DIR/za"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
 
 # za
@@ -83,6 +81,7 @@ alias yin="cd /Volumes/music-usb"
 ###
 
 alias mt="docker"
+alias docker_stat="docker ps --format 'table {{.Names}}\t{{.State}}\t{{.Status}}'"  #  https://docs.docker.com/engine/reference/commandline/ps/#formatting
 function mtl(){  # list all
     echo -e "\n";
 
@@ -156,7 +155,7 @@ alias off="deactivate"
 # 🛠 UTILS
 ###
 
-# pkg
+# packaging
 alias brewfr="brew ls --versions > $DOTFILES_DIR/pkg-brew.txt"
 alias brewup="brew outdated | xargs brew upgrade"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
@@ -164,7 +163,7 @@ alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vs-code/pkg-vsc.txt"
 alias pipx="python3 -m pipx"
 alias pipxfr="pipx list > $DOTFILES_DIR/python/pkg-pipx.txt"
 
-# exa ports of ls and tree
+# exa
 alias lh="l | head"
 function l(){
     if [ "$1" ]; then
@@ -173,34 +172,38 @@ function l(){
         exa -al --classify --git --git-ignore -I '.git|.DS_Store'
     fi
 }
+function ll(){
+    if [ "$1" ]; then
+        exa --classify --git -I '.git|.DS_Store|.localized' "$1"
+    else
+        exa --classify --git -I '.git|.DS_Store|.localized'
+    fi
+}
 function t(){
-    # document control flow
+    # t <depth> <dir>
     if [ $# -eq 2 ]; then
         exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store' "$2"
+    # t <depth>
     elif [ $# -eq 1 ]
     then
+        # break on dir prepended w/ digits e.g. logs/2019
         if [[ "$1" =~ ^-?[0-9]+[.,]?[0-9]*$ ]]; then  # break on dir prepended w/ digits e.g. `logs/2019`
             exa -al --tree --level="$1" --git-ignore -I '.git|.DS_Store'
         else
             exa -al --tree --git-ignore -I '.git|.DS_Store' "$1"
         fi
+    # t
     else
         exa -al --tree --git-ignore -I '.git|.DS_Store'
     fi
 }
 
-# za
-function kai(){
-    fname="$1.md";
-    cwd="$(pwd)";
-    touch "$cwd/$fname";
-    open "$cwd/$fname";
-}
 alias b="bat"
-alias c="clear"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
 alias cppath='pwd | pbcopy'
 alias d="pwd"
+alias v="vimv"
+alias c="clear"
 alias ds="qing .DS_Store"
 alias grep="grep --color=auto -n"
 alias m="make"
@@ -211,21 +214,29 @@ alias pdfg="pdfgrep -in"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"  # list all sym links
-alias upbp="source $HOME/.bash_profile"
+alias upbp="source $DOTFILES_DIR/.bash_profile"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias ytd="youtube-dl -i --extract-audio --audio-format m4a"
 alias ytdv="youtube-dl --format mp4"
 
+function kai(){
+    fname="$1.md";
+    cwd="$(pwd)";
+    touch "$cwd/$fname";
+    open "$cwd/$fname";
+}
+function logf(){
+    fname="$1.log";
+    cwd="$(pwd)";
+    touch "$cwd/$fname";
+    open "$cwd/$fname";
+}
+
 ###
 # 🛣 NAVIGATION
 ###
 
-# site
-alias zach="cd $CODE_DIR/lang/html-css/personal-site"
-alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
-alias vind="vim $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
-alias tuan="cd /Users/zach/Desktop/zvmac/materials/sw/db/shujuku/bookcase/notes/non-fiction/#clusters"
 # dev env
 alias denv="cd $DOTFILES_DIR/.."
 alias bin="cd $DOTFILES_DIR/../bin"
@@ -235,7 +246,7 @@ alias dot="cd $DOTFILES_DIR"
 alias sw="cd $CODE_DIR"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias vc="open $HOME/.vimrc"
-alias me="cd $HOME"
+alias home="cd $HOME"
 alias py="cd $CODE_DIR/lang/python"
 alias algos="cd $CODE_DIR/algos/algos"
 
@@ -243,7 +254,7 @@ alias algos="cd $CODE_DIR/algos/algos"
 alias db="cd $CODE_DIR/db"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
-alias shu="cd $CODE_DIR/db/shujuku/bookcase; br"
+alias shu="\cd $CODE_DIR/db/shujuku/bookcase; gs; t 2 notes/"
 alias jobs="cd $CODE_DIR/db/shujuku/jobs"
 alias ms="cd $CODE_DIR/hiring"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
@@ -252,13 +263,12 @@ alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http:
 alias dance="cd $MAT_DIR/za/dance; t 2; t | wc -l"
 alias desk="cd $HOME/Desktop"
 alias frank="open $MAT_DIR/sw/lang/html-css/personal-site/content/notes/2011-fukuyama-political-order.md"
-alias film="cd $CODE_DIR/db/shujuku/bookcase/notes/film; vim film.md"
 alias jay="cd $CODE_DIR/lang/html-css/music-site"
 alias lj="cd $MAT_DIR/jay/lianjie"
 alias logs="cd $LOGS_DIR"
 alias mat="cd $MAT_DIR"
 alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -e mpga -E yuyan/ -E music/ -E dance/ -E pods/"
-alias notes="cd $NOTES_DIR; exa -al --tree --git-ignore -I '.git|.DS_Store|jay'; jb"
+alias notes="\cd $NOTES_DIR; jb"
 alias skate="cd /Users/zach/Desktop/zvmac/materials/za/skating; t 2"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sou="bat $NOTES_DIR/jay/za/sou.md"
