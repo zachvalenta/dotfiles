@@ -241,6 +241,12 @@ function logf(){
 alias denv="cd $DOTFILES_DIR/.."
 alias bin="cd $DOTFILES_DIR/../bin"
 alias dot="cd $DOTFILES_DIR"
+function logf(){
+    fname="$1.log";
+    cwd="$(pwd)";
+    touch "$cwd/$fname";
+    open "$cwd/$fname";
+}
 
 # sw - general
 alias sw="cd $CODE_DIR"
