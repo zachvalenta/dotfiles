@@ -8,12 +8,14 @@ set hlsearch " highlight matches from last search
 set ignorecase " need to set this for smartcase to work
 set smartcase " same as rg; insensitive if query lower, sensitive if query upper
 
-" misc
+" visual
+set number "show line numbers
 set relativenumber "relative line numbers
 syntax enable "highlighting
+
+" misc
 :set backspace=indent,eol,start "macOS delete key workaround https://stackoverflow.com/a/22390576
 set hidden "idk
-set number "show line numbers
 set ts=4 " map tab key to add 4 spaces https://www.fullstackpython.com/vim.html
 :autocmd BufRead /Users/zach/Desktop/zvmac/notes/sw/za/industry.md set scrolloff=999 " config per file https://stackoverflow.com/a/456846
 
