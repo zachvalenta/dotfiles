@@ -12,6 +12,8 @@ set smartcase " same as rg; insensitive if query lower, sensitive if query upper
 set number "show line numbers
 set relativenumber "relative line numbers
 syntax enable "highlighting
+" gruvbox, material, vividchalk
+colorscheme gruvbox
 
 " misc
 :set backspace=indent,eol,start "macOS delete key workaround https://stackoverflow.com/a/22390576
