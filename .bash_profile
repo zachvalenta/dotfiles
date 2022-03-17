@@ -60,19 +60,20 @@ alias tuan="cd /Users/zach/Desktop/zvmac/materials/sw/db/shujuku/bookcase/notes/
 # 🎹 MUSIC
 ###
 
-# harmony
-alias bian="cd $NOTES_DIR/za; rg '## interchange' -A 19 -B 1; rg '## changes' -A 17 -B 1"
-alias hx="cd $NOTES_DIR/za; rg '## chords' -A 37 -B 1"
-alias key="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/music/theory/circle-of-fifths.png"
-alias mode="cd $NOTES_DIR/za; rg -U '## modes\n' -A 14 -B 1"
-
-# other theory
-alias us="rg '## upper structures' -A 17 B 1 $NOTES_DIR/za"
+alias mh="rg -sUA 16 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
+function changes(){
+    rg "## changes" -A 5 -B 1 $NOTES_DIR/za/music/theory.md
+    rg "## interchange" -A 5 -B 1 $NOTES_DIR/za/music/theory.md
+}
+function chords(){
+    rg "## chords" -A 37 -B 1 $NOTES_DIR/za/music/theory.md
+    rg "## chords" -A 8 -B 1 $NOTES_DIR/za/music/guitar.md
+    rg "## chords" -A 12 -B 1 $NOTES_DIR/za/music/instruments.md
+}
+alias keys="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/music/theory/circle-of-fifths.png"
+alias modes="cd $NOTES_DIR/za; rg -U '## modes\n' -A 14 -B 1"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
-
-# za
 alias muz="cd $MAT_DIR/za/music; t 2"
-alias mh="rg -sUA 9 '# harmony\n' $DOTFILES_DIR/.bash_profile"
 alias ml="cd $MAT_DIR/za/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 
@@ -247,6 +248,7 @@ function logf(){
     touch "$cwd/$fname";
     open "$cwd/$fname";
 }
+alias vimp="cd $HOME/.vim/pack; t 3"
 
 # sw - general
 alias sw="cd $CODE_DIR"
@@ -277,7 +279,7 @@ alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -e mpga -E yuyan/ -E music/ -E dance
 alias notes="\cd $NOTES_DIR; jb"
 alias skate="cd /Users/zach/Desktop/zvmac/materials/za/skating; t 2"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
-alias sou="bat $NOTES_DIR/jay/za/sou.md"
+alias sou="rg '## search' $NOTES_DIR/za/business/operations.md -A 19"
 alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias viz="cd $MAT_DIR/za/viz"
 alias yy="cd $MAT_DIR/za/yuyan/spanish; open ibarra-modern-grammar.pdf"
