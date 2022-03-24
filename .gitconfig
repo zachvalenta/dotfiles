@@ -18,7 +18,10 @@
 	far = remote -v show
 	conf = config --global --list
 	nb = checkout -b
-	l = log --graph --oneline --all --decorate
+	# l = log --graph --oneline --all --decorate
+    # https://stackoverflow.com/a/70223290
+    # https://stackoverflow.com/a/15458378
+    l = log --pretty=format:'%C(auto)%h %C(white yellow bold) %<|(20) %as %C(auto) %d %s'
 	s = status -s  # shorter output
 	t = show -s --format=%ci  # timestamp of last commit
 	u = reset HEAD
