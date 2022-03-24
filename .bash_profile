@@ -32,6 +32,8 @@ function _update_ps1() {
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
+export MLR_KEY_COLOR=208
+export MLR_VALUE_COLOR=33
 
 ###
 # 🏔 workflow
