@@ -40,6 +40,7 @@ export MLR_VALUE_COLOR=33
 ###
 
 alias wf="rg 'FOCUS' $HOME/.bash_profile -A 18 -B 5"
+# 📍 pull in mh and other root nodes here, mv out kbr block
 
 # reminders
 alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
@@ -47,6 +48,7 @@ alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
 alias year="bat $LOGS_DIR/22/2022-year.md"
 
 # kanban
+alias jbb="jb | b"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
 alias kbd="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/sw"
 alias kbm="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/za/music"
@@ -64,8 +66,11 @@ alias tuan="cd /Users/zach/Desktop/zvmac/materials/sw/db/shujuku/bookcase/notes/
 
 alias mh="rg -sUA 16 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
 function changes(){
-    rg "## changes" -A 5 -B 1 $NOTES_DIR/za/music/theory.md
+    rg "## changes" -A 8 -B 1 $NOTES_DIR/za/music/theory.md
     rg "## interchange" -A 5 -B 1 $NOTES_DIR/za/music/theory.md
+    echo -e "\n";
+    huan
+    echo -e "\n";
 }
 function chords(){
     rg "## chords" -A 37 -B 1 $NOTES_DIR/za/music/theory.md
@@ -143,12 +148,15 @@ alias gshow="git log --format=%B -n 1"  # msg description for commit
 # 🐍  PYTHON
 ###
 
+# 3.10
+alias diez="/usr/local/Cellar/python\@3.10/3.10.1/Frameworks/Python.framework/Versions/3.10/bin/python3"
+alias pipx="diez -m pipx"
+alias bpy="bpython"
+# 3.6
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
 export PIP_REQUIRE_VIRTUALENV=true
 alias py3="python3"
-alias tre="/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin/python3"
-alias bpy="bpython"
 alias venv="python3 -m venv venv; on; pip install -q --upgrade pip setuptools wheel; pip list"
 alias venv2="python3 -m venv venv-$(echo $PWD | awk -F'/' '{print $NF}')"
 alias on="source venv/bin/activate"
@@ -163,7 +171,6 @@ alias brewfr="brew ls --versions > $DOTFILES_DIR/pkg-brew.txt"
 alias brewup="brew outdated | xargs brew upgrade"
 alias cpvi="cp $HOME/Desktop/vimium-options.json $DOTFILES_DIR; qing $HOME/Desktop/vimium-options.json"
 alias vscfr="ls ~/.vscode/extensions/ > $DOTFILES_DIR/vs-code/pkg-vsc.txt"
-alias pipx="python3 -m pipx"
 alias pipxfr="pipx list > $DOTFILES_DIR/python/pkg-pipx.txt"
 
 # exa
@@ -250,6 +257,7 @@ function logf(){
     touch "$cwd/$fname";
     open "$cwd/$fname";
 }
+alias logs="cd $DOTFILES_DIR/../logs"
 alias vimp="cd $HOME/.vim/pack; t 3"
 
 # sw - general
@@ -275,14 +283,13 @@ alias desk="cd $HOME/Desktop"
 alias frank="open $MAT_DIR/sw/lang/html-css/personal-site/content/notes/2011-fukuyama-political-order.md"
 alias jay="cd $CODE_DIR/lang/html-css/music-site"
 alias lj="cd $MAT_DIR/jay/lianjie"
-alias logs="cd $LOGS_DIR"
 alias mat="cd $MAT_DIR"
 alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -e mpga -E yuyan/ -E music/ -E dance/ -E pods/"
 alias notes="\cd $NOTES_DIR; jb"
 alias skate="cd /Users/zach/Desktop/zvmac/materials/za/skating; t 2"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sou="rg '## search' $NOTES_DIR/za/business/operations.md -A 19"
-alias train="open $HOME/Desktop/zvmac/notes/jay/za/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
+alias train="open $HOME/Desktop/zvmac/notes/za/games/training.md; open $HOME/Desktop/zvmac/materials/jay/training"
 alias viz="cd $MAT_DIR/za/viz"
 alias yy="cd $MAT_DIR/za/yuyan/spanish; open ibarra-modern-grammar.pdf"
 alias trs="trans -I"
