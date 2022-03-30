@@ -128,14 +128,19 @@ alias gs="git s"  # status
 alias gd="git d"  # diff working directory and repo
 alias gds="git ds"  # diff staging area and repo
 alias gai="git ai"  # interactive stage
-function ga(){  # add specific file(s) or add all (sans args)
+function ga(){  # https://stackoverflow.com/a/27875395
     if [ $# -eq 0 ]; then
-        git add -A
-        return 0
+        echo -n "are you sure? "
+        read answer
+        if [ "$answer" != "${answer#[Yy]}" ]; then
+            echo "adding all"
+            git add -A
+        fi
     else
         for var in "$@"
         do
             git add "$var"
+            echo "added ${var}"
         done
     fi
 }
