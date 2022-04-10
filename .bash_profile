@@ -39,32 +39,26 @@ export MLR_VALUE_COLOR=33
 # 🏔 workflow
 ###
 
-alias wf="rg 'FOCUS' $HOME/.bash_profile -A 18 -B 5"
-# 📍 pull in mh and other root nodes here, mv out kbr block
+# root
+alias wf="rg 'WF' $HOME/.bash_profile -A13 -B5"
 
 # reminders
 alias tq="bat $HOME/Desktop/zvmac/notes/jay/za/reminders.md"
 alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
 alias year="bat $LOGS_DIR/22/2022-year.md"
-
-# kanban
+alias lj="rg -A20 '## updates' $NOTES_DIR/jay/za/lianjie.md"
 alias jbb="jb | b"
-alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
+
+# dev, music, everything else
 alias kbd="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/sw"
 alias kbm="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/za/music"
 alias kbr="\cd $NOTES_DIR; rg -UA 3 '## current\n\n[\w|\*]' -g '!sw/*' -g '!za/music/*'"
-
-# kbr
-alias zach="cd $CODE_DIR/lang/html-css/personal-site"
-alias ind="open $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
-alias vind="vim $CODE_DIR/lang/html-css/personal-site/zachvalenta.github.io/index.html"
-alias tuan="cd /Users/zach/Desktop/zvmac/materials/sw/db/shujuku/bookcase/notes/non-fiction/#clusters"
 
 ###
 # 🎹 MUSIC
 ###
 
-alias mh="rg -sUA 16 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
+alias mh="rg -sUA 18 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
 function changes(){
     rg "## changes" -A 8 -B 1 $NOTES_DIR/za/music/theory.md
     rg "## interchange" -A 5 -B 1 $NOTES_DIR/za/music/theory.md
@@ -73,7 +67,7 @@ function changes(){
     echo -e "\n";
 }
 function chords(){
-    rg "## chords" -A 37 -B 1 $NOTES_DIR/za/music/theory.md
+    rg "## chords" -A 33 -B 1 $NOTES_DIR/za/music/theory.md
     rg "## chords" -A 8 -B 1 $NOTES_DIR/za/music/guitar.md
     rg "## chords" -A 12 -B 1 $NOTES_DIR/za/music/instruments.md
 }
@@ -266,6 +260,7 @@ alias logs="cd $DOTFILES_DIR/../logs"
 alias vimp="cd $HOME/.vim/pack; t 3"
 
 # sw - general
+alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
 alias sw="cd $CODE_DIR"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
 alias vc="open $HOME/.vimrc"
@@ -283,14 +278,14 @@ alias ms="cd $CODE_DIR/hiring"
 alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 
 # za
+alias chess="rg -A 15 '## 参考' $NOTES_DIR/za/games/chess.md"
 alias dance="cd $MAT_DIR/za/dance; t 2; t | wc -l"
 alias desk="cd $HOME/Desktop"
 alias frank="open $MAT_DIR/sw/lang/html-css/personal-site/content/notes/2011-fukuyama-political-order.md"
-alias jay="cd $CODE_DIR/lang/html-css/music-site"
-alias lj="cd $MAT_DIR/jay/lianjie"
 alias mat="cd $MAT_DIR"
 alias mp3="cd $MAT_DIR/za; fd -e mp3 -e m4a -e mpga -E yuyan/ -E music/ -E dance/ -E pods/"
 alias notes="\cd $NOTES_DIR; jb"
+alias site="cd $CODE_DIR/lang/html-css/personal-site"
 alias skate="cd /Users/zach/Desktop/zvmac/materials/za/skating; t 2"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias sou="rg '## search' $NOTES_DIR/za/business/operations.md -A 19"
