@@ -4,11 +4,6 @@ apps are exposed on your $PATH at /Users/zach/.local/bin
     - black
     - black-primer
     - blackd
-   package bpython 0.22.1, installed using Python 3.10.1
-    - bpdb
-    - bpython
-    - bpython-curses
-    - bpython-urwid
    package flake8 4.0.1, installed using Python 3.10.1
     - flake8
    package litecli 1.7.0, installed using Python 3.10.1
