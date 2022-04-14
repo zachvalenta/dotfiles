@@ -45,8 +45,9 @@ export MLR_VALUE_COLOR=33
 ###
 
 # cadence
-alias wf="rg 'WF' $HOME/.bash_profile -A10 -B5"
+alias wf="rg 'WF' $HOME/.bash_profile -A11 -B5"
 alias jbb="jb | b"
+alias track="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.04.md"
 alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
 alias year="bat $HOME/Desktop/zvmac/personal/calendar/logs/yearly/22-year.md"
 
@@ -76,7 +77,7 @@ function chords(){
 alias keys="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/music/theory/circle-of-fifths.png"
 alias modes="cd $NOTES_DIR/za; rg -U '## modes\n' -A 14 -B 1"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
-alias ml="cd $MAT_DIR/za/music/za/music-library; vim README.md"
+alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 
 ###
@@ -255,7 +256,12 @@ alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
 alias notes="\cd $NOTES_DIR; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
-alias gr="cd $HOME/Desktop/zvmac/personal/calendar"
+function gr(){
+    \cd $HOME/Desktop/zvmac/personal/calendar
+    gd
+    echo -e "\n";
+    gl
+}
 
 # denv
 alias denv="cd $DOTFILES_DIR/.."
@@ -273,6 +279,6 @@ alias site="cd $CODE_DIR/lang/html-css/personal-site"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 
 # za
-alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/sw/za/industry.md"
-alias chess="rg -A 15 '## 参考' $NOTES_DIR/za/games/chess.md"
-alias zp="vim +/'## leads' $HOME/Desktop/zvmac/notes/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
+alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/stem/dev/za/industry.md"
+alias chess="rg -A 15 '## 参考' $NOTES_DIR/humanities/games/chess.md"
+alias zp="vim +/'## leads' $NOTES_DIR/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html

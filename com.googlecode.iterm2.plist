@@ -1028,7 +1028,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>imgcat /Users/zach/Desktop/zvmac/materials/jay/lianjie/photos/za/water.png</string>
+			<string>imgcat /Users/zach/Desktop/zvmac/personal/photos/za/water.png</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
