@@ -37,7 +37,7 @@ function _update_ps1() {
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
-export MLR_KEY_COLOR=208
+export MLR_KEY_COLOR=208-underline
 export MLR_VALUE_COLOR=33
 
 ###
@@ -63,16 +63,16 @@ alias lj="rg -UA 3 '## current\n\n[\w|\*]' $PER_DIR/contacts/qin.md; rg -A20 '##
 
 alias mh="rg -sUA 18 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
 function changes(){
-    rg "## changes" -A 8 -B 1 $NOTES_DIR/za/music/theory.md
-    rg "## interchange" -A 5 -B 1 $NOTES_DIR/za/music/theory.md
+    rg "## changes" -A 8 -B 1 $NOTES_DIR/art/music/theory.md
+    rg "## interchange" -A 5 -B 1 $NOTES_DIR/art/music/theory.md
     echo -e "\n";
     huan
     echo -e "\n";
 }
 function chords(){
-    rg "## chords" -A 33 -B 1 $NOTES_DIR/za/music/theory.md
-    rg "## chords" -A 8 -B 1 $NOTES_DIR/za/music/guitar.md
-    rg "## chords" -A 12 -B 1 $NOTES_DIR/za/music/instruments.md
+    rg "## chords" -A 33 -B 1 $NOTES_DIR/art/music/theory.md
+    rg "## chords" -A 8 -B 1 $NOTES_DIR/art/music/guitar.md
+    rg "## chords" -A 12 -B 1 $NOTES_DIR/art/music/instruments.md
 }
 alias keys="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/music/theory/circle-of-fifths.png"
 alias modes="cd $NOTES_DIR/za; rg -U '## modes\n' -A 14 -B 1"
