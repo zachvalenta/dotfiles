@@ -41,27 +41,27 @@ export MLR_KEY_COLOR=208-underline
 export MLR_VALUE_COLOR=33
 
 ###
-# 🏔 workflow
+# 🏔 WORKFLOW
 ###
 
-# cadence
+# CADENCE
 alias wf="rg 'WF' $HOME/.bash_profile -A11 -B5"
 alias jbb="jb | b"
-alias track="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.04.md"
+alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.08.md; gr"
 alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
 alias year="bat $HOME/Desktop/zvmac/personal/calendar/logs/yearly/22-year.md"
 
-# art, humanities, stem, lianjie
+# ART, HUMANITIES, STEM, LIANJIE
 alias kba="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/art"
 alias kbh="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/humanities"
 alias kbs="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/stem"
-alias lj="rg -UA 3 '## current\n\n[\w|\*]' $PER_DIR/contacts/qin.md; rg -A20 '## updates' $PER_DIR/contacts/lianjie.md"
+alias lj="rg -UA 3 '## current\n\n[\w|\*]' $PER_DIR/contacts/qin.md; echo -e "\n"; rg -A20 '## updates' $PER_DIR/contacts/lianjie.md"
 
 ###
 # 🎹 MUSIC
 ###
 
-alias mh="rg -sUA 18 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
+alias mh="rg -sUA 20 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
 function changes(){
     rg "## changes" -A 8 -B 1 $NOTES_DIR/art/music/theory.md
     rg "## interchange" -A 5 -B 1 $NOTES_DIR/art/music/theory.md
@@ -78,7 +78,9 @@ alias keys="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/musi
 alias modes="cd $NOTES_DIR/za; rg -U '## modes\n' -A 14 -B 1"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
+alias us='rg -A 19  "upper structures" $NOTES_DIR'
 alias yin="cd /Volumes/music-usb"
+alias muz="cd $MAT_DIR/art/music"
 
 ###
 # 🚢 DOCKER
@@ -256,12 +258,7 @@ alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
 alias notes="\cd $NOTES_DIR; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
-function gr(){
-    \cd $HOME/Desktop/zvmac/personal/calendar
-    gd
-    echo -e "\n";
-    gl
-}
+alias gr="cd $HOME/Desktop/zvmac/personal/calendar; gd"
 
 # denv
 alias denv="cd $DOTFILES_DIR/.."
@@ -281,4 +278,7 @@ alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 # za
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/stem/dev/za/industry.md"
 alias chess="rg -A 15 '## 参考' $NOTES_DIR/humanities/games/chess.md"
+alias wed="cd /Users/zach/Desktop/ellen-wedding; vim notes.md"
+alias swing="cd $MAT_DIR/humanities/golf/swings"
+alias fy="cd $MAT_DIR/humanities/yuyan/french"
 alias zp="vim +/'## leads' $NOTES_DIR/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
