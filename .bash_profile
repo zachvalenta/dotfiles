@@ -45,21 +45,22 @@ export MLR_VALUE_COLOR=33
 ###
 
 # CADENCE
-alias wf="rg 'WF' $HOME/.bash_profile -A11 -B5"
+alias wf="rg 'WF' $HOME/.bash_profile -A16 -B5"
 alias jbb="jb | b"
 alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.09.md; gr"
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
-alias year="bat $HOME/Desktop/zvmac/personal/calendar/logs/yearly/22-year.md"
+function nian(){
+    year="$1-year.md";
+    path="$HOME/Desktop/zvmac/personal/calendar/logs/yearly";
+    bat "$path/$year";
+}
 
-# ART, HUMANITIES, STEM, LIANJIE
+# ART, HUMANITIES, STEM, WRITING, LIANJIE
 alias kba="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/art"
 alias kbh="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/humanities"
 alias kbs="rg -UA 5 '## current\n\n[\w|\*]' $NOTES_DIR/stem"
-function lj(){
-    rg -A 5 kata "$NOTES_DIR/art/aesthetics.md"
-    rg -UA 4 "## current\n\n[\w|\*]" "$PER_DIR/contacts/lianjie.md"
-    rg -UA 3 "## current\n\n[\w|\*]" "$PER_DIR/contacts/qin.md"
-}
+alias wen="rg -A 5 kata $NOTES_DIR/art/aesthetics.md"
+alias lj=" rg -UA 4 '## current\n\n[\w|\*]' $PER_DIR/contacts/lianjie.md; rg -UA 3 '## current\n\n[\w|\*]' $PER_DIR/contacts/qin.md;"
 
 ###
 # 🎹 MUSIC
@@ -267,7 +268,6 @@ alias gr="cd $HOME/Desktop/zvmac/personal/calendar; gd"
 alias denv="cd $DOTFILES_DIR/.."
 alias dot="cd $DOTFILES_DIR"
 alias bp="vsc $DOTFILES_DIR/.bash_profile"
-alias logs="cd $DOTFILES_DIR/../logs"
 alias snip="cd $HOME/Library/Application\ Support/Code/User/snippets"
 alias vimp="cd $HOME/.vim/pack; t 3"
 
