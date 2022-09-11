@@ -47,15 +47,19 @@ export MLR_VALUE_COLOR=33
 # CADENCE
 alias wf="rg 'WF' $HOME/.bash_profile -A11 -B5"
 alias jbb="jb | b"
-alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.08.md; gr"
-alias shui="bat $CODE_DIR/lang/html-css/personal-site/content/about/quotes.md"
+alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.09.md; gr"
+alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias year="bat $HOME/Desktop/zvmac/personal/calendar/logs/yearly/22-year.md"
 
 # ART, HUMANITIES, STEM, LIANJIE
 alias kba="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/art"
 alias kbh="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/humanities"
-alias kbs="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/stem"
-alias lj="rg -UA 3 '## current\n\n[\w|\*]' $PER_DIR/contacts/qin.md; echo -e "\n"; rg -A20 '## updates' $PER_DIR/contacts/lianjie.md"
+alias kbs="rg -UA 5 '## current\n\n[\w|\*]' $NOTES_DIR/stem"
+function lj(){
+    rg -A 5 kata "$NOTES_DIR/art/aesthetics.md"
+    rg -UA 4 "## current\n\n[\w|\*]" "$PER_DIR/contacts/lianjie.md"
+    rg -UA 3 "## current\n\n[\w|\*]" "$PER_DIR/contacts/qin.md"
+}
 
 ###
 # 🎹 MUSIC
@@ -74,8 +78,8 @@ function chords(){
     rg "## chords" -A 8 -B 1 $NOTES_DIR/art/music/guitar.md
     rg "## chords" -A 12 -B 1 $NOTES_DIR/art/music/instruments.md
 }
-alias keys="imgcat $MAT_DIR/za/music/theory/30-keys.jpg; imgcat $MAT_DIR/za/music/theory/circle-of-fifths.png"
-alias modes="cd $NOTES_DIR/za; rg -U '## modes\n' -A 14 -B 1"
+alias keys="imgcat $MAT_DIR/art/music/theory/30-keys.jpg; imgcat $MAT_DIR/art/music/theory/circle-of-fifths.png; rg -UA 6 '## key' $NOTES_DIR/art/music/theory.md"
+alias modes="rg -U '## modes\n' -A 14 -B 1 $NOTES_DIR/art/music"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias us='rg -A 19  "upper structures" $NOTES_DIR'
@@ -213,7 +217,6 @@ function t(){
 alias b="bat"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
 alias cppath='pwd | pbcopy'
-alias d="pwd"
 alias v="vimv"
 alias c="clear"
 alias ds="qing .DS_Store"
@@ -272,13 +275,13 @@ alias vimp="cd $HOME/.vim/pack; t 3"
 alias algos="cd $CODE_DIR/algos/algos"
 alias ms="cd $CODE_DIR/hiring"
 alias sand="cd $CODE_DIR/db/query-sandbox"
-alias site="cd $CODE_DIR/lang/html-css/personal-site"
+alias site="cd $CODE_DIR/lang/html-css"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 
 # za
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/stem/dev/za/industry.md"
 alias chess="rg -A 15 '## 参考' $NOTES_DIR/humanities/games/chess.md"
-alias wed="cd /Users/zach/Desktop/ellen-wedding; vim notes.md"
-alias swing="cd $MAT_DIR/humanities/golf/swings"
+alias golf="cd $MAT_DIR/humanities/golf"
+alias sk8="cd $MAT_DIR/art/skating"
 alias fy="cd $MAT_DIR/humanities/yuyan/french"
 alias zp="vim +/'## leads' $NOTES_DIR/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
