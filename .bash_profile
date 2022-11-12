@@ -44,10 +44,10 @@ export MLR_VALUE_COLOR=33
 # 🏔 WORKFLOW
 ###
 
-# CADENCE
-alias wf="rg 'WF' $HOME/.bash_profile -A16 -B5"
-alias jbb="jb | b"
-alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.09.md; gr"
+# 💡 non-fiction during meals, fiction at night
+alias wf="rg 'WF' $HOME/.bash_profile -A18 -B5"
+
+# 🌆
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 function nian(){
     year="$1-year.md";
@@ -55,10 +55,12 @@ function nian(){
     bat "$path/$year";
 }
 
-# ART, HUMANITIES, STEM, WRITING, LIANJIE
+# 🌇
 alias kba="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/art"
 alias kbh="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/humanities"
-alias kbs="rg -UA 5 '## current\n\n[\w|\*]' $NOTES_DIR/stem"
+alias kbs="rg -UA 1 '## current\n\n[\w|\*]' $NOTES_DIR/stem"
+
+# 🌃
 alias wen="rg -A 5 kata $NOTES_DIR/art/aesthetics.md"
 alias lj=" rg -UA 4 '## current\n\n[\w|\*]' $PER_DIR/contacts/lianjie.md; rg -UA 3 '## current\n\n[\w|\*]' $PER_DIR/contacts/qin.md;"
 
@@ -253,6 +255,7 @@ function logf(){
 # 🛣 NAVIGATION
 ###
 
+alias jbb="jb | b"
 alias home="cd $HOME"
 alias desk="cd $HOME/Desktop"
 alias root="cd $HOME/Desktop/zvmac; t 2"
@@ -262,6 +265,7 @@ alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
 alias notes="\cd $NOTES_DIR; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
+alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.11.md; gr"
 alias gr="cd $HOME/Desktop/zvmac/personal/calendar; gd"
 
 # denv
@@ -282,6 +286,8 @@ alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/stem/dev/za/industry.md"
 alias chess="rg -A 15 '## 参考' $NOTES_DIR/humanities/games/chess.md"
 alias golf="cd $MAT_DIR/humanities/golf"
+alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
+alias jt="cd $MAT_DIR/art/music/guitar/rn; t 2"
 alias sk8="cd $MAT_DIR/art/skating"
 alias fy="cd $MAT_DIR/humanities/yuyan/french"
 alias zp="vim +/'## leads' $NOTES_DIR/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
