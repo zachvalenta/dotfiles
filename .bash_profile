@@ -56,9 +56,9 @@ function nian(){
 }
 
 # 🌇
-alias kba="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/art"
-alias kbh="rg -UA 3 '## current\n\n[\w|\*]' $NOTES_DIR/humanities"
-alias kbs="rg -UA 1 '## current\n\n[\w|\*]' $NOTES_DIR/stem"
+alias kba="rg -UA 1 '## board\n\n[\w|\*]' $NOTES_DIR/art"
+alias kbh="rg -UA 1 '## board\n\n[\w|\*]' $NOTES_DIR/humanities"
+alias kbs="rg -UA 1 '## board\n\n[\w|\*]' $NOTES_DIR/stem"
 
 # 🌃
 alias wen="rg -A 5 kata $NOTES_DIR/art/aesthetics.md"
