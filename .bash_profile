@@ -56,7 +56,7 @@ function nian(){
 }
 
 # 🌇
-alias kba="rg -UA 1 '## board\n\n[\w|\*]' $NOTES_DIR/art"
+alias kba="rg -UA 2 '## board\n\n[\w|\*]' $NOTES_DIR/art"
 alias kbh="rg -UA 1 '## board\n\n[\w|\*]' $NOTES_DIR/humanities"
 alias kbs="rg -UA 1 '## board\n\n[\w|\*]' $NOTES_DIR/stem"
 
@@ -68,26 +68,21 @@ alias lj=" rg -UA 4 '## current\n\n[\w|\*]' $PER_DIR/contacts/lianjie.md; rg -UA
 # 🎹 MUSIC
 ###
 
-alias mh="rg -sUA 20 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
+alias mh="rg -sUA 15 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
 function changes(){
-    rg "## changes" -A 8 -B 1 $NOTES_DIR/art/music/theory.md
-    rg "## interchange" -A 5 -B 1 $NOTES_DIR/art/music/theory.md
+    rg "## changes" -A 30 -B 1 $NOTES_DIR/art/music/theory.md
     echo -e "\n";
     huan
-    echo -e "\n";
-}
-function chords(){
-    rg "## chords" -A 33 -B 1 $NOTES_DIR/art/music/theory.md
-    rg "## chords" -A 8 -B 1 $NOTES_DIR/art/music/guitar.md
-    rg "## chords" -A 12 -B 1 $NOTES_DIR/art/music/instruments.md
 }
 alias keys="imgcat $MAT_DIR/art/music/theory/30-keys.jpg; imgcat $MAT_DIR/art/music/theory/circle-of-fifths.png; rg -UA 6 '## key' $NOTES_DIR/art/music/theory.md"
 alias modes="rg -U '## modes\n' -A 14 -B 1 $NOTES_DIR/art/music"
+alias chords="rg -A 28 -B 1 '## chords' $NOTES_DIR/art/music/theory.md"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
-alias us='rg -A 19  "upper structures" $NOTES_DIR'
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
+alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
+alias jt="cd $MAT_DIR/art/music/guitar/rn; t 2"
 
 ###
 # 🚢 DOCKER
@@ -281,13 +276,6 @@ alias ms="cd $CODE_DIR/hiring"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias site="cd $CODE_DIR/lang/html-css"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
-
-# za
 alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/stem/dev/za/industry.md"
-alias chess="rg -A 15 '## 参考' $NOTES_DIR/humanities/games/chess.md"
-alias golf="cd $MAT_DIR/humanities/golf"
-alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
-alias jt="cd $MAT_DIR/art/music/guitar/rn; t 2"
-alias sk8="cd $MAT_DIR/art/skating"
-alias fy="cd $MAT_DIR/humanities/yuyan/french"
 alias zp="vim +/'## leads' $NOTES_DIR/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
+alias sk8="cd $MAT_DIR/art/skating"
