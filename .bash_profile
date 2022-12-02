@@ -7,12 +7,13 @@ echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "; date
 # 🌐  GLOBALS
 ###
 
-# file system
+# var
 MAT_DIR="$HOME/Desktop/zvmac/materials"
 CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 NOTES_DIR="$HOME/Desktop/zvmac/notes"
 PER_DIR="$HOME/Desktop/zvmac/personal"
+KB_REGEX="## board\n\n[\w|\*]"
 
 # env
 export MANPAGER=bat
@@ -56,13 +57,13 @@ function nian(){
 }
 
 # 🌇
-alias kba="rg -UA 2 '## board\n\n[\w|\*]' $NOTES_DIR/art"
-alias kbh="rg -UA 1 '## board\n\n[\w|\*]' $NOTES_DIR/humanities"
-alias kbs="rg -UA 1 '## board\n\n[\w|\*]' $NOTES_DIR/stem"
+alias kba="rg -UA 2 '$KB_REGEX' $NOTES_DIR/art"
+alias kbh="rg -UA 1 '$KB_REGEX' $NOTES_DIR/humanities"
+alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
 
 # 🌃
 alias wen="rg -A 5 kata $NOTES_DIR/art/aesthetics.md"
-alias lj=" rg -UA 4 '## current\n\n[\w|\*]' $PER_DIR/contacts/lianjie.md; rg -UA 3 '## current\n\n[\w|\*]' $PER_DIR/contacts/qin.md;"
+alias lj=" rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md;"
 
 ###
 # 🎹 MUSIC
@@ -260,7 +261,7 @@ alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
 alias notes="\cd $NOTES_DIR; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
-alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.11.md; gr"
+alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.12.md; gr"
 alias gr="cd $HOME/Desktop/zvmac/personal/calendar; gd"
 
 # denv
