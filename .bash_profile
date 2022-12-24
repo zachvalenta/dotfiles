@@ -45,25 +45,33 @@ export MLR_VALUE_COLOR=33
 # 🏔 WORKFLOW
 ###
 
-# 💡 non-fiction during meals, fiction at night
-alias wf="rg 'WF' $HOME/.bash_profile -A18 -B5"
+# | day | do                       |
+# |-----|--------------------------|
+# | T   | skate (Christiana)       |
+# | W   | lianjie (write, irl)     |
+# | R   | golf (sim)               |
+# | F   | dance (Trestle, Dolphin) |
+# | SAT | skate (Millennium)       |
+# | SUN | cook, fam dinner         |
+alias wf="rg 'WF' $HOME/.bash_profile -A19 -B12"
+alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
 
-# 🌆
+# 🌅 0630 wake, yoga, breakfast (oatmeal, juice, tea)
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
+
+# 🌇 1200 lunch (rice, book notes) breaks (guitar/movies, read) 1700 EOD (train)
+alias kba="rg -UA 4 '$KB_REGEX' $NOTES_DIR/art"  # daily tracking for 2023.q1
+alias kbh="rg -UA 4 '$KB_REGEX' $NOTES_DIR/humanities"
+alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
+
+# 🌃 2000 dinner 2200 write 2300 bed
+alias wen="rg -A 5 kata $NOTES_DIR/art/aesthetics.md"
+alias lj=" rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md;"
 function nian(){
     year="$1-year.md";
     path="$HOME/Desktop/zvmac/personal/calendar/logs/yearly";
     bat "$path/$year";
 }
-
-# 🌇
-alias kba="rg -UA 2 '$KB_REGEX' $NOTES_DIR/art"
-alias kbh="rg -UA 1 '$KB_REGEX' $NOTES_DIR/humanities"
-alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
-
-# 🌃
-alias wen="rg -A 5 kata $NOTES_DIR/art/aesthetics.md"
-alias lj=" rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md;"
 
 ###
 # 🎹 MUSIC
@@ -255,13 +263,13 @@ alias jbb="jb | b"
 alias home="cd $HOME"
 alias desk="cd $HOME/Desktop"
 alias root="cd $HOME/Desktop/zvmac; t 2"
-alias shu="\cd $HOME/Desktop/zvmac/bookcase; gs; t 2 notes/"
+alias shu="\cd $HOME/Desktop/zvmac/bookcase; br"
 alias mat="cd $MAT_DIR"
 alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
-alias notes="\cd $NOTES_DIR; jb"
+alias bj="\cd $NOTES_DIR; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
-alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/22.12.md; gr"
+alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/12.md; gr"
 alias gr="cd $HOME/Desktop/zvmac/personal/calendar; gd"
 
 # denv
