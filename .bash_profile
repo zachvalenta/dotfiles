@@ -53,22 +53,25 @@ export MLR_VALUE_COLOR=33
 # | F   | dance (Trestle, Dolphin) |
 # | SAT | skate (Millennium)       |
 # | SUN | cook, fam dinner         |
-alias wf="rg 'WF' $HOME/.bash_profile -A19 -B12"
-alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
+alias wf="rg 'WF' $HOME/.bash_profile -A21 -B12"
+alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/sow.md"
+alias gr="cd $PER_DIR/calendar; gd; termgraph $PER_DIR/calendar/logs/22/12.dat --color green"
+alias qd="vim $PER_DIR/calendar/logs/22/12.dat; termgraph $PER_DIR/calendar/logs/22/12.dat --color green"
 
-# 🌅 0630 wake, yoga, breakfast (oatmeal, juice, tea)
+# 🌅 0730 wake, yoga, breakfast (oatmeal, juice, tea)
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 
-# 🌇 1200 lunch (rice, book notes) breaks (guitar/movies, read) 1700 EOD (train)
+# 🌇 1200 lunch (book notes) breaks (guitar/movie, read) 1700 train
 alias kba="rg -UA 4 '$KB_REGEX' $NOTES_DIR/art"  # daily tracking for 2023.q1
+# alias kba="rg -Ul '$KB_REGEX' $NOTES_DIR/art"
 alias kbh="rg -UA 4 '$KB_REGEX' $NOTES_DIR/humanities"
 alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
 
-# 🌃 2000 dinner 2200 write 2300 bed
+# 🌃 2000 dinner 2200 guitar/movie 2300 write 0000 bed
 alias wen="rg -A 5 kata $NOTES_DIR/art/aesthetics.md"
 alias lj=" rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md;"
 function nian(){
-    year="$1-year.md";
+    year="$1.md";
     path="$HOME/Desktop/zvmac/personal/calendar/logs/yearly";
     bat "$path/$year";
 }
@@ -77,7 +80,7 @@ function nian(){
 # 🎹 MUSIC
 ###
 
-alias mh="rg -sUA 15 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
+alias mh="rg -sUA 16 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
 function changes(){
     rg "## changes" -A 30 -B 1 $NOTES_DIR/art/music/theory.md
     echo -e "\n";
@@ -92,6 +95,7 @@ alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
 alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
 alias jt="cd $MAT_DIR/art/music/guitar/rn; t 2"
+alias ge="cd $MAT_DIR/art/lit/songwriting/"
 
 ###
 # 🚢 DOCKER
@@ -166,6 +170,7 @@ alias gshow="git log --format=%B -n 1"  # msg description for commit
 alias diez="/usr/local/Cellar/python\@3.10/3.10.1/Frameworks/Python.framework/Versions/3.10/bin/python3"
 alias pipx="diez -m pipx"
 alias bpy="diez -m bpython"
+alias ipy="ipython"
 # 3.6
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}" # Setting PATH for Python 3.6; original version saved in .bash_profile.pysave
 export PYTHONDONTWRITEBYTECODE=1
@@ -269,8 +274,6 @@ alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
 alias bj="\cd $NOTES_DIR; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
-alias qd="vim $HOME/Desktop/zvmac/personal/calendar/logs/22/12.md; gr"
-alias gr="cd $HOME/Desktop/zvmac/personal/calendar; gd"
 
 # denv
 alias denv="cd $DOTFILES_DIR/.."
@@ -284,7 +287,6 @@ alias algos="cd $CODE_DIR/algos/algos"
 alias ms="cd $CODE_DIR/hiring"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias site="cd $CODE_DIR/lang/html-css"
-alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
-alias cm="vim +/'## profile' $HOME/Desktop/zvmac/notes/stem/dev/za/industry.md"
-alias zp="vim +/'## leads' $NOTES_DIR/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
 alias sk8="cd $MAT_DIR/art/skating"
+alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
+alias zp="vim +/'## leads' $NOTES_DIR/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
