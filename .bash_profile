@@ -13,6 +13,7 @@ CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 NOTES_DIR="$HOME/Desktop/zvmac/notes"
 PER_DIR="$HOME/Desktop/zvmac/personal"
+TRACK_DIR="$PER_DIR/tracking"
 KB_REGEX="## board\n\n[\w|\*]"
 
 # env
@@ -53,21 +54,24 @@ export MLR_VALUE_COLOR=33
 # | F   | dance (Trestle, Dolphin) |
 # | SAT | skate (Millennium)       |
 # | SUN | cook, fam dinner         |
-alias wf="rg 'WF' $HOME/.bash_profile -A21 -B12"
-alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/sow.md"
-alias gr="cd $PER_DIR/calendar; gd; termgraph $PER_DIR/calendar/logs/22/12.dat --color green"
-alias qd="vim $PER_DIR/calendar/logs/22/12.dat; termgraph $PER_DIR/calendar/logs/22/12.dat --color green"
 
-# 🌅 0730 wake, yoga, breakfast (oatmeal, juice, tea)
+# 🌊 META
+alias wf="rg 'WF' $HOME/.bash_profile -A22 -B12"
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
+alias mb="rg -UA 3 '2023 goals' $NOTES_DIR"
+alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/sow.md"
 
-# 🌇 1200 lunch (book notes) breaks (guitar/movie, read) 1700 train
-alias kba="rg -UA 4 '$KB_REGEX' $NOTES_DIR/art"  # daily tracking for 2023.q1
-# alias kba="rg -Ul '$KB_REGEX' $NOTES_DIR/art"
+# 📊 TRACKING
+alias tu="termgraph $TRACK_DIR/23/01.dat --color green; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -c "weight" -cc red 2>/dev/null"
+alias gz="vim $TRACK_DIR/23/01.dat; gr; tu"
+alias gr="cd $TRACK_DIR; gd"
+
+# 📝 TODO
+alias kba="rg -UA 1 '$KB_REGEX' $NOTES_DIR/art"
 alias kbh="rg -UA 4 '$KB_REGEX' $NOTES_DIR/humanities"
 alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
 
-# 🌃 2000 dinner 2200 guitar/movie 2300 write 0000 bed
+# PERSONAL
 alias wen="rg -A 5 kata $NOTES_DIR/art/aesthetics.md"
 alias lj=" rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md;"
 function nian(){
@@ -229,6 +233,7 @@ function t(){
 alias b="bat"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
 alias cppath='pwd | pbcopy'
+alias ic="imgcat"
 alias v="vimv"
 alias c="clear"
 alias ds="qing .DS_Store"
