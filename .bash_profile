@@ -62,7 +62,7 @@ alias mb="rg -UA 3 '2023 goals' $NOTES_DIR"
 alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/sow.md"
 
 # 📊 TRACKING
-alias tu="termgraph $TRACK_DIR/23/01.dat --color green; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -c "weight" -cc red 2>/dev/null"
+alias tu="cat $TRACK_DIR/weight.dat | asciigraph -h 10 -c "weight" -cc red 2>/dev/null; termgraph $TRACK_DIR/23/01.dat --color green; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}"
 alias gz="vim $TRACK_DIR/23/01.dat; gr; tu"
 alias gr="cd $TRACK_DIR; gd"
 
