@@ -43,6 +43,18 @@ export MLR_KEY_COLOR=208-underline
 export MLR_VALUE_COLOR=33
 
 ###
+# 📊 CHARTS
+###
+
+function timeleft(){
+    year_past="$(python -c 'print(round(float(15) / float(365), 2))')"
+    label "honeydew" "% of year past so far: ${year_past}"
+}
+alias weight="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
+alias totals="label "skyblue" "TOTALS"; termgraph $TRACK_DIR/23/01.dat --color green"
+alias goals="label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}"
+
+###
 # 🏔 WORKFLOW
 ###
 
@@ -52,28 +64,28 @@ export MLR_VALUE_COLOR=33
 # | W   | lianjie (write, irl)     |
 # | R   | golf (sim)               |
 # | F   | dance (Trestle, Dolphin) |
-# | SAT | skate (Millennium)       |
+# | SAT | kba                      |
 # | SUN | cook, fam dinner         |
 
 # 🌊 META
-alias wf="rg 'WF' $HOME/.bash_profile -A22 -B12"
+alias wf="rg 'WF' $HOME/.bash_profile -A23 -B11"
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias mb="rg -UA 3 '2023 goals' $NOTES_DIR"
-alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/sow.md"
+alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
 
-# 📊 TRACKING
-alias tu="cat $TRACK_DIR/weight.dat | asciigraph -h 10 -c "weight" -cc red 2>/dev/null; termgraph $TRACK_DIR/23/01.dat --color green; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}"
-alias gz="vim $TRACK_DIR/23/01.dat; gr; tu"
+# 🧮 TRACKING
+alias gz="vim $TRACK_DIR/23/01.dat; gr"
 alias gr="cd $TRACK_DIR; gd"
+alias eod="timeleft; weight; totals; goals"
 
 # 📝 TODO
 alias kba="rg -UA 1 '$KB_REGEX' $NOTES_DIR/art"
 alias kbh="rg -UA 4 '$KB_REGEX' $NOTES_DIR/humanities"
 alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
 
-# PERSONAL
-alias wen="rg -A 5 kata $NOTES_DIR/art/aesthetics.md"
-alias lj=" rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md;"
+# 🍃 PERSONAL
+alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
+alias lj="rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md"
 function nian(){
     year="$1.md";
     path="$HOME/Desktop/zvmac/personal/calendar/logs/yearly";
@@ -246,6 +258,7 @@ alias pdfg="pdfgrep -in"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"  # list all sym links
+alias tq="curl wttr.in"
 alias upbp="source $DOTFILES_DIR/.bash_profile"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
@@ -263,6 +276,14 @@ function logf(){
     cwd="$(pwd)";
     touch "$cwd/$fname";
     open "$cwd/$fname";
+}
+
+function label(){
+    update_bg="$1"
+    update_fg="$(pastel textcolor "$update_bg")"
+    echo -en "\n"
+    pastel paint "$update_fg" --on "$update_bg" "$2"
+    echo -en "\n"
 }
 
 ###
