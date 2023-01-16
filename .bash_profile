@@ -47,7 +47,7 @@ export MLR_VALUE_COLOR=33
 ###
 
 function timeleft(){
-    year_past="$(python -c 'print(round(float(15) / float(365), 2))')"
+    year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
     label "honeydew" "% of year past so far: ${year_past}"
 }
 alias weight="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
@@ -68,7 +68,7 @@ alias goals="label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {
 # | SUN | cook, fam dinner         |
 
 # 🌊 META
-alias wf="rg 'WF' $HOME/.bash_profile -A23 -B11"
+alias wf="rg 'WF' $HOME/.bash_profile -A24 -B11"
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias mb="rg -UA 3 '2023 goals' $NOTES_DIR"
 alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
@@ -76,7 +76,7 @@ alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
 # 🧮 TRACKING
 alias gz="vim $TRACK_DIR/23/01.dat; gr"
 alias gr="cd $TRACK_DIR; gd"
-alias eod="timeleft; weight; totals; goals"
+alias eod="weight; totals; goals; timeleft"
 
 # 📝 TODO
 alias kba="rg -UA 1 '$KB_REGEX' $NOTES_DIR/art"
@@ -86,6 +86,7 @@ alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
 # 🍃 PERSONAL
 alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
 alias lj="rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md"
+alias rj="cd $PER_DIR/calendar/rj"
 function nian(){
     year="$1.md";
     path="$HOME/Desktop/zvmac/personal/calendar/logs/yearly";
