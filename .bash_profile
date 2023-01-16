@@ -68,14 +68,15 @@ alias goals="label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {
 # | SUN | cook, fam dinner         |
 
 # 🌊 META
-alias wf="rg 'WF' $HOME/.bash_profile -A24 -B11"
+alias wf="rg 'WF' $HOME/.bash_profile -A20 -B11"
+alias nian='function yea(){ bat "$PER_DIR"/calendar/logs/yearly/"$1".md; }; yea'
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
-alias mb="rg -UA 3 '2023 goals' $NOTES_DIR"
 alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
 
 # 🧮 TRACKING
 alias gz="vim $TRACK_DIR/23/01.dat; gr"
 alias gr="cd $TRACK_DIR; gd"
+alias mb="rg -UA 3 '2023 goals' $NOTES_DIR"
 alias eod="weight; totals; goals; timeleft"
 
 # 📝 TODO
@@ -87,11 +88,6 @@ alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
 alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
 alias lj="rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md"
 alias rj="cd $PER_DIR/calendar/rj"
-function nian(){
-    year="$1.md";
-    path="$HOME/Desktop/zvmac/personal/calendar/logs/yearly";
-    bat "$path/$year";
-}
 
 ###
 # 🎹 MUSIC
