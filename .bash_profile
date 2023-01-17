@@ -43,51 +43,40 @@ export MLR_KEY_COLOR=208-underline
 export MLR_VALUE_COLOR=33
 
 ###
-# 📊 CHARTS
-###
-
-function timeleft(){
-    year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
-    label "honeydew" "% of year past so far: ${year_past}"
-}
-alias weight="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
-alias totals="label "skyblue" "TOTALS"; termgraph $TRACK_DIR/23/01.dat --color green"
-alias goals="label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}"
-
-###
 # 🏔 WORKFLOW
 ###
 
 # | day | do                       |
 # |-----|--------------------------|
-# | T   | skate (Christiana)       |
-# | W   | lianjie (write, irl)     |
-# | R   | golf (sim)               |
-# | F   | dance (Trestle, Dolphin) |
-# | SAT | kba                      |
-# | SUN | cook, fam dinner         |
+# | T   | skate                    |
+# | W   | golf                     |
+# | R   | lianjie (wen)            |
+# | F   | dance                    |
+# | SUN | cook, fam                |
 
-# 🌊 META
-alias wf="rg 'WF' $HOME/.bash_profile -A20 -B11"
-alias nian='function yea(){ bat "$PER_DIR"/calendar/logs/yearly/"$1".md; }; yea'
-alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
-alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
-
-# 🧮 TRACKING
-alias gz="vim $TRACK_DIR/23/01.dat; gr"
-alias gr="cd $TRACK_DIR; gd"
-alias mb="rg -UA 3 '2023 goals' $NOTES_DIR"
-alias eod="weight; totals; goals; timeleft"
-
-# 📝 TODO
-alias kba="rg -UA 1 '$KB_REGEX' $NOTES_DIR/art"
+# TOP
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A6 -B10"
+alias kba="clear; rg -UA 1 '$KB_REGEX' $NOTES_DIR/art"
 alias kbh="rg -UA 4 '$KB_REGEX' $NOTES_DIR/humanities"
 alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
+alias mb="clear; rg -UA 3 '2023 goals' $NOTES_DIR"
+alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; timeleft"
 
-# 🍃 PERSONAL
-alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
-alias lj="rg -UA 4 '$KB_REGEX' $PER_DIR/contacts/lianjie.md; rg -UA 3 '$KB_REGEX' $PER_DIR/contacts/qin.md"
-alias rj="cd $PER_DIR/calendar/rj"
+# 📝 BOARD
+
+# 🌊 META
+alias nian='function nian(){ bat "$PER_DIR"/calendar/logs/yearly/"$1".md; }; nian'
+alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
+
+# 🧮 GOALS
+alias gz="vim $TRACK_DIR/23/01.dat; gr"
+alias gr="cd $TRACK_DIR; gd"
+alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
+alias agg="label "skyblue" "TOTALS"; termgraph $TRACK_DIR/23/01.dat --color green"
+function timeleft(){
+    year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
+    label "honeydew" "% of year past so far: ${year_past}"
+}
 
 ###
 # 🎹 MUSIC
@@ -107,7 +96,7 @@ alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
 alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
-alias jt="cd $MAT_DIR/art/music/guitar/rn; t 2"
+alias jt="cd $MAT_DIR/art/music/guitar/acpg; t 2; open 02/licks.pdf"
 alias ge="cd $MAT_DIR/art/lit/songwriting/"
 
 ###
@@ -254,11 +243,13 @@ alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
+alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
 alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"  # list all sym links
 alias tq="curl wttr.in"
 alias upbp="source $DOTFILES_DIR/.bash_profile"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
+alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
 alias ytd="youtube-dl -i --extract-audio --audio-format m4a"
 alias ytdv="youtube-dl --format mp4"
 
@@ -308,6 +299,7 @@ alias vimp="cd $HOME/.vim/pack; t 3"
 # MRU repos
 alias algos="cd $CODE_DIR/algos/algos"
 alias ms="cd $CODE_DIR/hiring"
+alias rj="vim $PER_DIR/calendar/rj/README.md"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias site="cd $CODE_DIR/lang/html-css"
 alias sk8="cd $MAT_DIR/art/skating"
