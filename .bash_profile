@@ -46,19 +46,20 @@ export MLR_VALUE_COLOR=33
 # 🏔 WORKFLOW
 ###
 
-# | day | do                       |
-# |-----|--------------------------|
-# | T   | skate                    |
-# | W   | golf                     |
-# | R   | lianjie (wen)            |
-# | F   | dance                    |
-# | SUN | cook, fam                |
+# | day | thing          | doing |
+# |-----|----------------|-------|
+# | T   | skate          |       |
+# | W   | golf           |       |
+# | R   | lianjie (wen)  |       |
+# | F   | dance          |       |
+# | S/S | cook, fam      | x     |
 
 # TOP
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A6 -B10"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A7 -B10"
 alias kba="clear; rg -UA 1 '$KB_REGEX' $NOTES_DIR/art"
 alias kbh="rg -UA 4 '$KB_REGEX' $NOTES_DIR/humanities"
 alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
+alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
 alias mb="clear; rg -UA 3 '2023 goals' $NOTES_DIR"
 alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; timeleft"
 
@@ -72,7 +73,7 @@ alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias gz="vim $TRACK_DIR/23/01.dat; gr"
 alias gr="cd $TRACK_DIR; gd"
 alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
-alias agg="label "skyblue" "TOTALS"; termgraph $TRACK_DIR/23/01.dat --color green"
+alias agg="clear; label "skyblue" "TOTALS"; termgraph $TRACK_DIR/23/01.dat --color green"
 function timeleft(){
     year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
     label "honeydew" "% of year past so far: ${year_past}"
@@ -96,7 +97,7 @@ alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
 alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
-alias jt="cd $MAT_DIR/art/music/guitar/acpg; t 2; open 02/licks.pdf"
+alias jt="\cd $MAT_DIR/art/music/guitar/acpg; t 2"
 alias ge="cd $MAT_DIR/art/lit/songwriting/"
 
 ###
@@ -245,11 +246,10 @@ alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
 alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"  # list all sym links
-alias tq="curl wttr.in"
+alias tq="curl wttr.in"  # fix: inability to default to current location in one-line mode, no humidity in main view
 alias upbp="source $DOTFILES_DIR/.bash_profile"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
-alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
 alias ytd="youtube-dl -i --extract-audio --audio-format m4a"
 alias ytdv="youtube-dl --format mp4"
 
