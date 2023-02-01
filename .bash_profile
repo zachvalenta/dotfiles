@@ -71,9 +71,13 @@ alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 
 # 🧮 GOALS
 alias gz="vim $TRACK_DIR/23/01.dat; gr"
-alias gr="cd $TRACK_DIR; gd"
+alias gr="\cd $TRACK_DIR; gd"
 alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
-alias agg="clear; label "skyblue" "TOTALS"; termgraph $TRACK_DIR/23/01.dat --color green"
+function agg(){
+    clear
+    label "skyblue" "TOTALS"
+    rg -IN "^(guitar|piano|dance|skate|train|dev|cooking|muz|golf|read|yuyan|lianjie|admin|toil)" $TRACK_DIR/23/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i];}' | sort | termgraph --color green
+}
 function timeleft(){
     year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
     label "honeydew" "% of year past so far: ${year_past}"
@@ -244,7 +248,7 @@ alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
-alias sou="rg -UA 12 '## search' $NOTES_DIR/humanities/business/km.md"
+alias sou="rg -UA 7 '## search' $NOTES_DIR/humanities/business/km.md"
 alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"  # list all sym links
 alias tq="curl wttr.in"  # fix: inability to default to current location in one-line mode, no humidity in main view
 alias upbp="source $DOTFILES_DIR/.bash_profile"
@@ -299,9 +303,10 @@ alias vimp="cd $HOME/.vim/pack; t 3"
 # MRU repos
 alias algos="cd $CODE_DIR/algos/algos"
 alias ms="cd $CODE_DIR/hiring"
-alias rj="vim $PER_DIR/calendar/rj/README.md"
+alias rj="vim $PER_DIR/rj/README.md"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias site="cd $CODE_DIR/lang/html-css"
-alias sk8="cd $MAT_DIR/art/skating"
+alias sk8="cd $MAT_DIR/art/skate"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
+alias tw="cd $MAT_DIR/art/dance"
 alias zp="vim +/'## leads' $NOTES_DIR/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
