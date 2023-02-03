@@ -70,13 +70,13 @@ alias nian='function nian(){ bat "$PER_DIR"/calendar/logs/yearly/"$1".md; }; nia
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 
 # 🧮 GOALS
-alias gz="vim $TRACK_DIR/23/01.dat; gr"
+alias gz="vim $TRACK_DIR/23/02.dat; gr"  # use python to get current month here
 alias gr="\cd $TRACK_DIR; gd"
 alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
 function agg(){
-    clear
+    YEAR=${1:-23}
     label "skyblue" "TOTALS"
-    rg -IN "^(guitar|piano|dance|skate|train|dev|cooking|muz|golf|read|yuyan|lianjie|admin|toil)" $TRACK_DIR/23/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i];}' | sort | termgraph --color green
+    rg -IN "^(guitar|piano|dance|skate|train|dev|cooking|muz|golf|read|yuyan|lianjie|admin|toil)" $TRACK_DIR/"$YEAR"/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i];}' | sort | termgraph --color green
 }
 function timeleft(){
     year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
