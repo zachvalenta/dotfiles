@@ -55,19 +55,19 @@ export MLR_VALUE_COLOR=33
 # | S/S | cook, fam      | x     |
 
 # TOP
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A7 -B10"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A4 -B10"
 alias kba="clear; rg -UA 1 '$KB_REGEX' $NOTES_DIR/art"
-alias kbh="rg -UA 4 '$KB_REGEX' $NOTES_DIR/humanities"
-alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
-alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
 alias mb="clear; rg -UA 3 '2023 goals' $NOTES_DIR"
 alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; timeleft"
 
 # 📝 BOARD
+alias kbh="rg -UA 4 '$KB_REGEX' $NOTES_DIR/humanities"
+alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
 
 # 🌊 META
 alias nian='function nian(){ bat "$PER_DIR"/calendar/logs/yearly/"$1".md; }; nian'
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
+alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
 
 # 🧮 GOALS
 alias gz="vim $TRACK_DIR/23/02.dat; gr"  # use python to get current month here
@@ -76,7 +76,7 @@ alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 
 function agg(){
     YEAR=${1:-23}
     label "skyblue" "TOTALS"
-    rg -IN "^(guitar|piano|dance|skate|train|dev|cooking|muz|golf|read|yuyan|lianjie|admin|toil)" $TRACK_DIR/"$YEAR"/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i];}' | sort | termgraph --color green
+    rg -IN "^(guitar|piano|dance|skate|train|dev|cooking|muz|golf|read|yuyan|lianjie|admin|toil)" $TRACK_DIR/"$YEAR"/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i]/4;}' | sort | termgraph --color green
 }
 function timeleft(){
     year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
@@ -99,6 +99,7 @@ alias chords="rg -A 28 -B 1 '## chords' $NOTES_DIR/art/music/theory.md"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
+alias now="cd /Volumes/music-usb/rock/punk/70s-first"
 alias muz="cd $MAT_DIR/art/music"
 alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
 alias jt="\cd $MAT_DIR/art/music/guitar/acpg; t 2"
