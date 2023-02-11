@@ -11,7 +11,7 @@ echo -n "$(tput setaf 5) updating ~/.bash_profile at$(tput sgr0): "; date
 MAT_DIR="$HOME/Desktop/zvmac/materials"
 CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
-NOTES_DIR="$HOME/Desktop/zvmac/notes"
+DOMAIN_NOTES="$HOME/Desktop/zvmac/notes/domains"
 PER_DIR="$HOME/Desktop/zvmac/personal"
 TRACK_DIR="$PER_DIR/tracking"
 KB_REGEX="## board\n\n[\w|\*]"
@@ -56,18 +56,18 @@ export MLR_VALUE_COLOR=33
 
 # TOP
 alias wf="clear; rg 'WF' $HOME/.bash_profile -A4 -B10"
-alias kba="clear; rg -UA 1 '$KB_REGEX' $NOTES_DIR/art"
-alias mb="clear; rg -UA 3 '2023 goals' $NOTES_DIR"
+alias kba="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/art"
+alias mb="clear; rg -UA 3 '2023 goals' $DOMAIN_NOTES"
 alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; timeleft"
 
 # 📝 BOARD
-alias kbh="rg -UA 4 '$KB_REGEX' $NOTES_DIR/humanities"
-alias kbs="rg -UA 1 '$KB_REGEX' $NOTES_DIR/stem"
+alias kbh="rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities"
+alias kbs="rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/stem"
 
 # 🌊 META
-alias nian='function nian(){ bat "$PER_DIR"/calendar/logs/yearly/"$1".md; }; nian'
+alias nian='function nian(){ bat "$PER_DIR"/calendar/logs/"$1".md; }; nian'
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
-alias wen="rg -A 5 KATA $NOTES_DIR/art/aesthetics.md"
+alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
 
 # 🧮 GOALS
 alias gz="vim $TRACK_DIR/23/02.dat; gr"  # use python to get current month here
@@ -89,14 +89,14 @@ function timeleft(){
 
 alias mh="rg -sUA 16 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
 function changes(){
-    rg "## changes" -A 30 -B 1 $NOTES_DIR/art/music/theory.md
+    rg "## changes" -A 30 -B 1 $DOMAIN_NOTES/art/music/theory.md
     echo -e "\n";
     huan
 }
-alias keys="imgcat $MAT_DIR/art/music/theory/30-keys.jpg; imgcat $MAT_DIR/art/music/theory/circle-of-fifths.png; rg -UA 6 '## key' $NOTES_DIR/art/music/theory.md"
-alias modes="rg -U '## modes\n' -A 14 -B 1 $NOTES_DIR/art/music"
-alias chords="rg -A 28 -B 1 '## chords' $NOTES_DIR/art/music/theory.md"
-alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $NOTES_DIR; echo -e '\n'"
+alias keys="imgcat $MAT_DIR/art/music/theory/30-keys.jpg; imgcat $MAT_DIR/art/music/theory/circle-of-fifths.png; rg -UA 6 '## key' $DOMAIN_NOTES/art/music/theory.md"
+alias modes="rg -U '## modes\n' -A 14 -B 1 $DOMAIN_NOTES/art/music"
+alias chords="rg -A 28 -B 1 '## chords' $DOMAIN_NOTES/art/music/theory.md"
+alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $DOMAIN_NOTES; echo -e '\n'"
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias now="cd /Volumes/music-usb/rock/punk/70s-first"
@@ -249,7 +249,7 @@ alias oo="open ."
 alias pdfg="pdfgrep -in"
 alias ri="ncal -3"
 alias rm='function redirect(){ echo "use qing instead";}; redirect'
-alias sou="rg -UA 7 '## search' $NOTES_DIR/humanities/business/km.md"
+alias sou="rg -UA 7 '## search' $DOMAIN_NOTES/humanities/business/km.md"
 alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"  # list all sym links
 alias tq="curl wttr.in"  # fix: inability to default to current location in one-line mode, no humidity in main view
 alias upbp="source $DOTFILES_DIR/.bash_profile"
@@ -287,11 +287,11 @@ alias jbb="jb | b"
 alias home="cd $HOME"
 alias desk="cd $HOME/Desktop"
 alias root="cd $HOME/Desktop/zvmac; t 2"
-alias shu="\cd $HOME/Desktop/zvmac/bookcase; br"
+alias shu="\cd $HOME/Desktop/zvmac/notes/bookcase; br"
 alias mat="cd $MAT_DIR"
 alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
-alias bj="\cd $NOTES_DIR; jb"
+alias bj="\cd $DOMAIN_NOTES; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
 
 # denv
@@ -310,4 +310,4 @@ alias site="cd $CODE_DIR/lang/html-css"
 alias sk8="cd $MAT_DIR/art/skate"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias tw="cd $MAT_DIR/art/dance"
-alias zp="vim +/'## leads' $NOTES_DIR/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
+alias zp="vim +/'## leads' $DOMAIN_NOTES/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
