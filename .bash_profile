@@ -52,28 +52,28 @@ export MLR_VALUE_COLOR=33
 # | W   | golf           |       |
 # | R   | lianjie (wen)  |       |
 # | F   | dance          |       |
-# | S/S | cook, fam      | x     |
+# | S/S | cook, fam      |       |
 
 # TOP
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A4 -B10"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A5 -B10"
 alias kba="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/art"
 alias mb="clear; rg -UA 3 '2023 goals' $DOMAIN_NOTES"
 alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; timeleft"
+alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
 
 # 📝 BOARD
-alias kbh="rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities"
+alias kbh="rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
 alias kbs="rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/stem"
 
 # 🌊 META
-alias nian='function nian(){ bat "$PER_DIR"/calendar/logs/"$1".md; }; nian'
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
 
 # 🧮 GOALS
-alias gz="vim $TRACK_DIR/23/02.dat; gr"  # use python to get current month here
+alias gz="vim $TRACK_DIR/23/04.dat; gr"  # use python to get current month here
 alias gr="\cd $TRACK_DIR; gd"
-alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
 function agg(){
+    clear;
     YEAR=${1:-23}
     label "skyblue" "TOTALS"
     rg -IN "^(guitar|piano|dance|skate|train|dev|cooking|muz|golf|read|yuyan|lianjie|admin|toil)" $TRACK_DIR/"$YEAR"/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i]/4;}' | sort | termgraph --color green
@@ -99,7 +99,6 @@ alias chords="rg -A 28 -B 1 '## chords' $DOMAIN_NOTES/art/music/theory.md"
 alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $DOMAIN_NOTES; echo -e '\n'"
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
-alias now="cd /Volumes/music-usb/rock/punk/70s-first"
 alias muz="cd $MAT_DIR/art/music"
 alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
 alias jt="\cd $MAT_DIR/art/music/guitar/acpg; t 2"
@@ -309,5 +308,5 @@ alias sand="cd $CODE_DIR/db/query-sandbox"
 alias site="cd $CODE_DIR/lang/html-css"
 alias sk8="cd $MAT_DIR/art/skate"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
-alias tw="cd $MAT_DIR/art/dance"
+alias tw="cd $MAT_DIR/art/dance/house; t"
 alias zp="vim +/'## leads' $DOMAIN_NOTES/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
