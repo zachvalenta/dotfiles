@@ -59,7 +59,7 @@ alias wf="clear; rg 'WF' $HOME/.bash_profile -A5 -B10"
 alias kba="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/art"
 alias mb="clear; rg -UA 3 '2023 goals' $DOMAIN_NOTES"
 alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; timeleft"
-alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 red 2>/dev/null"
+alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
 
 # 📝 BOARD
 alias kbh="rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
@@ -70,8 +70,8 @@ alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
 
 # 🧮 GOALS
-alias gz="vim $TRACK_DIR/23/04.dat; gr"  # use python to get current month here
-alias gr="\cd $TRACK_DIR; gd"
+alias gz="vim $TRACK_DIR/23/05.dat; gr"  # use python to get current month here
+alias gr="\cd $TRACK_DIR; gds"
 function agg(){
     clear;
     YEAR=${1:-23}
@@ -101,7 +101,7 @@ alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
 alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
-alias jt="\cd $MAT_DIR/art/music/guitar/acpg; t 2"
+alias jt="\cd $MAT_DIR/art/music/guitar/rn; t 2"
 alias ge="cd $MAT_DIR/art/lit/songwriting/"
 
 ###
