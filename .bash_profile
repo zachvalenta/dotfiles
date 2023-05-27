@@ -46,23 +46,23 @@ export MLR_VALUE_COLOR=33
 # 🏔 WORKFLOW
 ###
 
-# | day | thing          | doing |
-# |-----|----------------|-------|
-# | T   | skate          |       |
-# | W   | golf           |       |
-# | R   | lianjie (wen)  |       |
-# | F   | dance          |       |
-# | S/S | cook, fam      |       |
+# | day | kba   |
+# |-----|-------|
+# | T   | skate |
+# | W   | golf  |
+# | R   | dance |
 
 # TOP
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A5 -B10"
-alias kba="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/art"
-alias mb="clear; rg -UA 3 '2023 goals' $DOMAIN_NOTES"
-alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; timeleft"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A8 -B10; imgcat $PER_DIR/photos/23/mo-hooker.jpg"
 alias tz="label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
+alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; timeleft"
+alias mb="clear; rg -UA 3 '2023 goals' $DOMAIN_NOTES"
+alias tm="b $TRACK_DIR/23/05.dat"  # ++ agg
+alias kba="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/art"
+alias kbh="rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
+alias sch="vim ~/Desktop/camp/schedule.md"
 
 # 📝 BOARD
-alias kbh="rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
 alias kbs="rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/stem"
 
 # 🌊 META
@@ -71,12 +71,13 @@ alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
 
 # 🧮 GOALS
 alias gz="vim $TRACK_DIR/23/05.dat; gr"  # use python to get current month here
-alias gr="\cd $TRACK_DIR; gds"
+alias gr="\cd $TRACK_DIR; l"
 function agg(){
     clear;
     YEAR=${1:-23}
     label "skyblue" "TOTALS"
-    rg -IN "^(guitar|piano|dance|skate|train|dev|cooking|muz|golf|read|yuyan|lianjie|admin|toil)" $TRACK_DIR/"$YEAR"/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i]/4;}' | sort | termgraph --color green
+    # rg -IN "^(guitar|piano|dance|skate|train|dev|cooking|muz|golf|read|yuyan|lianjie|admin|toil)" $TRACK_DIR/"$YEAR"/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i]/4;}' | sort | termgraph --color green
+    rg -IN "^(guitar|piano|dance|skate|train|muz)" $TRACK_DIR/"$YEAR"/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i]/4;}' | sort | termgraph --color green
 }
 function timeleft(){
     year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
@@ -88,15 +89,15 @@ function timeleft(){
 ###
 
 alias mh="rg -sUA 16 '🎹 MUSIC' $DOTFILES_DIR/.bash_profile"
-function changes(){
-    rg "## changes" -A 30 -B 1 $DOMAIN_NOTES/art/music/theory.md
-    echo -e "\n";
-    huan
+alias clef="imgcat $MAT_DIR/art/music/theory/clef.png"
+function mp(){
+    make -C $CODE_DIR/lang/python/music-prompt chords
+    make -C $CODE_DIR/lang/python/music-prompt melody
 }
 alias keys="imgcat $MAT_DIR/art/music/theory/30-keys.jpg; imgcat $MAT_DIR/art/music/theory/circle-of-fifths.png; rg -UA 6 '## key' $DOMAIN_NOTES/art/music/theory.md"
 alias modes="rg -U '## modes\n' -A 14 -B 1 $DOMAIN_NOTES/art/music"
 alias chords="rg -A 28 -B 1 '## chords' $DOMAIN_NOTES/art/music/theory.md"
-alias rhy="imgcat $MAT_DIR/za/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $DOMAIN_NOTES; echo -e '\n'"
+alias rhy="imgcat $MAT_DIR/art/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $DOMAIN_NOTES; echo -e '\n'"
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
@@ -292,6 +293,7 @@ alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
 alias bj="\cd $DOMAIN_NOTES; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
+alias golf="cd $MAT_DIR/art/golf"
 
 # denv
 alias denv="cd $DOTFILES_DIR/.."
@@ -308,5 +310,5 @@ alias sand="cd $CODE_DIR/db/query-sandbox"
 alias site="cd $CODE_DIR/lang/html-css"
 alias sk8="cd $MAT_DIR/art/skate"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
-alias tw="cd $MAT_DIR/art/dance/house; t"
+alias tw="cd $MAT_DIR/art/dance/core/house/course; t"
 alias zp="vim +/'## leads' $DOMAIN_NOTES/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
