@@ -43,22 +43,15 @@ export MLR_KEY_COLOR=208-underline
 export MLR_VALUE_COLOR=33
 
 ###
-# 🏔 WORKFLOW
+# 🏔 WORKFLOW: yearly doc open, focus: "what did I get done this week? this month? this quarter?"
 ###
 
-# 🔍 YEARLY DOC OPEN, FOCUS: "WHAT DID I GET DONE THIS WEEK? THIS MONTH? THIS QUARTER?"
-
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A8 -B7; imgcat $PER_DIR/photos/23\ new\ life/za/mo-hooker.jpg"
-alias kba="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/art"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A6 -B4; imgcat $PER_DIR/photos/23\ new\ life/06\ mo\ hooker\ camp.jpg; days_left"
+alias kba="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/art"
 alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
-alias sch="\cd ~/Desktop/camp; bat schedule.md"
+alias sch="clear; \cd ~/Desktop/camp; bat schedule.md"
 alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
-alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; timeleft"
-alias mb="clear; rg -UA 3 '2023 goals' $DOMAIN_NOTES"
-alias tm="b $TRACK_DIR/23/06.dat"  # ++ agg
-
-# 📝 BOARD
-alias kbs="rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/stem"
+alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
 
 # 🌊 META
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
@@ -67,6 +60,8 @@ alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
 # 🧮 GOALS
 alias gz="vim $TRACK_DIR/23/06.dat; gr"  # use python to get current month here
 alias gr="\cd $TRACK_DIR; l"
+alias mb="clear; rg -UA 4 '2023 goals' $DOMAIN_NOTES"
+alias tm="b $TRACK_DIR/23/06.dat"  # ++ agg
 function agg(){
     clear;
     YEAR=${1:-23}
@@ -74,11 +69,13 @@ function agg(){
     # rg -IN "^(guitar|piano|dance|skate|train|dev|cooking|muz|golf|read|yuyan|lianjie|admin|toil)" $TRACK_DIR/"$YEAR"/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i]/4;}' | sort | termgraph --color green
     rg -IN "^(guitar|piano|dance|skate)" $TRACK_DIR/"$YEAR"/??.dat | awk "NF" | awk '{a[$1]+=$2;}END{for(i in a)print i", "a[i]/4;}' | sort | termgraph --color green
 }
-function timeleft(){
+function year_past(){
     year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
+    label "darkmagenta" "% of year past so far: ${year_past}"
+}
+function days_left(){
     days_left="$(python -c 'from datetime import datetime as dt; print(abs((dt.strptime("2057-01-01", "%Y-%m-%d") - dt.today()).days))')"
-    label "honeydew" "% of year past so far: ${year_past}"
-    label "deeppink" "days left: ${days_left}"
+    label "darkmagenta" "days left: ${days_left}"
 }
 
 ###
@@ -98,8 +95,8 @@ alias rhy="imgcat $MAT_DIR/art/music/theory/note-divisions.jpg; echo -e '\n'; rg
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
-alias gq="cd $MAT_DIR/art/music/piano/gospel-cowling; t 2"
-alias jt="cd $MAT_DIR/art/music/guitar/rn/acpg/02-slurs"
+alias gq="cd $MAT_DIR/art/music/piano/harrison\ -\ pop/02-applied"
+alias jt="cd $MAT_DIR/art/music/guitar/acpg/03-bend-slide; open exercises.pdf"
 alias ge="cd $MAT_DIR/art/lit/songwriting/"
 
 ###
@@ -290,6 +287,7 @@ alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
 alias bj="\cd $DOMAIN_NOTES; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
+alias logs="cd $HOME/Desktop/zvmac/personal/logs"
 alias golf="cd $MAT_DIR/art/golf"
 
 # denv
@@ -307,5 +305,5 @@ alias sand="cd $CODE_DIR/db/query-sandbox"
 alias site="cd $CODE_DIR/lang/html-css"
 alias sk8="cd $MAT_DIR/art/skate"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
-alias tw="cd $MAT_DIR/art/dance/rap; t"
+alias tw="cd $MAT_DIR/art/dance; t"
 alias zp="vim +/'## leads' $DOMAIN_NOTES/humanities/business/software.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
