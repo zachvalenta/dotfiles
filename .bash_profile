@@ -44,16 +44,17 @@ export MLR_KEY_COLOR=208-underline
 export MLR_VALUE_COLOR=33
 
 ###
-# 🌊 "accomplished this WEEK? this MONTH? this QUARTER?"
+# 🌊 "this WEEK? this MONTH? this QUARTER?"
 ###
 
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A7 -B4; imgcat $NEW_LIFE/06\ mo\ hooker\ camp.jpg; days_left"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A8 -B4; imgcat $NEW_LIFE/06\ camp\ mo\ hooker.jpg; days_left"
 alias kba="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/art"
 alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
 alias sch="clear; \cd $NEW_LIFE/camp; bat schedule.md"
 alias qian="clear; \cd $NEW_LIFE/camp; vim spending.md"
 alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
 alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
+alias qt="clear; bat $MAT_DIR/sw/lang/html-css/content/about/quotes.md"
 
 # 🌊 META
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
@@ -74,6 +75,8 @@ function agg(){
 function year_past(){
     year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
     label "darkmagenta" "% of year past so far: ${year_past}"
+    day_since="$(python -c 'from datetime import datetime as dt; print(int(abs((dt.today() - dt.strptime("2023-06-26", "%Y-%m-%d")).days)))')"
+    label "darkred" "days since: ${day_since}"
 }
 function days_left(){
     days_left="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2057-01-01", "%Y-%m-%d") - dt.today()).days))')"
@@ -292,6 +295,7 @@ alias dev="cd $CODE_DIR"
 alias bj="\cd $DOMAIN_NOTES; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
 alias logs="cd $HOME/Desktop/zvmac/personal/logs"
+alias ren="cd $HOME/Desktop/zvmac/personal/people"
 alias golf="cd $MAT_DIR/art/golf"
 
 # denv
