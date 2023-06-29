@@ -13,6 +13,7 @@ CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 DOMAIN_NOTES="$HOME/Desktop/zvmac/notes/domains"
 PER_DIR="$HOME/Desktop/zvmac/personal"
+NEW_LIFE="$PER_DIR/photos/23\ new\ life"
 TRACK_DIR="$PER_DIR/tracking"
 KB_REGEX="## board\n\n[\w|\*]"
 
@@ -43,13 +44,14 @@ export MLR_KEY_COLOR=208-underline
 export MLR_VALUE_COLOR=33
 
 ###
-# 🏔 WORKFLOW: yearly doc open, focus: "what did I get done this week? this month? this quarter?"
+# 🌊 "accomplished this WEEK? this MONTH? this QUARTER?"
 ###
 
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A6 -B4; imgcat $PER_DIR/photos/23\ new\ life/06\ mo\ hooker\ camp.jpg; days_left"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A7 -B4; imgcat $NEW_LIFE/06\ mo\ hooker\ camp.jpg; days_left"
 alias kba="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/art"
 alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
-alias sch="clear; \cd ~/Desktop/camp; bat schedule.md"
+alias sch="clear; \cd $NEW_LIFE/camp; bat schedule.md"
+alias qian="clear; \cd $NEW_LIFE/camp; vim spending.md"
 alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
 alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
 
@@ -74,8 +76,10 @@ function year_past(){
     label "darkmagenta" "% of year past so far: ${year_past}"
 }
 function days_left(){
-    days_left="$(python -c 'from datetime import datetime as dt; print(abs((dt.strptime("2057-01-01", "%Y-%m-%d") - dt.today()).days))')"
+    days_left="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2057-01-01", "%Y-%m-%d") - dt.today()).days))')"
     label "darkmagenta" "days left: ${days_left}"
+    deal="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2024-10-01", "%Y-%m-%d") - dt.today()).days))')"
+    label "darkred" "days left to deal: ${deal}"
 }
 
 ###
@@ -96,7 +100,7 @@ alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
 alias gq="cd $MAT_DIR/art/music/piano/harrison\ -\ pop/02-applied"
-alias jt="cd $MAT_DIR/art/music/guitar/acpg/03-bend-slide; open exercises.pdf"
+alias jt="cd $MAT_DIR/art/music/guitar/acpg/03-bend-slide; open bend.pdf; open slide.pdf"
 alias ge="cd $MAT_DIR/art/lit/songwriting/"
 
 ###
