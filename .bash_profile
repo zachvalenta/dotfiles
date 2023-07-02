@@ -61,10 +61,10 @@ alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
 
 # 🧮 GOALS
-alias gz="vim $TRACK_DIR/23/06.dat; gr"  # use python to get current month here
+alias gz="vim $TRACK_DIR/23/07.dat; gr"  # use python to get current month here
 alias gr="\cd $TRACK_DIR; l"
 alias mb="clear; rg -UA 4 '2023 goals' $DOMAIN_NOTES"
-alias tm="b $TRACK_DIR/23/06.dat"  # ++ agg
+alias tm="b $TRACK_DIR/23/07.dat"  # ++ agg
 function agg(){
     clear;
     YEAR=${1:-23}
@@ -150,22 +150,23 @@ alias gs="git s"  # status
 alias gd="git d"  # diff working directory and repo
 alias gds="git ds"  # diff staging area and repo
 alias gai="git ai"  # interactive stage
-function ga(){  # https://stackoverflow.com/a/27875395
-    if [ $# -eq 0 ]; then
-        echo -n "are you sure? "
-        read answer
-        if [ "$answer" != "${answer#[Yy]}" ]; then
-            echo "adding all"
-            git add -A
-        fi
-    else
-        for var in "$@"
-        do
-            git add "$var"
-            echo "added ${var}"
-        done
-    fi
-}
+alias ga="git add -A"
+# function ga(){  # https://stackoverflow.com/a/27875395
+#     if [ $# -eq 0 ]; then
+#         echo -n "are you sure? "
+#         read answer
+#         if [ "$answer" != "${answer#[Yy]}" ]; then
+#             echo "adding all"
+#             git add -A
+#         fi
+#     else
+#         for var in "$@"
+#         do
+#             git add "$var"
+#             echo "added ${var}"
+#         done
+#     fi
+# }
 alias gl="git l"  # prettified log of previous 10 commits
 alias glb="git cherry -v master '$(git rev-parse --abbrev-ref HEAD)'"  # log commits on current branch *not* on master
 alias gc="git c"  # commit
