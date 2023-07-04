@@ -77,12 +77,14 @@ function year_past(){
     label "darkmagenta" "% of year past so far: ${year_past}"
     day_since="$(python -c 'from datetime import datetime as dt; print(int(abs((dt.today() - dt.strptime("2023-06-26", "%Y-%m-%d")).days)))')"
     label "darkred" "days since: ${day_since}"
+    deal="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2024-12-31", "%Y-%m-%d") - dt.today()).days))')"
+    label "darkred" "days left to deal: ${deal}"
+    show="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2026-02-08", "%Y-%m-%d") - dt.today()).days))')"
+    label "darkred" "days left to show: ${show}"
 }
 function days_left(){
     days_left="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2057-01-01", "%Y-%m-%d") - dt.today()).days))')"
     label "darkmagenta" "days left: ${days_left}"
-    deal="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2024-10-01", "%Y-%m-%d") - dt.today()).days))')"
-    label "darkred" "days left to deal: ${deal}"
 }
 
 ###
