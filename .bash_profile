@@ -56,12 +56,12 @@ alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigr
 alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
 alias qt="clear; bat $MAT_DIR/sw/lang/html-css/content/about/quotes.md"
 
-# 🌊 META
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
+alias kbs="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/stem"
 
 # 🧮 GOALS
-alias gz="vim $TRACK_DIR/23/07.dat; gr"  # use python to get current month here
+alias gz="vim $TRACK_DIR/23/07.dat; gr"
 alias gr="\cd $TRACK_DIR; l"
 alias mb="clear; rg -UA 4 '2023 goals' $DOMAIN_NOTES"
 alias tm="b $TRACK_DIR/23/07.dat"  # ++ agg
@@ -77,9 +77,9 @@ function year_past(){
     label "darkmagenta" "% of year past so far: ${year_past}"
     day_since="$(python -c 'from datetime import datetime as dt; print(int(abs((dt.today() - dt.strptime("2023-06-26", "%Y-%m-%d")).days)))')"
     label "darkred" "days since: ${day_since}"
-    deal="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2024-12-31", "%Y-%m-%d") - dt.today()).days))')"
+    deal="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2025-12-31", "%Y-%m-%d") - dt.today()).days))')"
     label "darkred" "days left to deal: ${deal}"
-    show="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2026-02-08", "%Y-%m-%d") - dt.today()).days))')"
+    show="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2027-02-06", "%Y-%m-%d") - dt.today()).days))')"
     label "darkred" "days left to show: ${show}"
 }
 function days_left(){
@@ -104,7 +104,7 @@ alias rhy="imgcat $MAT_DIR/art/music/theory/note-divisions.jpg; echo -e '\n'; rg
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
-alias gq="cd $MAT_DIR/art/music/piano/harrison\ -\ pop/02-applied"
+alias gq="cd $MAT_DIR/art/music/piano/harrison\ -\ pop/02\ applied"
 alias jt="cd $MAT_DIR/art/music/guitar/acpg/03-bend-slide; open bend.pdf; open slide.pdf"
 alias ge="cd $MAT_DIR/art/lit/songwriting/"
 
