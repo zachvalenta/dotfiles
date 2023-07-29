@@ -47,18 +47,19 @@ export MLR_VALUE_COLOR=33
 # 🌊 "this WEEK? this MONTH? this QUARTER?"
 ###
 
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A8 -B4; imgcat $NEW_LIFE/06\ camp\ mo\ hooker.jpg; days_left"
-alias kba="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/art"
-alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A8 -B4; imgcat $NEW_LIFE/07\ spence.png; days_left"
 alias sch="clear; \cd $NEW_LIFE/camp; bat schedule.md"
-alias qian="clear; \cd $NEW_LIFE/camp; vim spending.md"
-alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
-alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
 alias qt="clear; bat $MAT_DIR/sw/lang/html-css/content/about/quotes.md"
+alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
+alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
+
+alias kba="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/art"
+alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
 
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
 alias kbs="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/stem"
+alias qian="clear; \cd $NEW_LIFE/camp; vim spending/07.md"
 
 # 🧮 GOALS
 alias gz="vim $TRACK_DIR/23/07.dat; gr"
@@ -104,7 +105,7 @@ alias rhy="imgcat $MAT_DIR/art/music/theory/note-divisions.jpg; echo -e '\n'; rg
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
-alias gq="cd $MAT_DIR/art/music/piano/harrison\ -\ pop/02\ applied"
+alias gq="cd $MAT_DIR/art/music/piano/harrison\ -\ pop/01\ theory"
 alias jt="cd $MAT_DIR/art/music/guitar/acpg/03-bend-slide; open bend.pdf; open slide.pdf"
 alias ge="cd $MAT_DIR/art/lit/songwriting/"
 
@@ -314,7 +315,7 @@ alias ms="cd $CODE_DIR/hiring"
 alias rj="vim $PER_DIR/rj/README.md"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias site="cd $CODE_DIR/lang/html-css"
-alias sk8="cd $MAT_DIR/art/skate"
+alias sk8="cd $MAT_DIR/art/skate/jam; t"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias tw="cd $MAT_DIR/art/dance; t"
 alias zp="vim +/'## leads' $DOMAIN_NOTES/humanities/business/software.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
