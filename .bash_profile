@@ -44,28 +44,30 @@ export MLR_KEY_COLOR=208-underline
 export MLR_VALUE_COLOR=33
 
 ###
-# 🌊 "this WEEK? this MONTH? this QUARTER?"
+# 🎵 Mary https://www.youtube.com/watch?v=gIH-Yptxf54 Tyler https://www.youtube.com/watch?v=o7PEnj-8NHw
+# 💃🏻 Bouboo https://www.youtube.com/watch?v=uz-SYAY-cfg Tony https://www.youtube.com/watch?v=ukHvM6npEOw
+# ⛸ Sparkles https://www.youtube.com/watch?v=sO8k77AxxXA
 ###
 
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A8 -B4; imgcat $NEW_LIFE/07\ spence.png; days_left"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A5 -B7; imgcat $NEW_LIFE/06\ camp\ mo\ hooker.jpg; days_left"
 alias sch="clear; \cd $NEW_LIFE/camp; bat schedule.md"
-alias qt="clear; bat $MAT_DIR/sw/lang/html-css/content/about/quotes.md"
-alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
+alias kba="clear; rg -UA 7 '$KB_REGEX' $DOMAIN_NOTES/art"
+
 alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
 
-alias kba="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/art"
-alias fz="clear; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
-
+alias qt="clear; bat $MAT_DIR/sw/lang/html-css/content/about/quotes.md"
 alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
 alias kbs="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/stem"
-alias qian="clear; \cd $NEW_LIFE/camp; vim spending/07.md"
+alias qian="clear; \cd $NEW_LIFE/camp; vim spending/08.md"
 
 # 🧮 GOALS
-alias gz="vim $TRACK_DIR/23/07.dat; gr"
+alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
+alias tm="b $TRACK_DIR/23/08.dat"
+alias fz="clear; bat $PER_DIR/photos/23\ new\ life/camp/weeks/11.md; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
+alias gz="vim $TRACK_DIR/23/08.dat; gr"
 alias gr="\cd $TRACK_DIR; l"
 alias mb="clear; rg -UA 4 '2023 goals' $DOMAIN_NOTES"
-alias tm="b $TRACK_DIR/23/07.dat"  # ++ agg
 function agg(){
     clear;
     YEAR=${1:-23}
