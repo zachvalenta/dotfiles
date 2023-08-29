@@ -49,15 +49,13 @@ export MLR_VALUE_COLOR=33
 # ⛸ Sparkles https://www.youtube.com/watch?v=sO8k77AxxXA
 ###
 
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A5 -B7; imgcat $NEW_LIFE/06\ camp\ mo\ hooker.jpg; days_left"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A2 -B7; imgcat $NEW_LIFE/06\ camp\ mo\ hooker.jpg; days_left"
 alias sch="clear; \cd $NEW_LIFE/camp; bat schedule.md"
-alias kba="clear; rg -UA 7 '$KB_REGEX' $DOMAIN_NOTES/art"
-
-alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
 
 alias qt="clear; bat $MAT_DIR/sw/lang/html-css/content/about/quotes.md"
-alias shui="bat $CODE_DIR/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
+alias kba="clear; rg -UA 7 '$KB_REGEX' $DOMAIN_NOTES/art"
+alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
 alias kbs="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/stem"
 alias qian="clear; \cd $NEW_LIFE/camp; vim spending/08.md"
 
@@ -67,7 +65,6 @@ alias tm="b $TRACK_DIR/23/08.dat"
 alias fz="clear; bat $PER_DIR/photos/23\ new\ life/camp/weeks/11.md; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
 alias gz="vim $TRACK_DIR/23/08.dat; gr"
 alias gr="\cd $TRACK_DIR; l"
-alias mb="clear; rg -UA 4 '2023 goals' $DOMAIN_NOTES"
 function agg(){
     clear;
     YEAR=${1:-23}
@@ -101,7 +98,7 @@ function mp(){
     make -C $CODE_DIR/lang/python/music-prompt melody
 }
 alias keys="imgcat $MAT_DIR/art/music/theory/30-keys.jpg; imgcat $MAT_DIR/art/music/theory/circle-of-fifths.png; rg -UA 6 '## key' $DOMAIN_NOTES/art/music/theory.md"
-alias modes="rg -U '## modes\n' -A 14 -B 1 $DOMAIN_NOTES/art/music"
+alias modes="rg -U '## modes\n' -A 11 -B 1 $DOMAIN_NOTES/art/music"
 alias chords="rg -A 28 -B 1 '## chords' $DOMAIN_NOTES/art/music/theory.md"
 alias rhy="imgcat $MAT_DIR/art/music/theory/note-divisions.jpg; echo -e '\n'; rg '## rhythm' -A 20 -B 1 $DOMAIN_NOTES; echo -e '\n'"
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
@@ -317,7 +314,7 @@ alias ms="cd $CODE_DIR/hiring"
 alias rj="vim $PER_DIR/rj/README.md"
 alias sand="cd $CODE_DIR/db/query-sandbox"
 alias site="cd $CODE_DIR/lang/html-css"
-alias sk8="cd $MAT_DIR/art/skate/jam; t"
+alias sk8="cd $MAT_DIR/art/skate; t 2"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias tw="cd $MAT_DIR/art/dance; t"
 alias zp="vim +/'## leads' $DOMAIN_NOTES/humanities/business/software.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
