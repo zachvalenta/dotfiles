@@ -13,9 +13,9 @@ CODE_DIR="$HOME/Desktop/zvmac/materials/sw"
 DOTFILES_DIR="$HOME/Desktop/zvmac/materials/sw/os/za/dotfiles"
 DOMAIN_NOTES="$HOME/Desktop/zvmac/notes/domains"
 PER_DIR="$HOME/Desktop/zvmac/personal"
-NEW_LIFE="$PER_DIR/photos/23\ new\ life"
+PHOTO_DIR="$PER_DIR/photos/22-23\ tara/23/"
 TRACK_DIR="$PER_DIR/tracking"
-KB_REGEX="## board\n\n[\w|\*]"
+KB_REGEX="## now\n\n[\w|\*]"
 
 # env
 export MANPAGER=bat
@@ -49,21 +49,21 @@ export MLR_VALUE_COLOR=33
 # ⛸ Sparkles https://www.youtube.com/watch?v=sO8k77AxxXA
 ###
 
-alias wf="clear; rg 'WF' $HOME/.bash_profile -A2 -B7; imgcat $NEW_LIFE/06\ camp\ mo\ hooker.jpg; days_left"
-alias sch="clear; \cd $NEW_LIFE/camp; bat schedule.md"
+alias wf="clear; rg 'WF' $HOME/.bash_profile -A3 -B7; imgcat $PHOTO_DIR/06\ tara\ real\ gone/06\ camp\ mo\ hooker.jpg; days_left"
+alias sch="clear; \cd $PHOTO_DIR/camp; bat schedule.md"
+alias kba="clear; rg -UA 3 '$KB_REGEX' $DOMAIN_NOTES/art"
 
 alias qt="clear; bat $MAT_DIR/sw/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
-alias kba="clear; rg -UA 7 '$KB_REGEX' $DOMAIN_NOTES/art"
 alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
 alias kbs="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/stem"
-alias qian="clear; \cd $NEW_LIFE/camp; vim spending/08.md"
+alias qian="clear; \cd $PHOTO_DIR/camp; vim spending/09.md"
 
 # 🧮 GOALS
 alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
-alias tm="b $TRACK_DIR/23/08.dat"
-alias fz="clear; bat $PER_DIR/photos/23\ new\ life/camp/weeks/11.md; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
-alias gz="vim $TRACK_DIR/23/08.dat; gr"
+alias tm="b $TRACK_DIR/23/09.dat"
+alias fz="clear; bat $PHOTO_DIR/camp/02/01.md; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
+alias gz="vim $TRACK_DIR/23/09.dat; gr"
 alias gr="\cd $TRACK_DIR; l"
 function agg(){
     clear;
@@ -75,8 +75,8 @@ function agg(){
 function year_past(){
     year_past="$(python -c 'from datetime import datetime as dt; print(round(float(abs((dt.strptime("2023-01-01", "%Y-%m-%d") - dt.today()).days)) / float(365), 2))')"
     label "darkmagenta" "% of year past so far: ${year_past}"
-    day_since="$(python -c 'from datetime import datetime as dt; print(int(abs((dt.today() - dt.strptime("2023-06-26", "%Y-%m-%d")).days)))')"
-    label "darkred" "days since: ${day_since}"
+    # day_since="$(python -c 'from datetime import datetime as dt; print(int(abs((dt.today() - dt.strptime("2023-06-26", "%Y-%m-%d")).days)))')"
+    # label "darkred" "days since: ${day_since}"
     deal="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2025-12-31", "%Y-%m-%d") - dt.today()).days))')"
     label "darkred" "days left to deal: ${deal}"
     show="$(python -c 'from datetime import datetime as dt; print(int(abs(dt.strptime("2027-02-06", "%Y-%m-%d") - dt.today()).days))')"
@@ -104,8 +104,8 @@ alias rhy="imgcat $MAT_DIR/art/music/theory/note-divisions.jpg; echo -e '\n'; rg
 alias ml="cd $MAT_DIR/art/music/za/music-library; vim README.md"
 alias yin="cd /Volumes/music-usb"
 alias muz="cd $MAT_DIR/art/music"
-alias gq="cd $MAT_DIR/art/music/piano/harrison\ -\ pop/01\ theory"
-alias jt="cd $MAT_DIR/art/music/guitar/acpg/03-bend-slide; open bend.pdf; open slide.pdf"
+alias gq="cd $MAT_DIR/art/music/piano/harrison\ -\ pop/02\ applied"
+alias jt="cd $MAT_DIR/art/music/guitar"
 alias ge="cd $MAT_DIR/art/lit/songwriting/"
 
 ###
