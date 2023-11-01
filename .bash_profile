@@ -51,20 +51,20 @@ export MLR_VALUE_COLOR=33
 
 alias wf="clear; rg 'WF' $HOME/.bash_profile -A3 -B7; imgcat $PHOTO_DIR/06\ tara\ real\ gone/06\ camp\ mo\ hooker.jpg; days_left"
 alias sch="clear; \cd $PHOTO_DIR/camp; bat schedule.md"
-alias kba="clear; rg -UA 3 '$KB_REGEX' $DOMAIN_NOTES/art"
+alias kbs="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/stem"
+alias kbh="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 1 '$KB_REGEX' $PER_DIR/people"
 
+alias kba="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/art"
 alias qt="clear; bat $MAT_DIR/sw/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
-alias kbh="clear; rg -UA 4 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 4 '$KB_REGEX' $PER_DIR/people"
-alias kbs="clear; rg -UA 5 '$KB_REGEX' $DOMAIN_NOTES/stem"
 alias qian="clear; \cd $PHOTO_DIR/camp; vim spending/09.md"
 
 # 🧮 GOALS
 alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
-alias tm="b $TRACK_DIR/23/09.dat"
+alias tm="b $TRACK_DIR/23/10.dat"
 alias fz="clear; bat $PHOTO_DIR/camp/02/01.md; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
-alias gz="vim $TRACK_DIR/23/09.dat; gr"
-alias gr="\cd $TRACK_DIR; l"
+alias gz="vim $TRACK_DIR/23/11.dat; gr; ga; gds"
+alias gr="\cd $TRACK_DIR; gds"
 function agg(){
     clear;
     YEAR=${1:-23}
@@ -256,7 +256,7 @@ alias rm='function redirect(){ echo "use qing instead";}; redirect'
 alias sou="rg -UA 7 '## search' $DOMAIN_NOTES/humanities/business/km.md"
 alias sym="fd . '/Users/zach' -t l -d 3 -H -E .rvm -E Library -E Movies"  # list all sym links
 alias tq="curl wttr.in"  # fix: inability to default to current location in one-line mode, no humidity in main view
-alias upbp="source $DOTFILES_DIR/.bash_profile"
+alias upbp="source $DOTFILES_DIR/.bash_profile; clear"
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias vsc="open -a 'Visual Studio Code'"
 alias ytd="youtube-dl -i --extract-audio --audio-format m4a"
@@ -295,7 +295,7 @@ alias shu="\cd $HOME/Desktop/zvmac/notes/bookcase; br"
 alias mat="cd $MAT_DIR"
 alias art="cd $MAT_DIR/art"
 alias dev="cd $CODE_DIR"
-alias bj="\cd $DOMAIN_NOTES; jb"
+alias notes="\cd $DOMAIN_NOTES; jb"
 alias per="cd $HOME/Desktop/zvmac/personal"
 alias logs="cd $HOME/Desktop/zvmac/personal/logs"
 alias ren="cd $HOME/Desktop/zvmac/personal/people"
@@ -317,4 +317,4 @@ alias site="cd $CODE_DIR/lang/html-css"
 alias sk8="cd $MAT_DIR/art/skate; t 2"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias tw="cd $MAT_DIR/art/dance; t"
-alias zp="vim +/'## leads' $DOMAIN_NOTES/humanities/business/software.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
+alias zp="vim +/'## profile' $DOMAIN_NOTES/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
