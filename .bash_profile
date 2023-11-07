@@ -15,7 +15,8 @@ DOMAIN_NOTES="$HOME/Desktop/zvmac/notes/domains"
 PER_DIR="$HOME/Desktop/zvmac/personal"
 PHOTO_DIR="$PER_DIR/photos/22-23\ tara/23/"
 TRACK_DIR="$PER_DIR/tracking"
-KB_REGEX="## now\n\n[\w|\*]"
+KB_REGEX_NOW="## now\n\n[\w|\*]"
+KB_REGEX_NEXT="## next\n\n[\w|\*]"
 
 # env
 export MANPAGER=bat
@@ -51,10 +52,9 @@ export MLR_VALUE_COLOR=33
 
 alias wf="clear; rg 'WF' $HOME/.bash_profile -A3 -B7; imgcat $PHOTO_DIR/06\ tara\ real\ gone/06\ camp\ mo\ hooker.jpg; days_left"
 alias sch="clear; \cd $PHOTO_DIR/camp; bat schedule.md"
-alias kbs="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/stem"
-alias kbh="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/humanities; rg -UA 1 '$KB_REGEX' $PER_DIR/people"
+alias kb="clear; rg -UA 1 '$KB_REGEX_NOW' $DOMAIN_NOTES; rg -UA 1 '$KB_REGEX_NOW' $PER_DIR/people"
 
-alias kba="clear; rg -UA 1 '$KB_REGEX' $DOMAIN_NOTES/art"
+alias kbn="clear; rg -UA 1 '$KB_REGEX_NEXT' $DOMAIN_NOTES; rg -UA 1 '$KB_REGEX_NEXT' $PER_DIR/people"
 alias qt="clear; bat $MAT_DIR/sw/lang/html-css/content/about/quotes.md"
 alias wen="rg -A 5 KATA $DOMAIN_NOTES/art/aesthetics.md"
 alias qian="clear; \cd $PHOTO_DIR/camp; vim spending/09.md"
@@ -64,7 +64,7 @@ alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigr
 alias tm="b $TRACK_DIR/23/10.dat"
 alias fz="clear; bat $PHOTO_DIR/camp/02/01.md; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
 alias gz="vim $TRACK_DIR/23/11.dat; gr; ga; gds"
-alias gr="\cd $TRACK_DIR; gds"
+alias gr="\cd $TRACK_DIR"
 function agg(){
     clear;
     YEAR=${1:-23}
