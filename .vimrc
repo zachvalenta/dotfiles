@@ -2,6 +2,9 @@
 set nocompatible " disable Vi compatability https://vi.stackexchange.com/q/25149
 filetype plugin on " enables built-in plugins (for stuff like netrw)
 
+nnoremap <SPACE> <Nop> " ensure space not mapped to anything else
+let mapleader = ' '    " map space to leader
+
 " Neil practical vim 10.51
 set incsearch " highlight matches as you type
 set hlsearch " highlight matches from last search

@@ -61,7 +61,7 @@ alias qian="clear; \cd $PHOTO_DIR/camp; vim spending/09.md"
 
 # 🧮 GOALS
 alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
-alias tm="b $TRACK_DIR/23/10.dat"
+alias tm="b $TRACK_DIR/23/11.dat"
 alias fz="clear; bat $PHOTO_DIR/camp/02/01.md; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
 alias gz="vim $TRACK_DIR/23/11.dat; gr; ga; gds"
 alias gr="\cd $TRACK_DIR"
@@ -172,6 +172,7 @@ alias ga="git add -A"
 alias gl="git l"  # prettified log of previous 10 commits
 alias glb="git cherry -v master '$(git rev-parse --abbrev-ref HEAD)'"  # log commits on current branch *not* on master
 alias gc="git c"  # commit
+alias gca="git c --amend"  # commit amend
 alias gshow="git log --format=%B -n 1"  # msg description for commit
 
 ###
