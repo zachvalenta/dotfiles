@@ -173,6 +173,7 @@ alias gl="git l"  # prettified log of previous 10 commits
 alias glb="git cherry -v master '$(git rev-parse --abbrev-ref HEAD)'"  # log commits on current branch *not* on master
 alias gc="git c"  # commit
 alias gca="git c --amend"  # commit amend
+alias gcne="git c --amend --no-edit"  # commit amend
 alias gshow="git log --format=%B -n 1"  # msg description for commit
 
 ###
