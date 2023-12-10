@@ -61,9 +61,9 @@ alias qian="clear; \cd $PHOTO_DIR/camp; vim spending/09.md"
 
 # 🧮 GOALS
 alias tz="clear; label "orangered" "WEIGHT"; cat $TRACK_DIR/weight.dat | asciigraph -h 10 -w 120 red 2>/dev/null"
-alias tm="b $TRACK_DIR/23/11.dat"
-alias fz="clear; bat $PHOTO_DIR/camp/02/01.md; label "purple" "GOALS"; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"
-alias gz="vim $TRACK_DIR/23/11.dat; gr; ga; gds"
+alias tm="bat $TRACK_DIR/23/12.dat"
+alias fz="clear; termgraph $TRACK_DIR/23/goals.dat --color {green,blue}; year_past"  # bat $PHOTO_DIR/camp/02/01.md; label "purple" "GOALS"
+alias gz="vim $TRACK_DIR/23/12.dat; gr; ga; gds"
 alias gr="\cd $TRACK_DIR"
 function agg(){
     clear;
@@ -240,7 +240,7 @@ function t(){
     fi
 }
 
-alias b="bat"
+alias b="br"
 alias cd='function cdl(){ cd "$1"; l;}; cdl'
 alias cppath='pwd | pbcopy'
 alias ic="imgcat"
@@ -289,7 +289,7 @@ function label(){
 # 🛣 NAVIGATION
 ###
 
-alias jbb="jb | b"
+alias jbb="jb | bat"
 alias home="cd $HOME"
 alias desk="cd $HOME/Desktop"
 alias root="cd $HOME/Desktop/zvmac; t 2"
