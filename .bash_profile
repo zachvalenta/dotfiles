@@ -319,4 +319,4 @@ alias site="cd $CODE_DIR/lang/html-css"
 alias sk8="cd $MAT_DIR/art/skate; t 2"
 alias sjk="cd $CODE_DIR/db/shujuku; rg _model_"
 alias tw="cd $MAT_DIR/art/dance; t"
-alias zp="vim +/'## profile' $DOMAIN_NOTES/stem/dev/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html
+alias zp="vim +/'## profile' $DOMAIN_NOTES/sw/za/industry.md"  # http://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html

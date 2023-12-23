@@ -39,3 +39,10 @@ function! OpenURLUnderCursor()
   endif
 endfunction
 nnoremap gx :call OpenURLUnderCursor()<CR>
+
+" Markdown comments -> syntax type Comment is not italicized in Vim (for Markdown, Python, et al.)
+augroup markdown_highlight
+  autocmd!
+  autocmd FileType markdown syntax match markdownItalic /^>.*$/
+  autocmd FileType markdown highlight default link markdownItalic Comment
+augroup END
